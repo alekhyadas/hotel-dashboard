@@ -1,0 +1,2759 @@
+{
+  "generatedAt": "2026-09-14T23:44:44.636Z",
+  "groups": [
+    {
+      "hotelName": "AGM GRAND HOTEL & SPA",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.2,
+      "reviewCount": 396,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2801,
+      "lowestEver": 2801,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "AITHER",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.4,
+      "reviewCount": 17,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1613,
+      "lowestEver": 1613,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "AQUA BLUE RESORT PRIVATE LIMITED",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4,
+      "reviewCount": 484,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1624,
+      "lowestEver": 1624,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "ARADHYA Beach Resort || 2 minutes walk from Sea Beach",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.6,
+      "reviewCount": 13,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1470,
+      "lowestEver": 1470,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "AZAD HIND BEACH RESORT",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.2,
+      "reviewCount": 124,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1602,
+      "lowestEver": 1602,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Abhyagama Hotel",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.2,
+      "reviewCount": 2196,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1393,
+      "lowestEver": 1393,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Ananya Hotel",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.2,
+      "reviewCount": 389,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1723,
+      "lowestEver": 1723,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "Antique Regency",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.2,
+      "reviewCount": 961,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2243,
+      "lowestEver": 2243,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Aqua Marina Drive Inn",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.3,
+      "reviewCount": 2016,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2094,
+      "lowestEver": 2094,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Aryans Sea Sight Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4,
+      "reviewCount": 44,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2915,
+      "lowestEver": 2915,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Basanti Villa Digha",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.4,
+      "reviewCount": 142,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 507,
+      "lowestEver": 507,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-17",
+        "checkout": "2026-09-19"
+      }
+    },
+    {
+      "hotelName": "Beach View Resort",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4,
+      "reviewCount": 855,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2905,
+      "lowestEver": 2905,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Bhakti Sagar Hotel",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.1,
+      "reviewCount": 1575,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 623,
+      "lowestEver": 623,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Bombay Beach Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.3,
+      "reviewCount": 2465,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2084,
+      "lowestEver": 2084,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Breej Hotel Restaurant and Banquet",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4,
+      "reviewCount": 228,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1131,
+      "lowestEver": 1131,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "CORAL BEACH RESORT",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4,
+      "reviewCount": 78,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1215,
+      "lowestEver": 1215,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Cygnett Inn Sea View",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.1,
+      "reviewCount": 1368,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2567,
+      "lowestEver": 2567,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "Diya Lodge",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.4,
+      "reviewCount": 18,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 523,
+      "lowestEver": 523,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Dolphin Beach Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4,
+      "reviewCount": 882,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2196,
+      "lowestEver": 2196,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Elite Beach Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.1,
+      "reviewCount": 361,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1998,
+      "lowestEver": 1998,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Four Square Holidayz",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 2,
+      "reviewCount": 12,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 667,
+      "lowestEver": 667,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "GLOBAL RETREAT Digha",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.9,
+      "reviewCount": 162,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1582,
+      "lowestEver": 1582,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-10-30",
+        "checkout": "2026-11-01"
+      }
+    },
+    {
+      "hotelName": "GOA RESORT",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.7,
+      "reviewCount": 140,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2111,
+      "lowestEver": 2111,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Gogol Beach Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.1,
+      "reviewCount": 426,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1943,
+      "lowestEver": 1943,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Grand Beach Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.4,
+      "reviewCount": 805,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 4489,
+      "lowestEver": 4489,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "HOTEL ALLISHAN",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.8,
+      "reviewCount": 341,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2003,
+      "lowestEver": 2003,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "HOTEL MARINE PARK",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.3,
+      "reviewCount": 1296,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1615,
+      "lowestEver": 1615,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "HOTEL PARADISE",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.4,
+      "reviewCount": 894,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 519,
+      "lowestEver": 519,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-10-23",
+        "checkout": "2026-10-25"
+      }
+    },
+    {
+      "hotelName": "HOTEL SEA HORSE",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.1,
+      "reviewCount": 221,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 6387,
+      "lowestEver": 6387,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "HOTEL SEA N SAND (A Unit Of Berries Group Of Hotels)",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3,
+      "reviewCount": 2063,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1838,
+      "lowestEver": 1838,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hidden Monkey Backpackers || Near Darjeeling Toy Station",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 758,
+      "lowestEver": 758,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Holiday Beach Resorts, Mandarmani",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1444,
+      "lowestEver": 1444,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel Aamar Digha",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.8,
+      "reviewCount": 846,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1239,
+      "lowestEver": 1239,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "Hotel Aishwarya Near Amrabati Park New Digha",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 2.6,
+      "reviewCount": 37,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 397,
+      "lowestEver": 397,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "Hotel Big Boss New Digha",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.2,
+      "reviewCount": 54,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1687,
+      "lowestEver": 1687,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "Hotel Blue Waves",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3,
+      "reviewCount": 1586,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1173,
+      "lowestEver": 1173,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel Coral",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4,
+      "reviewCount": 2221,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 950,
+      "lowestEver": 950,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel Cosy Inn",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.7,
+      "reviewCount": 1599,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 713,
+      "lowestEver": 713,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel Dolphin",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.9,
+      "reviewCount": 2303,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 781,
+      "lowestEver": 781,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel Dreamland,Mandarmani",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.6,
+      "reviewCount": 186,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1895,
+      "lowestEver": 1895,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel GC International",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.8,
+      "reviewCount": 1125,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1131,
+      "lowestEver": 1131,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel Grand Sea",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4,
+      "reviewCount": 43,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1277,
+      "lowestEver": 1277,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel Green Park",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.4,
+      "reviewCount": 378,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1010,
+      "lowestEver": 1010,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "Hotel Hill Queen",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 733,
+      "lowestEver": 733,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel J P",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4,
+      "reviewCount": 1183,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1764,
+      "lowestEver": 1764,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel Kalia Nana",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3,
+      "reviewCount": 409,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 483,
+      "lowestEver": 483,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "Hotel M Plaza Mandarmani",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.8,
+      "reviewCount": 383,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1568,
+      "lowestEver": 1568,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel M Plaza New Digha",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4,
+      "reviewCount": 242,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1549,
+      "lowestEver": 1549,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel Mamoni Group",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.7,
+      "reviewCount": 1792,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 603,
+      "lowestEver": 603,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel Mayuri, Digha",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3,
+      "reviewCount": 418,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1198,
+      "lowestEver": 1198,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel Morning Glow",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.1,
+      "reviewCount": 426,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1440,
+      "lowestEver": 1440,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "Hotel Neel Samudra",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4,
+      "reviewCount": 936,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 835,
+      "lowestEver": 835,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel New Sagar Priya",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.8,
+      "reviewCount": 182,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2744,
+      "lowestEver": 2744,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "Hotel Paradise Mandarmani",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.5,
+      "reviewCount": 315,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 865,
+      "lowestEver": 865,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel Prince",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3,
+      "reviewCount": 490,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1308,
+      "lowestEver": 1308,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel Ridley International",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.6,
+      "reviewCount": 349,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2229,
+      "lowestEver": 2229,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "Hotel SS International",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.9,
+      "reviewCount": 1089,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 852,
+      "lowestEver": 852,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel Sandrup",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1390,
+      "lowestEver": 1390,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel Santiniketan",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.2,
+      "reviewCount": 875,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 810,
+      "lowestEver": 810,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel Sea Bird-4",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2032,
+      "lowestEver": 2032,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel Seagull",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.4,
+      "reviewCount": 2177,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2475,
+      "lowestEver": 2475,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel Silver Land New Digha",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.5,
+      "reviewCount": 563,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1331,
+      "lowestEver": 1331,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "Hotel Sonar Bangla Darjeeling - 50mts from Mall Road",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1982,
+      "lowestEver": 1982,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel Sunflower",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1425,
+      "lowestEver": 1425,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel Swarna",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.3,
+      "reviewCount": 468,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2037,
+      "lowestEver": 2037,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "Hotel Swastika Inn Old Digha",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.1,
+      "reviewCount": 29,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 796,
+      "lowestEver": 796,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "Hotel Tulip",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 2.9,
+      "reviewCount": 455,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 721,
+      "lowestEver": 721,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-10-23",
+        "checkout": "2026-10-25"
+      }
+    },
+    {
+      "hotelName": "Hotel Yuma Darjeeling By Yagi Group",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1409,
+      "lowestEver": 1409,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel bashera",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1179,
+      "lowestEver": 1179,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Hotel sucasa hills 400 meters from mall road",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1077,
+      "lowestEver": 1077,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Iconic Hotel",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.7,
+      "reviewCount": 266,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 758,
+      "lowestEver": 758,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "India Beach Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.6,
+      "reviewCount": 157,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2423,
+      "lowestEver": 2423,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Indismart Mandarmani Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.8,
+      "reviewCount": 97,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1396,
+      "lowestEver": 1396,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "JAIN GROUP HOTEL PINK MOUNTAIN DARJEELING",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1800,
+      "lowestEver": 1800,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Jairam Gold Royal Beach Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.1,
+      "reviewCount": 20,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2458,
+      "lowestEver": 2458,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Kamala Homestay, Mondarmoni",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.5,
+      "reviewCount": 21,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2399,
+      "lowestEver": 2399,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Kings Crown",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 2.8,
+      "reviewCount": 443,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1407,
+      "lowestEver": 1407,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "LLOYDS BEACH RESORT",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4,
+      "reviewCount": 958,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1320,
+      "lowestEver": 1320,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Le ROI Digha @Digha Railway Station",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.2,
+      "reviewCount": 3663,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1249,
+      "lowestEver": 1249,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Liv Sea Valley",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4,
+      "reviewCount": 81,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1320,
+      "lowestEver": 1320,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Luxury Amar Tree Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.6,
+      "reviewCount": 690,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 6551,
+      "lowestEver": 6551,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Luxury Cottages in the Shack",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.4,
+      "reviewCount": 49,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1767,
+      "lowestEver": 1767,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "MANDARMANI KISS OF SEA HOLIDAY RESORTS & COTTAGES PRIVATE LIMITED",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.7,
+      "reviewCount": 180,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1964,
+      "lowestEver": 1964,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "MATRI RESORT",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.2,
+      "reviewCount": 111,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1149,
+      "lowestEver": 1149,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Maa Durga Guest",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 2.2,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1281,
+      "lowestEver": 1281,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "Manas Kanya Resort Mandarmani",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.4,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1190,
+      "lowestEver": 1190,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Mandarmani Green Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3,
+      "reviewCount": 292,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1188,
+      "lowestEver": 1188,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Megha Beach Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1309,
+      "lowestEver": 1309,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Mohana Beach Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.3,
+      "reviewCount": 398,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2178,
+      "lowestEver": 2178,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Monalisa Inn",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.3,
+      "reviewCount": 768,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1432,
+      "lowestEver": 1432,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Mount Lungta Boutique Hotel & Spa",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1970,
+      "lowestEver": 1970,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Mount Queens Hill Lake Resort & Spa",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2009,
+      "lowestEver": 2009,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Mount Thistle Boutique Hotel (5 minutes from Mall Road)",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1882,
+      "lowestEver": 1882,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Muscatel Stardust - Chowrasta Mall Road",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1880,
+      "lowestEver": 1880,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "My Fair Beach Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3,
+      "reviewCount": 294,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1112,
+      "lowestEver": 1112,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "NEW UNIQUE INN",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3,
+      "reviewCount": 141,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1063,
+      "lowestEver": 1063,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "One Luxury Studio Apartment within a Three Star Resort",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.9,
+      "reviewCount": 28,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 823,
+      "lowestEver": 823,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "Orbit Hotel,Old Digha",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 2.8,
+      "reviewCount": 114,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 601,
+      "lowestEver": 601,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "PARTH KING BEACH RESORT",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4,
+      "reviewCount": 407,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2958,
+      "lowestEver": 2958,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "PRIME BEACH RESORT",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.2,
+      "reviewCount": 191,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 4713,
+      "lowestEver": 4713,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Park Point",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4,
+      "reviewCount": 1958,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1555,
+      "lowestEver": 1555,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Prapti Resort",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.2,
+      "reviewCount": 107,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1015,
+      "lowestEver": 1015,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "Prasant Beach Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3,
+      "reviewCount": 383,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2362,
+      "lowestEver": 2362,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "ROYAL VEDANTA",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.9,
+      "reviewCount": 402,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1329,
+      "lowestEver": 1329,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "Resort Garden Retreat",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.2,
+      "reviewCount": 266,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1231,
+      "lowestEver": 1231,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Resort K Sea View",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.3,
+      "reviewCount": 154,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2846,
+      "lowestEver": 2846,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Ricardo Beach Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.9,
+      "reviewCount": 177,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 943,
+      "lowestEver": 943,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Royal Gitanjali Resort and SPA",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.9,
+      "reviewCount": 275,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1902,
+      "lowestEver": 1902,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Royal Palace Beach Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4,
+      "reviewCount": 468,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1733,
+      "lowestEver": 1733,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Royal Sea View",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.3,
+      "reviewCount": 215,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1747,
+      "lowestEver": 1747,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "Rupsa home stay",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2120,
+      "lowestEver": 2120,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-10-23",
+        "checkout": "2026-10-25"
+      }
+    },
+    {
+      "hotelName": "SHIVAM RESORT",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2415,
+      "lowestEver": 2415,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "ST APPLE BEACH RESORT MANDARMONI",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3,
+      "reviewCount": 124,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1985,
+      "lowestEver": 1985,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Santiniketan hotel and resorts",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.8,
+      "reviewCount": 411,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2060,
+      "lowestEver": 2060,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Sea Land Mondarmoni",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3,
+      "reviewCount": 83,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 738,
+      "lowestEver": 738,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Sea Resort",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.9,
+      "reviewCount": 374,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2031,
+      "lowestEver": 2031,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "Sea Star Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4,
+      "reviewCount": 833,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 3053,
+      "lowestEver": 3053,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Shankhabela Guest Inn, New Digha",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.8,
+      "reviewCount": 31,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1124,
+      "lowestEver": 1124,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Shanti Seaview Resort And Spa",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.9,
+      "reviewCount": 444,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 3324,
+      "lowestEver": 3324,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Sher E Bengal Beach Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.1,
+      "reviewCount": 1252,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 3207,
+      "lowestEver": 3207,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Silver Sand Eco Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3,
+      "reviewCount": 297,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2309,
+      "lowestEver": 2309,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Silver Sand Resort & Spa",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.8,
+      "reviewCount": 76,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2036,
+      "lowestEver": 2036,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Sonargaon Beach Resort (Run and Managed by MBS Leisure Hotels & Resorts)",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.7,
+      "reviewCount": 62,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2010,
+      "lowestEver": 2010,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Star Inn Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 2,
+      "reviewCount": 287,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 820,
+      "lowestEver": 820,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Summit Barsana Resort & Spa (5 Mins drive to Mall)",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2898,
+      "lowestEver": 2898,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Summit Bougainvillea Tea Resort Kurseong",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2753,
+      "lowestEver": 2753,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Summit Hermon Hotel and Spa",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2380,
+      "lowestEver": 2380,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Summit Oakden Resort & Spa at Mall Road",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2848,
+      "lowestEver": 2848,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Summit Sherpa Mountain Hotel & Spa",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1782,
+      "lowestEver": 1782,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Summit Swiss Heritage Resort & Spa ( Mall Road )",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 3139,
+      "lowestEver": 3139,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Sun And Sand Hotel",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.5,
+      "reviewCount": 30,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 830,
+      "lowestEver": 830,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "Sun City Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.7,
+      "reviewCount": 2099,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2418,
+      "lowestEver": 2418,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Swarnabhoomi Beach Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.8,
+      "reviewCount": 220,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2227,
+      "lowestEver": 2227,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "TN RESORT",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3,
+      "reviewCount": 332,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 5006,
+      "lowestEver": 5006,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "TRAYEE INTERNATIONAL",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.8,
+      "reviewCount": 102,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1286,
+      "lowestEver": 1286,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-10-30",
+        "checkout": "2026-11-01"
+      }
+    },
+    {
+      "hotelName": "The Candlewood Park Beach Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.1,
+      "reviewCount": 3352,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2309,
+      "lowestEver": 2309,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "The Heritage, 15 mins from Chawk Bajar",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 613,
+      "lowestEver": 613,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "The Hotel Annapurna",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.7,
+      "reviewCount": 563,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 721,
+      "lowestEver": 721,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-10-23",
+        "checkout": "2026-10-25"
+      }
+    },
+    {
+      "hotelName": "The Monalisa Inn",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4,
+      "reviewCount": 299,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1504,
+      "lowestEver": 1504,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "The Rath Inns",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.3,
+      "reviewCount": 466,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2298,
+      "lowestEver": 2298,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "The Sana Beach",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.7,
+      "reviewCount": 787,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 5855,
+      "lowestEver": 5855,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "The West Gate Posada By Summit",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 3693,
+      "lowestEver": 3693,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Townhouse Mandarmani Beach Formerly Tropicana Beach Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.3,
+      "reviewCount": 51,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1554,
+      "lowestEver": 1554,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "UNIQUE BEACH RESORT",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.2,
+      "reviewCount": 462,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2223,
+      "lowestEver": 2223,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "UTTKALIKA AYATAN || Entire 1 BHK Flat in Digha",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4.2,
+      "reviewCount": 13,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 1476,
+      "lowestEver": 1476,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-18",
+        "checkout": "2026-09-20"
+      }
+    },
+    {
+      "hotelName": "Udaan Dekeling Resort & Spa, Darjeeling",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 3013,
+      "lowestEver": 3013,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Udaan Himalayan Suites, Darjeeling",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 3181,
+      "lowestEver": 3181,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Venus Hotel",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.8,
+      "reviewCount": 364,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 675,
+      "lowestEver": 675,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-10-23",
+        "checkout": "2026-10-25"
+      }
+    },
+    {
+      "hotelName": "Viceroy Beach & Spa Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.6,
+      "reviewCount": 1062,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 3560,
+      "lowestEver": 3560,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Victoria Beach Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 3.6,
+      "reviewCount": 343,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2056,
+      "lowestEver": 2056,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "White Tara Anex Homestay",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 794,
+      "lowestEver": 794,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Yashshree Mall Road Darjeeling",
+      "destination": "Darjeeling",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": null,
+      "reviewCount": null,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2754,
+      "lowestEver": 2754,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    },
+    {
+      "hotelName": "Zone By The Park Digha",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "rating": 4,
+      "reviewCount": 1423,
+      "isNewlyBuilt": false,
+      "youtubeViews": null,
+      "youtubeVideoUrl": null,
+      "cheapestPrice": 2173,
+      "lowestEver": 2173,
+      "everAtLowest": true,
+      "cheapest": {
+        "checkin": "2026-09-15",
+        "checkout": "2026-09-17"
+      }
+    }
+  ]
+}
