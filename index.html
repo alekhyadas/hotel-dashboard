@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Resort Deal Dashboard</title>
+<style>
+  /* Read-only public mirror of the extension's dashboard. No hide/AI
+     buttons here, this page only ever reads data.json published
+     alongside it, it can't write anything back. */
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Bricolage Grotesque', -apple-system, 'Segoe UI', system-ui, sans-serif;
+    margin: 0 auto; padding: 28px 20px 60px; max-width: 1100px;
+    color: #16181d; background: #f7f7f8;
+  }
+  h1 { font-size: 22px; font-weight: 700; margin: 0 0 4px; }
+  .subtitle { font-size: 12px; color: #6b7280; margin: 0 0 24px; }
+  .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin-bottom: 28px; }
+  .kpi { background: #fff; border: 1px solid #e8e9ec; border-radius: 10px; padding: 16px 18px; }
+  .kpi-value { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+  .kpi-label { font-size: 11px; font-weight: 600; color: #374151; }
+  table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #e8e9ec; border-radius: 10px; overflow: hidden; font-size: 13px; }
+  th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid #f0f1f3; vertical-align: top; }
+  th { background: #fbfbfc; font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: #6b7280; }
+  th.num, td.num { text-align: right; }
+  tr:last-child td { border-bottom: none; }
+  .hotel-name { font-weight: 600; }
+  .price { font-weight: 600; }
+  .price-low { color: #0f7a3d; }
+  .muted { color: #9ca3af; }
+  .small { font-size: 11px; }
+  .badge { display: inline-block; font-size: 9px; font-weight: 700; border-radius: 4px; padding: 2px 6px; margin-left: 5px; }
+  .badge-new { background: #eef4ff; color: #1e40af; }
+  .badge-low { background: #e8f6ee; color: #0f7a3d; }
+  .badge-yt { background: #fee2e2; color: #b91c1c; text-decoration: none; }
+  .stale-warning { background: #fff4e5; border: 1px solid #f3c988; border-radius: 8px; padding: 10px 14px; font-size: 12px; margin-bottom: 18px; }
+  .empty { color: #6b7280; padding: 40px 0; text-align: center; }
+</style>
+</head>
+<body>
+  <h1>Resort Deal Dashboard</h1>
+  <p class="subtitle" id="summary-line">Loading...</p>
+  <div id="stale-warning" class="stale-warning" style="display:none;"></div>
+  <div class="kpi-row" id="kpi-row"></div>
+  <table id="deals-table">
+    <thead>
+      <tr>
+        <th>Hotel</th><th>Destination</th><th>Cheapest dates</th>
+        <th class="num">Price</th><th class="num">Lowest ever</th>
+        <th>Guest rating</th>
+      </tr>
+    </thead>
+    <tbody id="deals-body"></tbody>
+  </table>
+  <div id="empty" class="empty" style="display:none;">Nothing published yet.</div>
+
+  <script>
+    function formatINR(amount) {
+      if (amount === null || amount === undefined) return "N/A";
+      const n = Math.abs(Math.round(amount));
+      const s = String(n);
+      let grouped;
+      if (s.length <= 3) grouped = s;
+      else {
+        const last3 = s.slice(-3);
+        let rest = s.slice(0, -3);
+        const parts = [];
+        while (rest.length > 2) { parts.unshift(rest.slice(-2)); rest = rest.slice(0, -2); }
+        if (rest) parts.unshift(rest);
+        grouped = parts.join(",") + "," + last3;
+      }
+      return (amount < 0 ? "-" : "") + "\u20b9" + grouped;
+    }
+    function formatViews(n) {
+      if (n === null || n === undefined) return "";
+      if (n >= 1000000) return (n / 1000000).toFixed(1).replace(/\.0$/, "") + "M";
+      if (n >= 1000) return (n / 1000).toFixed(1).replace(/\.0$/, "") + "K";
+      return String(n);
+    }
+    function esc(str) {
+      const d = document.createElement("div");
+      d.textContent = str ?? "";
+      return d.innerHTML;
+    }
+
+    async function main() {
+      let data;
+      try {
+        const resp = await fetch("./data.json?t=" + Date.now(), { cache: "no-store" });
+        data = await resp.json();
+      } catch (e) {
+        document.getElementById("summary-line").textContent = "Couldn't load data.json.";
+        return;
+      }
+
+      const groups = data.groups || [];
+      document.getElementById("summary-line").textContent =
+        `${groups.length} hotels tracked \u2022 last updated ${new Date(data.generatedAt).toLocaleString("en-IN")}`;
+
+      const ageMs = Date.now() - new Date(data.generatedAt).getTime();
+      if (ageMs > 24 * 60 * 60 * 1000) {
+        const warn = document.getElementById("stale-warning");
+        warn.style.display = "block";
+        warn.textContent = "This snapshot is more than a day old, prices may have changed since.";
+      }
+
+      const kpiRow = document.getElementById("kpi-row");
+      const cheapest = groups.slice().sort((a, b) => a.cheapestPrice - b.cheapestPrice)[0];
+      const atLow = groups.filter((g) => g.everAtLowest).length;
+      const newlyBuilt = groups.filter((g) => g.isNewlyBuilt).length;
+      kpiRow.innerHTML = `
+        <div class="kpi"><div class="kpi-value">${cheapest ? formatINR(cheapest.cheapestPrice) : "\u2014"}</div><div class="kpi-label">Cheapest tracked stay</div></div>
+        <div class="kpi"><div class="kpi-value">${atLow}</div><div class="kpi-label">At their lowest price</div></div>
+        <div class="kpi"><div class="kpi-value">${newlyBuilt}</div><div class="kpi-label">Newly built</div></div>
+      `;
+
+      const body = document.getElementById("deals-body");
+      if (groups.length === 0) {
+        document.getElementById("empty").style.display = "block";
+        return;
+      }
+
+      body.innerHTML = groups.map((g) => `
+        <tr>
+          <td>
+            <span class="hotel-name">${esc(g.hotelName)}</span>
+            ${g.starRating ? `<span class="muted small">${"\u2605".repeat(g.starRating)}</span>` : ""}
+            ${g.isNewlyBuilt ? '<span class="badge badge-new">NEW BUILD</span>' : ""}
+            ${g.youtubeViews ? `<a href="${esc(g.youtubeVideoUrl || "#")}" target="_blank" class="badge badge-yt">\u{1F3A5} ${formatViews(g.youtubeViews)}</a>` : ""}
+          </td>
+          <td>${esc(g.destination)}<div class="muted small">${esc(g.source)}</div></td>
+          <td>${g.cheapest.checkin} <div class="muted small">to ${g.cheapest.checkout}</div></td>
+          <td class="num">
+            <span class="price${g.everAtLowest ? " price-low" : ""}">${formatINR(g.cheapestPrice)}</span>
+            ${g.everAtLowest ? '<div class="badge badge-low">lowest so far</div>' : ""}
+          </td>
+          <td class="num">${formatINR(g.lowestEver)}</td>
+          <td>${g.rating ? `<b>${g.rating.toFixed(1)}</b><div class="muted small">${(g.reviewCount || 0).toLocaleString("en-IN")} reviews</div>` : '<span class="muted">no rating</span>'}</td>
+        </tr>
+      `).join("");
+    }
+
+    main();
+  </script>
+</body>
+</html>
