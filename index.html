@@ -67,6 +67,32 @@
   .hint { font-size: 12px; color: #6b7280; margin-top: 14px; }
   .hidden { display: none; }
   .empty { color: #6b7280; padding: 40px 0; text-align: center; }
+
+  .tab-bar { display: flex; gap: 4px; margin-bottom: 20px; border-bottom: 1px solid #e8e9ec; }
+  .tab-btn { background: none; border: none; color: #6b7280; font-family: inherit; font-size: 13px; font-weight: 600; padding: 10px 16px; cursor: pointer; border-bottom: 2px solid transparent; }
+  .tab-btn:hover { color: #16181d; }
+  .tab-btn.active { color: #16181d; border-bottom-color: #16181d; }
+  .tab-panel.hidden { display: none; }
+
+  .badge-stale { background: #fff4e5; color: #a15c00; margin-top: 4px; }
+  .sparkline { display: block; margin: 4px 0 0 auto; }
+  .reality-check { font-size: 10px; color: #6b7280; margin-top: 3px; font-style: italic; }
+
+  .sub-table tr.price-tier-low { background: #f0faf3; }
+  .sub-table tr.price-tier-high { background: #fdf3f0; }
+
+  .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; z-index: 900; }
+  .modal-overlay.hidden { display: none; }
+  .modal-panel { background: #fff; border-radius: 12px; padding: 24px; max-width: 480px; width: 90%; max-height: 80vh; overflow-y: auto; position: relative; box-shadow: 0 12px 40px rgba(0,0,0,0.2); }
+  .modal-close { position: absolute; top: 12px; right: 12px; background: none; border: none; font-size: 14px; color: #6b7280; cursor: pointer; padding: 4px 8px; }
+  .modal-close:hover { color: #16181d; }
+  .video-card { border: 1px solid #e8e9ec; border-radius: 8px; padding: 12px; margin: 12px 0; }
+  .video-card-type { font-size: 10px; text-transform: uppercase; letter-spacing: 0.03em; color: #9ca3af; font-weight: 700; margin-bottom: 4px; }
+  .video-card-title { display: block; font-weight: 600; color: #16181d; text-decoration: none; margin-bottom: 4px; }
+  .video-card-title:hover { text-decoration: underline; }
+
+  .video-btn { background: #fee2e2; color: #b91c1c; border: none; margin-left: 6px; cursor: pointer; font-size: 9px; font-weight: 700; letter-spacing: 0.03em; border-radius: 4px; padding: 2px 6px; font-family: inherit; }
+  .video-btn:hover { background: #fecaca; }
 </style>
 </head>
 <body>
@@ -74,56 +100,82 @@
   <p class="subtitle" id="summary-line">Loading...</p>
   <div id="stale-warning" class="stale-warning hidden"></div>
 
-  <div class="kpi-row" id="kpi-row"></div>
+  <nav class="tab-bar">
+    <button class="tab-btn active" data-tab="hotels">Hotels</button>
+    <button class="tab-btn" data-tab="videos">Videos</button>
+  </nav>
 
-  <div class="controls">
-    <label>Destination
-      <select id="filter-destination"><option value="">All</option></select>
-    </label>
-    <label>Star tier
-      <select id="filter-star">
-        <option value="">Any</option>
-        <option value="3">3+ star</option>
-        <option value="4">4+ star</option>
-        <option value="5">5 star</option>
-      </select>
-    </label>
-    <label>Sort by
-      <select id="sort-by">
-        <option value="lowest">Lowest price</option>
-        <option value="value">Best value (price vs rating)</option>
-        <option value="discount">Closest to its all-time low</option>
-        <option value="rating">Highest rated</option>
-        <option value="youtube">Most YouTube views</option>
-        <option value="checkin">Check-in date</option>
-      </select>
-    </label>
-    <label class="checkbox-inline">
-      <input type="checkbox" id="filter-quality" />
-      Trustworthy reviews only
-    </label>
-    <label class="checkbox-inline">
-      <input type="checkbox" id="filter-newly-built" />
-      Newly built only
-    </label>
-    <label class="checkbox-inline">
-      <input type="checkbox" id="filter-favorites" />
-      Favorites only
-    </label>
+  <div id="video-modal-overlay" class="modal-overlay hidden">
+    <div class="modal-panel">
+      <button id="video-modal-close" class="modal-close">&#10005;</button>
+      <h2 id="video-modal-title"></h2>
+      <div id="video-modal-body"></div>
+    </div>
   </div>
 
-  <table id="deals-table">
-    <thead>
-      <tr>
-        <th>Hotel</th><th>Star tier</th><th>Destination</th><th>Cheapest dates</th>
-        <th class="num">Price</th><th class="num">Lowest ever</th>
-        <th>Guest rating</th><th>Tracking</th>
-      </tr>
-    </thead>
-    <tbody id="deals-body"></tbody>
-  </table>
-  <p class="hint">Click a hotel to see all its tracked dates.</p>
-  <div id="empty" class="empty hidden">Nothing published yet.</div>
+  <div class="tab-panel" data-panel="hotels">
+    <div class="kpi-row" id="kpi-row"></div>
+
+    <div class="controls">
+      <label>Destination
+        <select id="filter-destination"><option value="">All</option></select>
+      </label>
+      <label>Star tier
+        <select id="filter-star">
+          <option value="">Any</option>
+          <option value="3">3+ star</option>
+          <option value="4">4+ star</option>
+          <option value="5">5 star</option>
+        </select>
+      </label>
+      <label>Sort by
+        <select id="sort-by">
+          <option value="lowest">Lowest price</option>
+          <option value="value">Best value (price vs rating)</option>
+          <option value="discount">Closest to its all-time low</option>
+          <option value="rating">Highest rated</option>
+          <option value="youtube">Most YouTube views</option>
+          <option value="checkin">Check-in date</option>
+        </select>
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" id="filter-quality" />
+        Trustworthy reviews only
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" id="filter-newly-built" />
+        Newly built only
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" id="filter-favorites" />
+        Favorites only
+      </label>
+    </div>
+
+    <table id="deals-table">
+      <thead>
+        <tr>
+          <th>Hotel</th><th>Star tier</th><th>Destination</th><th>Cheapest dates</th>
+          <th class="num">Price</th><th class="num">Lowest ever</th>
+          <th>Guest rating</th><th>Tracking</th>
+        </tr>
+      </thead>
+      <tbody id="deals-body"></tbody>
+    </table>
+    <p class="hint">Click a hotel to see all its tracked dates.</p>
+    <div id="empty" class="empty hidden">Nothing published yet.</div>
+  </div>
+
+  <div class="tab-panel hidden" data-panel="videos">
+    <p class="hint">One row per video found, both Shorts and long-form where a hotel has both.</p>
+    <table id="video-coverage-table">
+      <thead>
+        <tr><th>Hotel</th><th>Video</th><th>Creator</th><th>Type</th><th class="num">Views</th><th>Posted</th><th class="num">Channel avg (long-form)</th></tr>
+      </thead>
+      <tbody id="video-coverage-body"></tbody>
+    </table>
+    <div id="video-coverage-empty" class="empty hidden">No video data published yet.</div>
+  </div>
 
   <script>
     const TRUSTWORTHY_MIN_RATING = 4.0;
@@ -163,6 +215,77 @@
       const d = document.createElement("div");
       d.textContent = str ?? "";
       return d.innerHTML;
+    }
+
+    const STALE_DATA_MS = 3 * 24 * 60 * 60 * 1000;
+
+    function sparklineSvg(priceHistory) {
+      if (!priceHistory || priceHistory.length < 2) return "";
+      const values = priceHistory.map((p) => p.price);
+      const min = Math.min(...values);
+      const max = Math.max(...values);
+      const range = max - min || 1;
+      const w = 56, h = 18;
+      const points = values
+        .map((v, i) => `${((i / (values.length - 1)) * w).toFixed(1)},${(h - ((v - min) / range) * h).toFixed(1)}`)
+        .join(" ");
+      const netChange = values[values.length - 1] - values[0];
+      const color = netChange < 0 ? "#0f7a3d" : netChange > 0 ? "#b91c1c" : "#9ca3af";
+      return `<svg width="${w}" height="${h}" class="sparkline"><polyline points="${points}" fill="none" stroke="${color}" stroke-width="1.6"/></svg>`;
+    }
+
+    function stalenessBadge(updatedAt) {
+      if (!updatedAt) return "";
+      const ageMs = Date.now() - new Date(updatedAt).getTime();
+      if (ageMs < STALE_DATA_MS) return "";
+      const days = Math.floor(ageMs / (24 * 60 * 60 * 1000));
+      return `<div class="badge badge-stale" title="Last confirmed ${formatDate(updatedAt)}, not rescanned since">\u23f3 ${days}d old</div>`;
+    }
+
+    function priceRealityCheck(g) {
+      const original = g.cheapest.originalPrice;
+      if (!original || original <= g.cheapestPrice) return "";
+      const pct = Math.round(((original - g.cheapestPrice) / original) * 100);
+      return `<div class="reality-check">Normally ${formatINR(original)}, you'd pay ${pct}% less</div>`;
+    }
+
+    function formatPublishedDate(iso) {
+      if (!iso) return "";
+      const d = new Date(iso);
+      const now = new Date();
+      const diffDays = Math.max(0, Math.floor((now - d) / (1000 * 60 * 60 * 24)));
+      const dateStr = d.toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" });
+      let ago;
+      if (diffDays < 30) ago = `${diffDays}d ago`;
+      else if (diffDays < 365) ago = `${Math.round(diffDays / 30)}mo ago`;
+      else ago = `${(diffDays / 365).toFixed(1)}y ago`;
+      return `${dateStr} (${ago})`;
+    }
+
+    function videoCard(video, type) {
+      if (!video) return "";
+      return `
+        <div class="video-card">
+          <div class="video-card-type">${type}</div>
+          <a href="${escAttr(video.url)}" target="_blank" class="video-card-title">${esc(video.title || "Untitled")}</a>
+          <div class="muted small">${esc(video.channelTitle || "Unknown creator")} \u2022 ${video.channelSubs !== null && video.channelSubs !== undefined ? formatViews(video.channelSubs) + " subs" : "subs hidden"}</div>
+          <div class="muted small">${formatViews(video.views)} views \u2022 posted ${formatPublishedDate(video.publishedAt)}</div>
+        </div>
+      `;
+    }
+
+    function openVideoModal(g) {
+      document.getElementById("video-modal-title").textContent = g.hotelName;
+      const body = document.getElementById("video-modal-body");
+      const cards = [videoCard(g.youtubeTopLong, "Long-form"), videoCard(g.youtubeTopShort, "Shorts")].filter(Boolean).join("");
+      body.innerHTML = cards || '<p class="hint">No video details saved for this one yet.</p>';
+      if (g.youtubeAvgLongFormViews !== null && g.youtubeAvgLongFormViews !== undefined) {
+        body.innerHTML += `<p class="hint">This creator's recent long-form uploads average ${formatViews(g.youtubeAvgLongFormViews)} views.</p>`;
+      }
+      document.getElementById("video-modal-overlay").classList.remove("hidden");
+    }
+    function closeVideoModal() {
+      document.getElementById("video-modal-overlay").classList.add("hidden");
     }
     function escAttr(str) { return (str ?? "").replace(/"/g, "&quot;"); }
 
@@ -274,7 +397,10 @@
 
       groups.forEach((g, idx) => {
         const rowId = "hotel-row-" + idx;
-        const cheapest = g.dates[0];
+        // Falls back to the old derivation only for a snapshot published
+        // before this fix, once republished every group will have these.
+        const cheapestCheckin = g.cheapestCheckin || g.dates[0].checkin;
+        const cheapestCheckout = g.cheapestCheckout || g.dates[0].checkout;
         const tr = document.createElement("tr");
         tr.className = "hotel-row";
         tr.innerHTML = `
@@ -283,20 +409,33 @@
             ${g.isFavorite ? '<span title="Favorited" style="color:#b8860b;margin-right:3px;">\u2605</span>' : ""}
             <span class="hotel-name">${esc(g.hotelName)}</span>
             ${g.isNewlyBuilt ? '<span class="badge badge-new">NEW BUILD</span>' : ""}
-            ${g.youtubeViews ? `<a href="${escAttr(g.youtubeVideoUrl || "#")}" target="_blank" class="badge badge-yt" onclick="event.stopPropagation()">\u{1F3A5} ${formatViews(g.youtubeViews)}${g.youtubeVideoCount > 1 ? ` (${g.youtubeVideoCount}v)` : ""}</a>` : ""}
+            ${g.youtubeViews ? `<button class="video-btn" data-idx="${idx}" title="Click to see the videos found for this hotel">\u{1F3A5} ${formatViews(g.youtubeViews)}${g.youtubeVideoCount > 1 ? ` (${g.youtubeVideoCount}v)` : ""}</button>` : ""}
           </td>
           <td class="nowrap">${starTierDisplay(g)}</td>
           <td>${esc(g.destination)}<div class="muted small">${esc(g.source)}</div></td>
-          <td class="nowrap">${cheapest.checkin} <div class="muted small">to ${cheapest.checkout}</div></td>
+          <td class="nowrap">${cheapestCheckin} <div class="muted small">to ${cheapestCheckout}</div></td>
           <td class="num">
             <span class="price${g.everAtLowest ? " price-low" : ""}">${formatINR(g.cheapestPrice)}</span>
-            ${g.everAtLowest ? '<div class="badge badge-low">lowest so far</div>' : ""}
+            ${sparklineSvg(g.cheapest.priceHistory)}
+            ${g.everAtLowest ? '<div class="badge badge-low">\u{1F525} All-time low</div>' : ""}
+            ${priceRealityCheck(g)}
+            ${stalenessBadge(g.cheapest.updatedAt)}
           </td>
           <td class="num">${formatINR(g.lowestEver)}</td>
           <td>${ratingCell(g)}</td>
           <td class="muted small nowrap">${g.dates.length} date${g.dates.length > 1 ? "s" : ""}</td>
         `;
         body.appendChild(tr);
+
+        const datePrices = g.dates.map((d) => d.price);
+        const minDatePrice = Math.min(...datePrices);
+        const priceRange = Math.max(...datePrices) - minDatePrice || 1;
+        const priceTierClass = (price) => {
+          const ratio = (price - minDatePrice) / priceRange;
+          if (ratio <= 0.33) return "price-tier-low";
+          if (ratio >= 0.66) return "price-tier-high";
+          return "price-tier-mid";
+        };
 
         const detailTr = document.createElement("tr");
         detailTr.id = rowId;
@@ -308,7 +447,7 @@
             <thead><tr><th>Dates</th><th class="num">Price</th><th class="num">Lowest seen</th><th>Last checked</th><th></th></tr></thead>
             <tbody>
               ${g.dates.map((d) => `
-                <tr>
+                <tr class="${priceTierClass(d.price)}">
                   <td>${d.checkin} \u2192 ${d.checkout}</td>
                   <td class="num">${formatINR(d.price)}${d.price <= d.lowest ? '<span class="badge badge-low">lowest</span>' : ""}</td>
                   <td class="num">${formatINR(d.lowest)}</td>
@@ -322,15 +461,58 @@
         detailTr.appendChild(detailTd);
         body.appendChild(detailTr);
 
-        tr.addEventListener("click", () => {
+        tr.addEventListener("click", (e) => {
+          if (e.target.closest("button")) return;
           detailTr.classList.toggle("hidden");
           tr.querySelector(".expand-arrow").textContent = detailTr.classList.contains("hidden") ? "\u25b8" : "\u25be";
         });
+
+        const videoBtn = tr.querySelector(".video-btn");
+        if (videoBtn) {
+          videoBtn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            openVideoModal(g);
+          });
+        }
       });
     }
 
+    function renderVideoCoverage(groups) {
+      const body = document.getElementById("video-coverage-body");
+      const emptyEl = document.getElementById("video-coverage-empty");
+      const rows = [];
+      for (const g of groups) {
+        if (g.youtubeTopLong) rows.push({ g, video: g.youtubeTopLong, type: "Long-form" });
+        if (g.youtubeTopShort) rows.push({ g, video: g.youtubeTopShort, type: "Shorts" });
+      }
+      if (rows.length === 0) {
+        body.innerHTML = "";
+        emptyEl.classList.remove("hidden");
+        return;
+      }
+      emptyEl.classList.add("hidden");
+      rows.sort((a, b) => b.video.views - a.video.views);
+      body.innerHTML = rows
+        .map(
+          ({ g, video, type }) => `
+        <tr>
+          <td>${esc(g.hotelName)}<div class="muted small">${esc(g.destination)}</div></td>
+          <td><a class="view-link" href="${escAttr(video.url)}" target="_blank">${esc((video.title || "Untitled").slice(0, 60))}</a></td>
+          <td>${esc(video.channelTitle || "Unknown")}<div class="muted small">${video.channelSubs !== null && video.channelSubs !== undefined ? formatViews(video.channelSubs) + " subs" : "subs hidden"}</div></td>
+          <td>${type}</td>
+          <td class="num">${formatViews(video.views)}</td>
+          <td class="muted small nowrap">${formatPublishedDate(video.publishedAt)}</td>
+          <td class="num">${g.youtubeAvgLongFormViews !== null && g.youtubeAvgLongFormViews !== undefined ? formatViews(g.youtubeAvgLongFormViews) : "\u2014"}</td>
+        </tr>
+      `
+        )
+        .join("");
+    }
+
     function rerender() {
-      renderTable(applyFiltersAndSort(allGroups));
+      const filtered = applyFiltersAndSort(allGroups);
+      renderTable(filtered);
+      renderVideoCoverage(allGroups);
     }
 
     async function main() {
@@ -343,7 +525,15 @@
         return;
       }
 
-      allGroups = (data.groups || []).map((g) => ({ ...g, cheapest: g.dates[0] }));
+      // Resolve "cheapest" to the actual full date record (matched by
+      // the explicitly-published checkin/checkout), so its price
+      // history and original price are available for the sparkline and
+      // reality-check line, not just the price/dates already shown.
+      allGroups = (data.groups || []).map((g) => {
+        const cheapestDate =
+          g.dates.find((d) => d.checkin === g.cheapestCheckin && d.checkout === g.cheapestCheckout) || g.dates[0];
+        return { ...g, cheapest: cheapestDate };
+      });
       document.getElementById("summary-line").textContent =
         `${allGroups.length} hotels tracked \u2022 last updated ${new Date(data.generatedAt).toLocaleString("en-IN")}`;
 
@@ -360,6 +550,22 @@
 
       ["filter-destination", "filter-star", "sort-by", "filter-quality", "filter-newly-built", "filter-favorites"].forEach((id) => {
         document.getElementById(id).addEventListener("change", rerender);
+      });
+
+      document.querySelectorAll(".tab-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".tab-btn").forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          const target = btn.dataset.tab;
+          document.querySelectorAll(".tab-panel").forEach((panel) => {
+            panel.classList.toggle("hidden", panel.dataset.panel !== target);
+          });
+        });
+      });
+
+      document.getElementById("video-modal-close").addEventListener("click", closeVideoModal);
+      document.getElementById("video-modal-overlay").addEventListener("click", (e) => {
+        if (e.target.id === "video-modal-overlay") closeVideoModal();
       });
     }
 
