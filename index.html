@@ -11,93 +11,148 @@
      page doesn't have access to. It only ever reads data.json published
      alongside it. */
   * { box-sizing: border-box; }
+
+  :root {
+    --bg: #f7f7f8;
+    --card-bg: #ffffff;
+    --text: #16181d;
+    --muted: #6b7280;
+    --muted-2: #9ca3af;
+    --border: #e8e9ec;
+    --border-light: #eeeeee;
+    --border-light-2: #e5e7eb;
+    --dashed-border: #c8cad0;
+    --input-border: #d5d7dc;
+    --subtle-bg: #fbfbfc;
+    --hover-bg: #fcfcfd;
+    --hover-bg-2: #f3f4f6;
+    --label-text: #374151;
+    --label-text-2: #4b5563;
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #14161a;
+    --card-bg: #1c1e23;
+    --text: #e8e9ec;
+    --muted: #9299a6;
+    --muted-2: #6b7280;
+    --border: #2d2f36;
+    --border-light: #2a2c32;
+    --border-light-2: #33353c;
+    --dashed-border: #4a4d55;
+    --input-border: #3a3d45;
+    --subtle-bg: #202226;
+    --hover-bg: #24262c;
+    --hover-bg-2: #2a2c32;
+    --label-text: #c3c6cc;
+    --label-text-2: #a8abb3;
+  }
   body {
     font-family: 'Bricolage Grotesque', -apple-system, 'Segoe UI', system-ui, sans-serif;
     margin: 0 auto; padding: 28px 20px 60px; max-width: 1200px;
-    color: #16181d; background: #f7f7f8;
+    color: var(--text); background: var(--bg);
   }
   h1 { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 4px; }
-  .subtitle { font-size: 12px; color: #6b7280; margin: 0 0 20px; }
+  .subtitle { font-size: 12px; color: var(--muted); margin: 0 0 20px; }
   .stale-warning { background: #fff4e5; border: 1px solid #f3c988; border-radius: 8px; padding: 10px 14px; font-size: 12px; margin-bottom: 18px; }
 
   .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; margin-bottom: 26px; }
-  .kpi { background: #fff; border: 1px solid #e8e9ec; border-radius: 10px; padding: 16px 18px; }
+  .kpi { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; }
+  .kpi-row .kpi:not(:first-child) { cursor: pointer; transition: border-color 0.15s ease; }
+  .kpi-row .kpi:not(:first-child):hover { border-color: var(--muted-2); }
+  .kpi.kpi-active { border-color: var(--text); border-width: 2px; padding: 15px 17px; }
   .kpi-value { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 4px; }
-  .kpi-label { font-size: 11px; font-weight: 600; color: #374151; }
-  .kpi-sub { font-size: 10px; color: #9ca3af; margin-top: 2px; }
+  .kpi-label { font-size: 11px; font-weight: 600; color: var(--label-text); }
+  .kpi-sub { font-size: 10px; color: var(--muted-2); margin-top: 2px; }
 
   .controls { display: flex; gap: 18px; align-items: flex-end; margin-bottom: 16px; flex-wrap: wrap; }
-  .controls label { font-size: 11px; font-weight: 600; color: #4b5563; display: flex; flex-direction: column; gap: 5px; }
-  .controls select { padding: 7px 10px; font-size: 13px; font-weight: 400; border: 1px solid #d5d7dc; border-radius: 7px; background: #fff; min-width: 160px; }
+  .controls label { font-size: 11px; font-weight: 600; color: var(--label-text-2); display: flex; flex-direction: column; gap: 5px; }
+  .controls select, .controls input[type="text"] { padding: 7px 10px; font-size: 13px; font-weight: 400; border: 1px solid var(--input-border); border-radius: 7px; background: var(--card-bg); min-width: 160px; }
   .checkbox-inline { flex-direction: row !important; align-items: center; gap: 7px !important; height: 34px; font-weight: 400; font-size: 12px; }
   .checkbox-inline input { width: auto; }
 
-  table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #e8e9ec; border-radius: 10px; overflow: hidden; font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; font-size: 13px; }
+  thead tr:first-child th:first-child { border-top-left-radius: 10px; }
+  thead tr:first-child th:last-child { border-top-right-radius: 10px; }
+  #deals-table thead th { position: sticky; top: 0; z-index: 5; box-shadow: 0 1px 0 var(--border); }
   th, td { text-align: left; padding: 12px 15px; border-bottom: 1px solid #f0f1f3; vertical-align: top; }
-  th { background: #fbfbfc; font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: #6b7280; font-weight: 700; }
+  th { background: var(--subtle-bg); font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); font-weight: 700; }
   th.num, td.num { text-align: right; }
   tr:last-child td { border-bottom: none; }
   .hotel-row { cursor: pointer; }
-  .hotel-row:hover { background: #fcfcfd; }
+  .hotel-row:hover { background: var(--hover-bg); }
   .hotel-name { font-weight: 600; }
-  .expand-arrow { display: inline-block; width: 14px; color: #9ca3af; font-size: 11px; }
+  .expand-arrow { display: inline-block; width: 14px; color: var(--muted-2); font-size: 11px; }
   .stars { color: #d1a441; font-size: 11px; margin-left: 5px; }
-  .ai-star-estimate { font-style: italic; border-bottom: 1px dashed #c8cad0; cursor: help; }
+  .stars-ai-estimate { color: #7c3aed; cursor: help; }
   .price { font-weight: 600; font-size: 14px; }
   .price-low { color: #0f7a3d; }
-  .muted { color: #9ca3af; }
+  .muted { color: var(--muted-2); }
   .small { font-size: 11px; margin-top: 2px; }
   .nowrap { white-space: nowrap; }
   .rating-score { font-weight: 700; background: #eef4ff; color: #1e40af; border-radius: 5px; padding: 2px 7px; font-size: 12px; }
-  .review-count { display: block; font-size: 11px; color: #6b7280; margin-top: 3px; }
+  .review-count { display: block; font-size: 11px; color: var(--muted); margin-top: 3px; }
   .review-count.thin { color: #b45309; }
   .badge { display: inline-block; font-size: 9px; font-weight: 700; letter-spacing: 0.03em; border-radius: 4px; padding: 2px 6px; }
   .badge-new { background: #eef4ff; color: #1e40af; margin-left: 6px; }
   .badge-low { background: #e8f6ee; color: #0f7a3d; margin-top: 4px; }
   .badge-yt { background: #fee2e2; color: #b91c1c; margin-left: 6px; text-decoration: none; }
-  a.view-link { color: #16181d; font-size: 12px; font-weight: 600; text-decoration: none; border-bottom: 1px solid #c8cad0; }
+  a.view-link { color: var(--text); font-size: 12px; font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--dashed-border); }
 
-  .detail-row td { padding: 0; background: #fbfbfc; }
+  .detail-row td { padding: 0; background: var(--subtle-bg); }
   .detail-row.hidden { display: none; }
   .sub-table { width: 100%; border-collapse: collapse; }
   .sub-table th { background: transparent; font-size: 9px; padding: 8px 15px 6px 40px; }
-  .sub-table td { padding: 8px 15px 8px 40px; border-bottom: 1px solid #eee; font-size: 12px; }
+  .sub-table td { padding: 8px 15px 8px 40px; border-bottom: 1px solid var(--border-light); font-size: 12px; }
   .sub-table tr:last-child td { border-bottom: none; }
 
-  .hint { font-size: 12px; color: #6b7280; margin-top: 14px; }
+  .hint { font-size: 12px; color: var(--muted); margin-top: 14px; }
   .hidden { display: none; }
-  .empty { color: #6b7280; padding: 40px 0; text-align: center; }
+  .empty { color: var(--muted); padding: 40px 0; text-align: center; }
 
-  .tab-bar { display: flex; gap: 4px; margin-bottom: 20px; border-bottom: 1px solid #e8e9ec; }
-  .tab-btn { background: none; border: none; color: #6b7280; font-family: inherit; font-size: 13px; font-weight: 600; padding: 10px 16px; cursor: pointer; border-bottom: 2px solid transparent; }
-  .tab-btn:hover { color: #16181d; }
-  .tab-btn.active { color: #16181d; border-bottom-color: #16181d; }
+  .tab-bar { display: flex; gap: 4px; margin-bottom: 20px; border-bottom: 1px solid var(--border); }
+  .tab-btn { background: none; border: none; color: var(--muted); font-family: inherit; font-size: 13px; font-weight: 600; padding: 10px 16px; cursor: pointer; border-bottom: 2px solid transparent; }
+  .tab-btn:hover { color: var(--text); }
+  .tab-btn.active { color: var(--text); border-bottom-color: var(--text); }
   .tab-panel.hidden { display: none; }
 
   .badge-stale { background: #fff4e5; color: #a15c00; margin-top: 4px; }
   .sparkline { display: block; margin: 4px 0 0 auto; }
-  .reality-check { font-size: 10px; color: #6b7280; margin-top: 3px; font-style: italic; }
+  .reality-check { font-size: 10px; color: var(--muted); margin-top: 3px; font-style: italic; }
 
   .sub-table tr.price-tier-low { background: #f0faf3; }
   .sub-table tr.price-tier-high { background: #fdf3f0; }
 
   .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; z-index: 900; }
   .modal-overlay.hidden { display: none; }
-  .modal-panel { background: #fff; border-radius: 12px; padding: 24px; max-width: 480px; width: 90%; max-height: 80vh; overflow-y: auto; position: relative; box-shadow: 0 12px 40px rgba(0,0,0,0.2); }
-  .modal-close { position: absolute; top: 12px; right: 12px; background: none; border: none; font-size: 14px; color: #6b7280; cursor: pointer; padding: 4px 8px; }
-  .modal-close:hover { color: #16181d; }
-  .video-card { border: 1px solid #e8e9ec; border-radius: 8px; padding: 12px; margin: 12px 0; }
-  .video-card-type { font-size: 10px; text-transform: uppercase; letter-spacing: 0.03em; color: #9ca3af; font-weight: 700; margin-bottom: 4px; }
-  .video-card-title { display: block; font-weight: 600; color: #16181d; text-decoration: none; margin-bottom: 4px; }
+  .modal-panel { background: var(--card-bg); border-radius: 12px; padding: 24px; max-width: 480px; width: 90%; max-height: 80vh; overflow-y: auto; position: relative; box-shadow: 0 12px 40px rgba(0,0,0,0.2); }
+  .modal-close { position: absolute; top: 12px; right: 12px; background: none; border: none; font-size: 14px; color: var(--muted); cursor: pointer; padding: 4px 8px; }
+  .modal-close:hover { color: var(--text); }
+  .video-card { border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin: 12px 0; }
+  .video-card-type { font-size: 10px; text-transform: uppercase; letter-spacing: 0.03em; color: var(--muted-2); font-weight: 700; margin-bottom: 4px; }
+  .video-card-title { display: block; font-weight: 600; color: var(--text); text-decoration: none; margin-bottom: 4px; }
   .video-card-title:hover { text-decoration: underline; }
 
-  .video-btn { background: #fee2e2; color: #b91c1c; border: none; margin-left: 6px; cursor: pointer; font-size: 9px; font-weight: 700; letter-spacing: 0.03em; border-radius: 4px; padding: 2px 6px; font-family: inherit; }
-  .video-btn:hover { background: #fecaca; }
+  .vlog-views-btn { background: none; border: none; color: var(--text); cursor: pointer; font-size: 13px; font-weight: 600; font-family: inherit; padding: 0; text-decoration: underline dotted; text-decoration-color: var(--dashed-border); }
+  .vlog-views-btn:hover { color: #b91c1c; }
+  .badge-source { background: var(--hover-bg-2); color: var(--label-text-2); margin-left: 6px; font-weight: 600; }
+  a.price-link, a.price-link:visited { font-weight: 600; font-size: 14px; color: var(--text); text-decoration: none; border-bottom: 1px dashed var(--dashed-border); }
+  a.price-link:hover { border-bottom-color: var(--text); }
+  a.price-link.price-low { color: #0f7a3d; }
+
+  .header-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+  .theme-toggle-btn { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); border-radius: 7px; padding: 7px 14px; font-size: 12px; font-family: inherit; cursor: pointer; white-space: nowrap; }
+  .theme-toggle-btn:hover { background: var(--hover-bg); }
 </style>
 </head>
 <body>
-  <h1>Resort Deal Dashboard</h1>
-  <p class="subtitle" id="summary-line">Loading...</p>
+  <div class="header-row">
+    <div>
+      <h1>Resort Deal Dashboard</h1>
+      <p class="subtitle" id="summary-line">Loading...</p>
+    </div>
+    <button id="theme-toggle" class="theme-toggle-btn" title="Toggle dark mode">🌙 Dark</button>
+  </div>
   <div id="stale-warning" class="stale-warning hidden"></div>
 
   <nav class="tab-bar">
@@ -117,6 +172,9 @@
     <div class="kpi-row" id="kpi-row"></div>
 
     <div class="controls">
+      <label>Search
+        <input type="text" id="search-hotel-name" placeholder="Hotel name..." />
+      </label>
       <label>Destination
         <select id="filter-destination"><option value="">All</option></select>
       </label>
@@ -157,7 +215,7 @@
         <tr>
           <th>Hotel</th><th>Star tier</th><th>Destination</th><th>Cheapest dates</th>
           <th class="num">Price</th><th class="num">Lowest ever</th>
-          <th>Guest rating</th><th>Tracking</th>
+          <th>Guest rating</th><th class="num">Vlog views</th><th>Tracking</th>
         </tr>
       </thead>
       <tbody id="deals-body"></tbody>
@@ -170,7 +228,7 @@
     <p class="hint">One row per video found, both Shorts and long-form where a hotel has both.</p>
     <table id="video-coverage-table">
       <thead>
-        <tr><th>Hotel</th><th>Video</th><th>Creator</th><th>Type</th><th class="num">Views</th><th>Posted</th><th class="num">Channel avg (long-form)</th></tr>
+        <tr><th>Hotel</th><th>Video</th><th>Creator</th><th>Type</th><th class="num">Views</th><th>Posted</th><th class="num">Channel avg (long-form)</th><th class="num">Last 6mo</th></tr>
       </thead>
       <tbody id="video-coverage-body"></tbody>
     </table>
@@ -206,6 +264,34 @@
       if (n >= 1000) return (n / 1000).toFixed(1).replace(/\.0$/, "") + "K";
       return String(n);
     }
+    const KOLKATA_TRANSIT_ESTIMATES = {
+      digha: "~3.5-4h by train or car",
+      mandarmoni: "~4-4.5h by car",
+      darjeeling: "~10-12h by road, or fly to Bagdogra + ~3h road",
+      sundarbans: "~3-4h by road + boat",
+      puri: "~7-8h by train",
+      kolkata: "In the city",
+      shantiniketan: "~3h by train or car",
+      gangtok: "~12-14h by road, or fly to Bagdogra + ~4-5h road",
+      purulia: "~5-6h by train or car",
+    };
+    function transitEstimate(destination) {
+      return KOLKATA_TRANSIT_ESTIMATES[(destination || "").toLowerCase().trim()] || null;
+    }
+
+    const SHORT_MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    const SHORT_DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    function formatDateRangeWithWeekend(checkin, checkout) {
+      if (!checkin || !checkout) return `${checkin || "?"} to ${checkout || "?"}`;
+      const dayName = (iso) => {
+        const d = new Date(iso + "T12:00:00");
+        return { label: `${SHORT_MONTHS[d.getMonth()]} ${d.getDate()}`, dow: SHORT_DAYS[d.getDay()] };
+      };
+      const inD = dayName(checkin);
+      const outD = dayName(checkout);
+      return `${inD.label} - ${outD.label} (${inD.dow}-${outD.dow})`;
+    }
+
     function formatDate(iso) {
       if (!iso) return "";
       const d = new Date(iso);
@@ -230,7 +316,7 @@
         .map((v, i) => `${((i / (values.length - 1)) * w).toFixed(1)},${(h - ((v - min) / range) * h).toFixed(1)}`)
         .join(" ");
       const netChange = values[values.length - 1] - values[0];
-      const color = netChange < 0 ? "#0f7a3d" : netChange > 0 ? "#b91c1c" : "#9ca3af";
+      const color = netChange < 0 ? "#0f7a3d" : netChange > 0 ? "#b91c1c" : "var(--muted-2)";
       return `<svg width="${w}" height="${h}" class="sparkline"><polyline points="${points}" fill="none" stroke="${color}" stroke-width="1.6"/></svg>`;
     }
 
@@ -319,7 +405,11 @@
       }
     }
 
+    // For the two KPIs with no existing checkbox filter to reuse.
+    let kpiQuickFilter = null; // 'atLowest' | 'youtubePopular' | null
+
     function applyFiltersAndSort(groups) {
+      const searchText = document.getElementById("search-hotel-name").value.trim().toLowerCase();
       const destFilter = document.getElementById("filter-destination").value;
       const starFilter = document.getElementById("filter-star").value;
       const sortBy = document.getElementById("sort-by").value;
@@ -328,11 +418,14 @@
       const favoritesOnly = document.getElementById("filter-favorites").checked;
 
       const filtered = groups.filter((g) => {
+        if (searchText && !g.hotelName.toLowerCase().includes(searchText)) return false;
         if (destFilter && g.destination !== destFilter) return false;
         if (starFilter && (!g.starRating || g.starRating < parseInt(starFilter, 10))) return false;
         if (qualityOnly && !isTrustworthy(g)) return false;
         if (newlyBuiltOnly && !g.isNewlyBuilt) return false;
         if (favoritesOnly && !g.isFavorite) return false;
+        if (kpiQuickFilter === "atLowest" && !g.everAtLowest) return false;
+        if (kpiQuickFilter === "youtubePopular" && !(g.youtubeViews >= YOUTUBE_POPULAR_THRESHOLD)) return false;
         return true;
       });
 
@@ -362,17 +455,23 @@
           <div class="kpi-label">Cheapest tracked stay</div>
           <div class="kpi-sub">${cheapest ? esc(cheapest.hotelName) + " \u2022 " + esc(cheapest.destination) : ""}</div>
         </div>
-        <div class="kpi"><div class="kpi-value">${groups.filter((g) => g.everAtLowest).length}</div><div class="kpi-label">At their lowest price</div></div>
-        <div class="kpi"><div class="kpi-value">${groups.filter((g) => g.isNewlyBuilt).length}</div><div class="kpi-label">Newly built</div></div>
-        <div class="kpi"><div class="kpi-value">${groups.filter(isTrustworthy).length}</div><div class="kpi-label">Well reviewed</div><div class="kpi-sub">4.0+ with 200+ reviews</div></div>
-        <div class="kpi"><div class="kpi-value">${groups.filter((g) => g.youtubeViews >= YOUTUBE_POPULAR_THRESHOLD).length}</div><div class="kpi-label">Popular on YouTube</div><div class="kpi-sub">50K+ views</div></div>
+        <div class="kpi"><div class="kpi-value" id="kpi-at-low">${groups.filter((g) => g.everAtLowest).length}</div><div class="kpi-label">At their lowest price</div></div>
+        <div class="kpi"><div class="kpi-value" id="kpi-newly-built">${groups.filter((g) => g.isNewlyBuilt).length}</div><div class="kpi-label">Newly built</div></div>
+        <div class="kpi"><div class="kpi-value" id="kpi-well-reviewed">${groups.filter(isTrustworthy).length}</div><div class="kpi-label">Well reviewed</div><div class="kpi-sub">4.0+ with 200+ reviews</div></div>
+        <div class="kpi"><div class="kpi-value" id="kpi-youtube-popular">${groups.filter((g) => g.youtubeViews >= YOUTUBE_POPULAR_THRESHOLD).length}</div><div class="kpi-label">Popular on YouTube</div><div class="kpi-sub">50K+ views</div></div>
       `;
+    }
+
+    function channelActivityDisplay(count) {
+      if (count === null || count === undefined) return "\u2014";
+      if (count === 0) return '<span class="muted small" title="No uploads in the last 6 months">quiet</span>';
+      return `<span title="${count} upload${count === 1 ? "" : "s"} in the last 6 months">${count} upload${count === 1 ? "" : "s"}</span>`;
     }
 
     function starTierDisplay(g) {
       if (g.manualStarTier) return `<span class="stars">${"\u2605".repeat(g.manualStarTier)}</span><span class="muted small"> (owner set)</span>`;
       if (g.starRating) return `<span class="stars">${"\u2605".repeat(g.starRating)}</span>`;
-      if (g.aiEstimatedStarTier) return `<span class="muted small ai-star-estimate" title="AI estimate, not a verified rating">~${g.aiEstimatedStarTier}\u2605 (AI est.)</span>`;
+      if (g.aiEstimatedStarTier) return `<span class="stars stars-ai-estimate" title="AI estimate from price and reviews, not a verified rating">${"\u2605".repeat(g.aiEstimatedStarTier)}</span>`;
       return '<span class="muted small">unrated</span>';
     }
 
@@ -406,24 +505,30 @@
         tr.innerHTML = `
           <td>
             <span class="expand-arrow">\u25b8</span>
-            ${g.isFavorite ? '<span title="Favorited" style="color:#b8860b;margin-right:3px;">\u2605</span>' : ""}
+            ${g.isFavorite ? '<span title="Favorited" style="margin-right:3px;">\u2764\ufe0f</span>' : ""}
             <span class="hotel-name">${esc(g.hotelName)}</span>
             ${g.isNewlyBuilt ? '<span class="badge badge-new">NEW BUILD</span>' : ""}
-            ${g.youtubeViews ? `<button class="video-btn" data-idx="${idx}" title="Click to see the videos found for this hotel">\u{1F3A5} ${formatViews(g.youtubeViews)}${g.youtubeVideoCount > 1 ? ` (${g.youtubeVideoCount}v)` : ""}</button>` : ""}
           </td>
           <td class="nowrap">${starTierDisplay(g)}</td>
-          <td>${esc(g.destination)}<div class="muted small">${esc(g.source)}</div></td>
-          <td class="nowrap">${cheapestCheckin} <div class="muted small">to ${cheapestCheckout}</div></td>
+          <td>
+            ${esc(g.destination)}
+            <span class="badge badge-source">${esc(g.source)}</span>
+            ${transitEstimate(g.destination) ? `<div class="muted small" title="Typical travel time from Kolkata, a rough estimate, not a live check">\u{1F686} ${esc(transitEstimate(g.destination))}</div>` : ""}
+          </td>
+          <td class="nowrap">${formatDateRangeWithWeekend(cheapestCheckin, cheapestCheckout)}</td>
           <td class="num">
-            <span class="price${g.everAtLowest ? " price-low" : ""}">${formatINR(g.cheapestPrice)}</span>
+            ${g.cheapest.url
+              ? `<a class="price-link${g.everAtLowest ? " price-low" : ""}" href="${escAttr(sanitizeUrl(g.cheapest.url))}" target="_blank" onclick="event.stopPropagation()" title="Open the booking page">${formatINR(g.cheapestPrice)}</a>`
+              : `<span class="price${g.everAtLowest ? " price-low" : ""}">${formatINR(g.cheapestPrice)}</span>`}
             ${sparklineSvg(g.cheapest.priceHistory)}
             ${g.everAtLowest ? '<div class="badge badge-low">\u{1F525} All-time low</div>' : ""}
             ${priceRealityCheck(g)}
             ${stalenessBadge(g.cheapest.updatedAt)}
           </td>
-          <td class="num">${formatINR(g.lowestEver)}</td>
+          <td class="num">${g.everAtLowest ? '<span class="muted">\u2014</span>' : formatINR(g.lowestEver)}</td>
           <td>${ratingCell(g)}</td>
-          <td class="muted small nowrap">${g.dates.length} date${g.dates.length > 1 ? "s" : ""}</td>
+          <td class="num">${g.youtubeViews ? `<button class="vlog-views-btn" data-idx="${idx}" title="Click to see the videos found for this hotel">\u{1F3A5} ${formatViews(g.youtubeViews)}${g.youtubeVideoCount > 1 ? ` (${g.youtubeVideoCount}v)` : ""}</button>` : '<span class="muted">\u2014</span>'}</td>
+          <td class="muted small nowrap" title="Click this row to see prices for all ${g.dates.length} tracked date${g.dates.length > 1 ? "s" : ""}">${g.dates.length} date${g.dates.length > 1 ? "s" : ""} \u25b8 view</td>
         `;
         body.appendChild(tr);
 
@@ -441,7 +546,7 @@
         detailTr.id = rowId;
         detailTr.className = "detail-row hidden";
         const detailTd = document.createElement("td");
-        detailTd.colSpan = 8;
+        detailTd.colSpan = 9;
         detailTd.innerHTML = `
           <table class="sub-table">
             <thead><tr><th>Dates</th><th class="num">Price</th><th class="num">Lowest seen</th><th>Last checked</th><th></th></tr></thead>
@@ -467,7 +572,7 @@
           tr.querySelector(".expand-arrow").textContent = detailTr.classList.contains("hidden") ? "\u25b8" : "\u25be";
         });
 
-        const videoBtn = tr.querySelector(".video-btn");
+        const videoBtn = tr.querySelector(".vlog-views-btn");
         if (videoBtn) {
           videoBtn.addEventListener("click", (e) => {
             e.stopPropagation();
@@ -503,16 +608,29 @@
           <td class="num">${formatViews(video.views)}</td>
           <td class="muted small nowrap">${formatPublishedDate(video.publishedAt)}</td>
           <td class="num">${g.youtubeAvgLongFormViews !== null && g.youtubeAvgLongFormViews !== undefined ? formatViews(g.youtubeAvgLongFormViews) : "\u2014"}</td>
+          <td class="num">${channelActivityDisplay(g.youtubeRecentUploadCount)}</td>
         </tr>
       `
         )
         .join("");
     }
 
+    function renderKpiActiveStates() {
+      const atLow = document.getElementById("kpi-at-low");
+      const ytPop = document.getElementById("kpi-youtube-popular");
+      const newBuilt = document.getElementById("kpi-newly-built");
+      const wellRev = document.getElementById("kpi-well-reviewed");
+      if (atLow) atLow.closest(".kpi").classList.toggle("kpi-active", kpiQuickFilter === "atLowest");
+      if (ytPop) ytPop.closest(".kpi").classList.toggle("kpi-active", kpiQuickFilter === "youtubePopular");
+      if (newBuilt) newBuilt.closest(".kpi").classList.toggle("kpi-active", document.getElementById("filter-newly-built").checked);
+      if (wellRev) wellRev.closest(".kpi").classList.toggle("kpi-active", document.getElementById("filter-quality").checked);
+    }
+
     function rerender() {
       const filtered = applyFiltersAndSort(allGroups);
       renderTable(filtered);
       renderVideoCoverage(allGroups);
+      renderKpiActiveStates();
     }
 
     async function main() {
@@ -551,6 +669,30 @@
       ["filter-destination", "filter-star", "sort-by", "filter-quality", "filter-newly-built", "filter-favorites"].forEach((id) => {
         document.getElementById(id).addEventListener("change", rerender);
       });
+      document.getElementById("search-hotel-name").addEventListener("input", rerender);
+
+      const atLowKpi = document.getElementById("kpi-at-low");
+      const ytPopKpi = document.getElementById("kpi-youtube-popular");
+      const newBuiltKpi = document.getElementById("kpi-newly-built");
+      const wellRevKpi = document.getElementById("kpi-well-reviewed");
+      if (atLowKpi) atLowKpi.closest(".kpi").addEventListener("click", () => {
+        kpiQuickFilter = kpiQuickFilter === "atLowest" ? null : "atLowest";
+        rerender();
+      });
+      if (ytPopKpi) ytPopKpi.closest(".kpi").addEventListener("click", () => {
+        kpiQuickFilter = kpiQuickFilter === "youtubePopular" ? null : "youtubePopular";
+        rerender();
+      });
+      if (newBuiltKpi) newBuiltKpi.closest(".kpi").addEventListener("click", () => {
+        const cb = document.getElementById("filter-newly-built");
+        cb.checked = !cb.checked;
+        rerender();
+      });
+      if (wellRevKpi) wellRevKpi.closest(".kpi").addEventListener("click", () => {
+        const cb = document.getElementById("filter-quality");
+        cb.checked = !cb.checked;
+        rerender();
+      });
 
       document.querySelectorAll(".tab-btn").forEach((btn) => {
         btn.addEventListener("click", () => {
@@ -568,6 +710,19 @@
         if (e.target.id === "video-modal-overlay") closeVideoModal();
       });
     }
+
+    function applyTheme() {
+      const isDark = localStorage.getItem("theme") === "dark";
+      document.documentElement.dataset.theme = isDark ? "dark" : "light";
+      const btn = document.getElementById("theme-toggle");
+      if (btn) btn.textContent = isDark ? "\u2600\ufe0f Light" : "\ud83c\udf19 Dark";
+    }
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+      const isDark = document.documentElement.dataset.theme === "dark";
+      localStorage.setItem("theme", isDark ? "light" : "dark");
+      applyTheme();
+    });
+    applyTheme();
 
     main();
   </script>
