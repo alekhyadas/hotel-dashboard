@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T07:25:59.281Z",
+  "generatedAt": "2026-09-16T12:16:10.289Z",
   "groups": [
     {
       "hotelName": "ADITYA GUEST HOUSE",
@@ -56,14 +56,6 @@
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202403121338032325&_uCurrency=INR&checkin=09152026&checkout=09162026&city=CTXDI&country=IN&lat=21.62077&lng=87.49789&locusId=CTXDI&locusType=city&rank=59&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
         },
         {
-          "checkin": "2026-10-30",
-          "checkout": "2026-11-01",
-          "price": 171,
-          "lowest": 171,
-          "updatedAt": "2026-09-15T11:43:33.623Z",
-          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202403121338032325&_uCurrency=INR&checkin=09152026&checkout=09162026&city=CTXDI&country=IN&lat=21.62077&lng=87.49789&locusId=CTXDI&locusType=city&rank=59&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
-        },
-        {
           "checkin": "2026-09-18",
           "checkout": "2026-09-20",
           "price": 2801,
@@ -94,6 +86,14 @@
           "lowest": 2801,
           "updatedAt": "2026-09-14T22:42:47.918Z",
           "url": "https://www.makemytrip.com//www.makemytrip.com/hotels/hotel-details?hotelId=202403121338032325&_uCurrency=INR&checkin=09152026&checkout=09162026&city=CTXDI&country=IN&lat=21.62077&lng=87.49789&locusId=CTXDI&locusType=city&rank=34&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+        },
+        {
+          "checkin": "2026-10-30",
+          "checkout": "2026-11-01",
+          "price": 3591,
+          "lowest": 171,
+          "updatedAt": "2026-09-16T12:15:58.237Z",
+          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202403121338032325&_uCurrency=INR&checkin=09152026&checkout=09162026&city=CTXDI&country=IN&lat=21.62077&lng=87.49789&locusId=CTXDI&locusType=city&rank=59&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
         },
         {
           "checkin": "2026-10-02",
