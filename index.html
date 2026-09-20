@@ -29,6 +29,31 @@
     --hover-bg-2: #f3f4f6;
     --label-text: #374151;
     --label-text-2: #4b5563;
+
+    /* Same badge/status tokens as the extension's dashboard.css (kept in
+       sync there for v1.25.0's dark-mode fix, see that file's comments
+       for the full rationale and the contrast numbers). Light-mode
+       defaults are unchanged from what this page always used. */
+    --badge-blue-bg: #eef4ff;
+    --badge-blue-text: #1e40af;
+    --badge-green-bg: #e8f6ee;
+    --badge-green-text: #0f7a3d;
+    --badge-purple-bg: #f3e8ff;
+    --badge-purple-text: #6b21a8;
+    --badge-amber-bg: #fef3c7;
+    --badge-amber-text: #92400e;
+    --badge-red-bg: #fee2e2;
+    --badge-red-text: #b91c1c;
+    --badge-orange-bg: #fff4e5;
+    --badge-orange-text: #a15c00;
+    --price-low-text: #0f7a3d;
+    --stars-gold: #d1a441;
+    --stars-ai-text: #7c3aed;
+    --thin-review-text: #b45309;
+    --stale-warning-bg: #fff4e5;
+    --stale-warning-border: #f3c988;
+    --price-tier-low-bg: #f0faf3;
+    --price-tier-high-bg: #fdf3f0;
   }
 
   :root[data-theme="dark"] {
@@ -37,7 +62,9 @@
     --card-bg: #1c1e23;
     --text: #e8e9ec;
     --muted: #9299a6;
-    --muted-2: #6b7280;
+    /* Was #6b7280 (3.45:1 against --card-bg, fails WCAG AA). See
+       dashboard.css for the full writeup. */
+    --muted-2: #9095a1;
     --border: #2d2f36;
     --border-light: #2a2c32;
     --border-light-2: #33353c;
@@ -48,6 +75,29 @@
     --hover-bg-2: #2a2c32;
     --label-text: #c3c6cc;
     --label-text-2: #a8abb3;
+
+    /* Translucent tint over the dark surface instead of a solid light
+       pastel, so both the badge and any text near it keep working - see
+       dashboard.css for the contrast numbers behind each of these. */
+    --badge-blue-bg: rgba(59, 130, 246, 0.16);
+    --badge-blue-text: #93c5fd;
+    --badge-green-bg: rgba(34, 197, 94, 0.16);
+    --badge-green-text: #6ee7b7;
+    --badge-purple-bg: rgba(168, 85, 247, 0.18);
+    --badge-purple-text: #d8b4fe;
+    --badge-amber-bg: rgba(245, 158, 11, 0.16);
+    --badge-amber-text: #fcd34d;
+    --badge-red-bg: rgba(239, 68, 68, 0.18);
+    --badge-red-text: #fca5a5;
+    --badge-orange-bg: rgba(249, 115, 22, 0.16);
+    --badge-orange-text: #fdba74;
+    --price-low-text: #34d399;
+    --stars-ai-text: #c4b5fd;
+    --thin-review-text: #fbbf24;
+    --stale-warning-bg: rgba(249, 115, 22, 0.14);
+    --stale-warning-border: rgba(249, 115, 22, 0.35);
+    --price-tier-low-bg: rgba(34, 197, 94, 0.10);
+    --price-tier-high-bg: rgba(239, 68, 68, 0.10);
   }
   body {
     font-family: 'Bricolage Grotesque', -apple-system, 'Segoe UI', system-ui, sans-serif;
@@ -56,7 +106,7 @@
   }
   h1 { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 4px; }
   .subtitle { font-size: 12px; color: var(--muted); margin: 0 0 20px; }
-  .stale-warning { background: #fff4e5; border: 1px solid #f3c988; border-radius: 8px; padding: 10px 14px; font-size: 12px; margin-bottom: 18px; }
+  .stale-warning { background: var(--stale-warning-bg); border: 1px solid var(--stale-warning-border); border-radius: 8px; padding: 10px 14px; font-size: 12px; margin-bottom: 18px; }
 
   .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; margin-bottom: 26px; }
   .kpi { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; }
@@ -77,7 +127,7 @@
   thead tr:first-child th:first-child { border-top-left-radius: 10px; }
   thead tr:first-child th:last-child { border-top-right-radius: 10px; }
   #deals-table thead th { position: sticky; top: 0; z-index: 5; box-shadow: 0 1px 0 var(--border); }
-  th, td { text-align: left; padding: 12px 15px; border-bottom: 1px solid #f0f1f3; vertical-align: top; }
+  th, td { text-align: left; padding: 12px 15px; border-bottom: 1px solid var(--border-light); vertical-align: top; }
   th { background: var(--subtle-bg); font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); font-weight: 700; }
   th.num, td.num { text-align: right; }
   tr:last-child td { border-bottom: none; }
@@ -85,21 +135,38 @@
   .hotel-row:hover { background: var(--hover-bg); }
   .hotel-name { font-weight: 600; }
   .expand-arrow { display: inline-block; width: 14px; color: var(--muted-2); font-size: 11px; }
-  .stars { color: #d1a441; font-size: 11px; margin-left: 5px; }
-  .stars-ai-estimate { color: #7c3aed; cursor: help; }
+  .stars { color: var(--stars-gold); font-size: 11px; margin-left: 5px; }
+  .stars-ai-estimate { color: var(--stars-ai-text); cursor: help; }
   .video-group-header td { background: var(--subtle-bg); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--label-text-2); padding: 8px 15px; }
   .price { font-weight: 600; font-size: 14px; }
-  .price-low { color: #0f7a3d; }
+  .price-low { color: var(--price-low-text); }
   .muted { color: var(--muted-2); }
   .small { font-size: 11px; margin-top: 2px; }
   .nowrap { white-space: nowrap; }
-  .rating-score { font-weight: 700; background: #eef4ff; color: #1e40af; border-radius: 5px; padding: 2px 7px; font-size: 12px; }
+  .rating-score { font-weight: 700; background: var(--badge-blue-bg); color: var(--badge-blue-text); border-radius: 5px; padding: 2px 7px; font-size: 12px; }
   .review-count { display: block; font-size: 11px; color: var(--muted); margin-top: 3px; }
-  .review-count.thin { color: #b45309; }
+  .review-count.thin { color: var(--thin-review-text); }
   .badge { display: inline-block; font-size: 9px; font-weight: 700; letter-spacing: 0.03em; border-radius: 4px; padding: 2px 6px; }
-  .badge-new { background: #eef4ff; color: #1e40af; margin-left: 6px; }
-  .badge-low { background: #e8f6ee; color: #0f7a3d; margin-top: 4px; }
-  .badge-yt { background: #fee2e2; color: #b91c1c; margin-left: 6px; text-decoration: none; }
+  .badge-new { background: var(--badge-blue-bg); color: var(--badge-blue-text); margin-left: 6px; }
+  .badge-low { background: var(--badge-green-bg); color: var(--badge-green-text); margin-top: 4px; }
+  .badge-yt { background: var(--badge-red-bg); color: var(--badge-red-text); margin-left: 6px; text-decoration: none; }
+  .badge-amenity { background: var(--badge-purple-bg); color: var(--badge-purple-text); margin: 4px 4px 0 0; display: inline-block; }
+  .badge-target { background: var(--badge-amber-bg); color: var(--badge-amber-text); margin-top: 4px; display: inline-block; }
+  /* A price that looks like a mis-scraped promo/tax figure rather than a
+     real one, see flagOutlierDates() in shared.js. */
+  .badge-warn { background: var(--badge-red-bg); color: var(--badge-red-text); margin-left: 6px; cursor: help; }
+  .review-summary { font-size: 12px; color: var(--label-text-2); background: var(--subtle-bg); border: 1px solid var(--border-light); border-radius: 6px; padding: 8px 12px; margin: 0 0 10px; }
+  .review-summary strong { color: var(--text); }
+  .compare-cell { text-align: center; }
+  .compare-checkbox { width: auto; margin: 0; cursor: pointer; }
+  .compare-bar { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: var(--text); color: var(--card-bg); border-radius: 10px; padding: 10px 14px; display: flex; align-items: center; gap: 10px; font-size: 13px; box-shadow: 0 8px 24px rgba(0,0,0,0.2); z-index: 800; }
+  .compare-bar.hidden { display: none; }
+  .compare-bar button { background: transparent; border: 1px solid var(--card-bg); color: var(--card-bg); padding: 4px 10px; font-size: 12px; border-radius: 6px; cursor: pointer; font-family: inherit; }
+  .compare-bar button:hover { background: rgba(255,255,255,0.15); }
+  .compare-bar button:disabled { opacity: 0.4; cursor: not-allowed; }
+  .compare-panel { max-width: 900px; }
+  .compare-table th, .compare-table td { padding: 8px 14px; }
+  .compare-table th:first-child, .compare-table td:first-child { text-align: right; font-weight: 600; }
   a.view-link { color: var(--text); font-size: 12px; font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--dashed-border); }
 
   .detail-row td { padding: 0; background: var(--subtle-bg); }
@@ -119,12 +186,12 @@
   .tab-btn.active { color: var(--text); border-bottom-color: var(--text); }
   .tab-panel.hidden { display: none; }
 
-  .badge-stale { background: #fff4e5; color: #a15c00; margin-top: 4px; }
+  .badge-stale { background: var(--badge-orange-bg); color: var(--badge-orange-text); margin-top: 4px; }
   .sparkline { display: block; margin: 4px 0 0 auto; }
   .reality-check { font-size: 10px; color: var(--muted); margin-top: 3px; font-style: italic; }
 
-  .sub-table tr.price-tier-low { background: #f0faf3; }
-  .sub-table tr.price-tier-high { background: #fdf3f0; }
+  .sub-table tr.price-tier-low { background: var(--price-tier-low-bg); }
+  .sub-table tr.price-tier-high { background: var(--price-tier-high-bg); }
 
   .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; z-index: 900; }
   .modal-overlay.hidden { display: none; }
@@ -137,11 +204,11 @@
   .video-card-title:hover { text-decoration: underline; }
 
   .vlog-views-btn { background: none; border: none; color: var(--text); cursor: pointer; font-size: 13px; font-weight: 600; font-family: inherit; padding: 0; text-decoration: underline dotted; text-decoration-color: var(--dashed-border); }
-  .vlog-views-btn:hover { color: #b91c1c; }
+  .vlog-views-btn:hover { color: var(--badge-red-text); }
   .badge-source { background: var(--hover-bg-2); color: var(--label-text-2); margin-left: 6px; font-weight: 600; }
   a.price-link, a.price-link:visited { font-weight: 600; font-size: 14px; color: var(--text); text-decoration: none; border-bottom: 1px dashed var(--dashed-border); }
   a.price-link:hover { border-bottom-color: var(--text); }
-  a.price-link.price-low { color: #0f7a3d; }
+  a.price-link.price-low { color: var(--price-low-text); }
 
   .header-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
   .theme-toggle-btn { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); border-radius: 7px; padding: 7px 14px; font-size: 12px; font-family: inherit; cursor: pointer; white-space: nowrap; }
@@ -169,6 +236,20 @@
       <h2 id="video-modal-title"></h2>
       <div id="video-modal-body"></div>
     </div>
+  </div>
+
+  <div id="compare-modal-overlay" class="modal-overlay hidden">
+    <div class="modal-panel compare-panel">
+      <button id="compare-modal-close" class="modal-close">&#10005;</button>
+      <h2>Compare</h2>
+      <div id="compare-modal-body"></div>
+    </div>
+  </div>
+
+  <div id="compare-bar" class="compare-bar hidden">
+    <span id="compare-bar-label"></span>
+    <button id="compare-bar-open">Compare</button>
+    <button id="compare-bar-clear">Clear</button>
   </div>
 
   <div class="tab-panel" data-panel="hotels">
@@ -216,6 +297,7 @@
     <table id="deals-table">
       <thead>
         <tr>
+          <th title="Select 2-3 to compare side by side"></th>
           <th>Hotel</th><th>Star tier</th><th>Destination</th><th>Cheapest dates</th>
           <th class="num">Price</th><th class="num">Lowest ever</th>
           <th>Guest rating</th><th class="num">Vlog views</th><th>Tracking</th>
@@ -244,6 +326,11 @@
     const YOUTUBE_POPULAR_THRESHOLD = 50000;
 
     let allGroups = [];
+
+    // Comparison drawer (PROJECT_BRIEF open item 2), read-only here same
+    // as the rest of this page, purely a client-side selection.
+    const MAX_COMPARE = 3;
+    let compareSelection = new Set();
 
     function formatINR(amount) {
       if (amount === null || amount === undefined) return "N/A";
@@ -508,11 +595,16 @@
         const tr = document.createElement("tr");
         tr.className = "hotel-row";
         tr.innerHTML = `
+          <td class="compare-cell">
+            <input type="checkbox" class="compare-checkbox" data-groupkey="${escAttr(g.groupKey)}" title="Select to compare" ${compareSelection.has(g.groupKey) ? "checked" : ""} />
+          </td>
           <td>
             <span class="expand-arrow">\u25b8</span>
             ${g.isFavorite ? '<span title="Favorited" style="margin-right:3px;">\u2764\ufe0f</span>' : ""}
             <span class="hotel-name">${esc(g.hotelName)}</span>
             ${g.isNewlyBuilt ? '<span class="badge badge-new">NEW BUILD</span>' : ""}
+            ${g.hasFlaggedDates ? `<span class="badge badge-warn" title="One or more tracked dates for this hotel show a price that looks like a bad scrape, expand to see which. Excluded from this hotel's cheapest price and all-time-low badge.">⚠ check dates</span>` : ""}
+            ${(g.amenities || []).map((a) => `<span class="badge badge-amenity">${esc(a)}</span>`).join("")}
           </td>
           <td class="nowrap">${starTierDisplay(g)}</td>
           <td>
@@ -551,15 +643,16 @@
         detailTr.id = rowId;
         detailTr.className = "detail-row hidden";
         const detailTd = document.createElement("td");
-        detailTd.colSpan = 9;
+        detailTd.colSpan = 10;
         detailTd.innerHTML = `
+          ${g.aiReviewSummary ? `<p class="review-summary"><strong>Review insight (AI, inferred from rating patterns, not actual review text):</strong> ${esc(g.aiReviewSummary)}</p>` : ""}
           <table class="sub-table">
             <thead><tr><th>Dates</th><th class="num">Price</th><th class="num">Lowest seen</th><th>Last checked</th><th></th></tr></thead>
             <tbody>
               ${g.dates.map((d) => `
                 <tr class="${priceTierClass(d.price)}">
                   <td>${d.checkin} \u2192 ${d.checkout}</td>
-                  <td class="num">${formatINR(d.price)}${d.price <= d.lowest ? '<span class="badge badge-low">lowest</span>' : ""}</td>
+                  <td class="num">${formatINR(d.price)}${d.price <= d.lowest && !d.isLikelyBadScrape ? '<span class="badge badge-low">lowest</span>' : ""}${d.isLikelyBadScrape ? `<span class="badge badge-warn" title="Much lower than this hotel's other tracked dates, most likely a promo/cashback banner mis-read as the room price rather than a real discount. Excluded from this hotel's cheapest price and all-time-low badge.">⚠ looks off</span>` : ""}</td>
                   <td class="num">${formatINR(d.lowest)}</td>
                   <td class="muted small">${formatDate(d.updatedAt)}</td>
                   <td>${d.url ? `<a class="view-link" href="${escAttr(sanitizeUrl(d.url))}" target="_blank">View</a>` : ""}</td>
@@ -572,10 +665,28 @@
         body.appendChild(detailTr);
 
         tr.addEventListener("click", (e) => {
-          if (e.target.closest("button")) return;
+          if (e.target.closest("button, input")) return;
           detailTr.classList.toggle("hidden");
           tr.querySelector(".expand-arrow").textContent = detailTr.classList.contains("hidden") ? "\u25b8" : "\u25be";
         });
+
+        const compareCb = tr.querySelector(".compare-checkbox");
+        if (compareCb) {
+          compareCb.addEventListener("click", (e) => e.stopPropagation());
+          compareCb.addEventListener("change", () => {
+            const key = compareCb.dataset.groupkey;
+            if (compareCb.checked) {
+              if (compareSelection.size >= MAX_COMPARE) {
+                compareCb.checked = false;
+                return;
+              }
+              compareSelection.add(key);
+            } else {
+              compareSelection.delete(key);
+            }
+            renderCompareBar();
+          });
+        }
 
         const videoBtn = tr.querySelector(".vlog-views-btn");
         if (videoBtn) {
@@ -655,6 +766,61 @@
       renderTable(filtered);
       renderVideoCoverage(allGroups);
       renderKpiActiveStates();
+      renderCompareBar();
+    }
+
+    /** Mirrors dashboard.js's comparison drawer, read-only here, same as the rest of this page. */
+    function renderCompareBar() {
+      const bar = document.getElementById("compare-bar");
+      const label = document.getElementById("compare-bar-label");
+      const openBtn = document.getElementById("compare-bar-open");
+      if (compareSelection.size === 0) {
+        bar.classList.add("hidden");
+        return;
+      }
+      bar.classList.remove("hidden");
+      label.textContent = `${compareSelection.size} selected to compare`;
+      openBtn.disabled = compareSelection.size < 2;
+    }
+
+    const COMPARE_ATTRIBUTES = [
+      { label: "Destination", get: (g) => `${g.destination} (${g.source})` },
+      { label: "Cheapest price", get: (g) => formatINR(g.cheapestPrice) },
+      { label: "Cheapest dates", get: (g) => `${g.cheapestCheckin || g.dates[0].checkin} → ${g.cheapestCheckout || g.dates[0].checkout}` },
+      { label: "Lowest ever seen", get: (g) => (g.everAtLowest ? "At its lowest now" : formatINR(g.lowestEver)) },
+      { label: "Star tier", get: (g) => (g.manualStarTier || g.starRating ? `${g.manualStarTier || g.starRating}★` : g.aiEstimatedStarTier ? `~${g.aiEstimatedStarTier}★ (AI est.)` : "Unrated") },
+      { label: "Guest rating", get: (g) => (g.rating !== null && g.rating !== undefined ? `${g.rating.toFixed(1)} (${(g.reviewCount || 0).toLocaleString("en-IN")} reviews)` : "—") },
+      { label: "Newly built", get: (g) => (g.isNewlyBuilt ? "Yes" : "—") },
+      { label: "YouTube views", get: (g) => (g.youtubeViews ? `${formatViews(g.youtubeViews)}${g.youtubeVideoCount > 1 ? ` (${g.youtubeVideoCount} videos)` : ""}` : "Not checked") },
+      { label: "Amenities", get: (g) => ((g.amenities || []).length ? g.amenities.join(", ") : "None detected") },
+      { label: "Transit from Kolkata", get: (g) => transitEstimate(g.destination) || "—" },
+    ];
+
+    function openCompareModal() {
+      const groups = allGroups.filter((g) => compareSelection.has(g.groupKey));
+      const body = document.getElementById("compare-modal-body");
+      if (groups.length < 2) {
+        body.innerHTML = '<p class="hint">Select at least 2 hotels from the checkboxes in the table first.</p>';
+      } else {
+        body.innerHTML = `
+          <table class="sub-table compare-table">
+            <thead><tr><th></th>${groups.map((g) => `<th>${esc(g.hotelName)}</th>`).join("")}</tr></thead>
+            <tbody>
+              ${COMPARE_ATTRIBUTES.map((attr) => `
+                <tr>
+                  <td class="muted small">${attr.label}</td>
+                  ${groups.map((g) => `<td>${esc(String(attr.get(g)))}</td>`).join("")}
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        `;
+      }
+      document.getElementById("compare-modal-overlay").classList.remove("hidden");
+    }
+
+    function closeCompareModal() {
+      document.getElementById("compare-modal-overlay").classList.add("hidden");
     }
 
     async function main() {
@@ -732,6 +898,17 @@
       document.getElementById("video-modal-close").addEventListener("click", closeVideoModal);
       document.getElementById("video-modal-overlay").addEventListener("click", (e) => {
         if (e.target.id === "video-modal-overlay") closeVideoModal();
+      });
+
+      document.getElementById("compare-bar-open").addEventListener("click", openCompareModal);
+      document.getElementById("compare-bar-clear").addEventListener("click", () => {
+        compareSelection.clear();
+        renderCompareBar();
+        rerender();
+      });
+      document.getElementById("compare-modal-close").addEventListener("click", closeCompareModal);
+      document.getElementById("compare-modal-overlay").addEventListener("click", (e) => {
+        if (e.target.id === "compare-modal-overlay") closeCompareModal();
       });
     }
 
