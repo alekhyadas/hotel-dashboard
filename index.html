@@ -137,7 +137,6 @@
   .expand-arrow { display: inline-block; width: 14px; color: var(--muted-2); font-size: 11px; }
   .stars { color: var(--stars-gold); font-size: 11px; margin-left: 5px; }
   .stars-ai-estimate { color: var(--stars-ai-text); cursor: help; }
-  .video-group-header td { background: var(--subtle-bg); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--label-text-2); padding: 8px 15px; }
   .price { font-weight: 600; font-size: 14px; }
   .price-low { color: var(--price-low-text); }
   .muted { color: var(--muted-2); }
@@ -202,6 +201,8 @@
   .video-card-type { font-size: 10px; text-transform: uppercase; letter-spacing: 0.03em; color: var(--muted-2); font-weight: 700; margin-bottom: 4px; }
   .video-card-title { display: block; font-weight: 600; color: var(--text); text-decoration: none; margin-bottom: 4px; }
   .video-card-title:hover { text-decoration: underline; }
+  .video-section-heading { font-size: 13px; font-weight: 700; color: var(--text); margin: 20px 0 4px; padding-top: 12px; border-top: 1px solid var(--border); }
+  .video-section-heading:first-child { margin-top: 0; padding-top: 0; border-top: none; }
 
   .vlog-views-btn { background: none; border: none; color: var(--text); cursor: pointer; font-size: 13px; font-weight: 600; font-family: inherit; padding: 0; text-decoration: underline dotted; text-decoration-color: var(--dashed-border); }
   .vlog-views-btn:hover { color: var(--badge-red-text); }
@@ -310,10 +311,20 @@
   </div>
 
   <div class="tab-panel hidden" data-panel="videos">
-    <p class="hint">One row per video found, both Shorts and long-form where a hotel has both.</p>
+    <p class="hint">One row per hotel. Every genuinely-matched video counts, not just one creator's best hit &mdash; click a row for each one individually.</p>
+    <div class="controls">
+      <label>Sort by
+        <select id="video-sort-by">
+          <option value="longform">Best avg. long-form views</option>
+          <option value="videocount">Most videos found (regular coverage)</option>
+          <option value="totalviews">Most total views</option>
+          <option value="destination">By location</option>
+        </select>
+      </label>
+    </div>
     <table id="video-coverage-table">
       <thead>
-        <tr><th>Hotel</th><th>Video</th><th>Creator</th><th>Type</th><th class="num">Views</th><th>Posted</th><th class="num">Channel avg (long-form)</th><th class="num">Last 6mo</th></tr>
+        <tr><th class="num">#</th><th>Hotel</th><th>Destination</th><th>Best long-form</th><th>Best Short</th><th class="num">Videos found</th></tr>
       </thead>
       <tbody id="video-coverage-body"></tbody>
     </table>
@@ -406,7 +417,10 @@
         .map((v, i) => `${((i / (values.length - 1)) * w).toFixed(1)},${(h - ((v - min) / range) * h).toFixed(1)}`)
         .join(" ");
       const netChange = values[values.length - 1] - values[0];
-      const color = netChange < 0 ? "#0f7a3d" : netChange > 0 ? "#b91c1c" : "var(--muted-2)";
+      // Was hardcoded for the rising/falling cases (only the neutral
+      // case used var(...) already), bypassing dark mode the same way
+      // dashboard.js's copy did.
+      const color = netChange < 0 ? "var(--price-low-text)" : netChange > 0 ? "var(--badge-red-text)" : "var(--muted-2)";
       return `<svg width="${w}" height="${h}" class="sparkline"><polyline points="${points}" fill="none" stroke="${color}" stroke-width="1.6"/></svg>`;
     }
 
@@ -450,14 +464,20 @@
       `;
     }
 
+    function videoListSectionHtml(label, list) {
+      if (!list || list.length === 0) return "";
+      const heading =
+        list.length > 1
+          ? `<h3 class="video-section-heading">${label} · ${list.length} found, avg ${formatViews(Math.round(avgViews(list)))} views</h3>`
+          : `<h3 class="video-section-heading">${label}</h3>`;
+      return heading + list.map((v) => videoCard(v, label)).join("");
+    }
+
     function openVideoModal(g) {
       document.getElementById("video-modal-title").textContent = g.hotelName;
       const body = document.getElementById("video-modal-body");
-      const cards = [videoCard(g.youtubeTopLong, "Long-form"), videoCard(g.youtubeTopShort, "Shorts")].filter(Boolean).join("");
-      body.innerHTML = cards || '<p class="hint">No video details saved for this one yet.</p>';
-      if (g.youtubeAvgLongFormViews !== null && g.youtubeAvgLongFormViews !== undefined) {
-        body.innerHTML += `<p class="hint">This creator's recent long-form uploads average ${formatViews(g.youtubeAvgLongFormViews)} views.</p>`;
-      }
+      const html = videoListSectionHtml("Long-form", longFormList(g)) + videoListSectionHtml("Shorts", shortsList(g));
+      body.innerHTML = html || '<p class="hint">No video details saved for this one yet.</p>';
       document.getElementById("video-modal-overlay").classList.remove("hidden");
     }
     function closeVideoModal() {
@@ -531,7 +551,13 @@
         case "discount": filtered.sort((a, b) => (a.cheapestPrice - a.lowestEver) - (b.cheapestPrice - b.lowestEver)); break;
         case "rating": filtered.sort((a, b) => (b.rating || 0) - (a.rating || 0) || (b.reviewCount || 0) - (a.reviewCount || 0)); break;
         case "youtube": filtered.sort((a, b) => (b.youtubeViews || 0) - (a.youtubeViews || 0)); break;
-        case "checkin": filtered.sort((a, b) => (a.dates[0]?.checkin || "").localeCompare(b.dates[0]?.checkin || "")); break;
+        // Sorts by the CHEAPEST listing's own check-in date, matching
+        // dashboard.js. This used to sort by dates[0], the first entry
+        // in whatever order the dates array happened to be in (not
+        // necessarily the cheapest, and not necessarily excluding a
+        // flagged/past date), which could produce a genuinely different
+        // order than the extension dashboard for the exact same data.
+        case "checkin": filtered.sort((a, b) => (a.cheapestCheckin || a.dates[0]?.checkin || "").localeCompare(b.cheapestCheckin || b.dates[0]?.checkin || "")); break;
       }
       return filtered;
     }
@@ -550,14 +576,6 @@
         <div class="kpi"><div class="kpi-value" id="kpi-well-reviewed">${groups.filter(isTrustworthy).length}</div><div class="kpi-label">Well reviewed</div><div class="kpi-sub">4.0+ with 200+ reviews</div></div>
         <div class="kpi"><div class="kpi-value" id="kpi-youtube-popular">${groups.filter((g) => g.youtubeViews >= YOUTUBE_POPULAR_THRESHOLD).length}</div><div class="kpi-label">Popular on YouTube</div><div class="kpi-sub">50K+ views</div></div>
       `;
-    }
-
-    function channelActivityDisplay(count) {
-      if (count === null || count === undefined) {
-        return '<span class="muted small" title="Not checked with this feature yet">\u2014</span>';
-      }
-      if (count === 0) return '<span class="muted small" title="No uploads in the last 6 months">quiet</span>';
-      return `<span title="${count} upload${count === 1 ? "" : "s"} in the last 6 months">${count} upload${count === 1 ? "" : "s"}</span>`;
     }
 
     function starTierDisplay(g) {
@@ -698,57 +716,100 @@
       });
     }
 
-    function videoCoverageRow(g, video, type) {
+    // v1.26.0: one row per hotel (both its best videos side by side)
+    // instead of one row per video grouped by destination, plus a sort
+    // control matching the two actual questions this page is for. See
+    // dashboard.js's comment on this same rewrite for the full reasoning.
+    let videoSortBy = "longform";
+
+    // Same fallback as dashboard.js: data published before v1.27.0 only
+    // ever carried the single best video per format.
+    function longFormList(g) {
+      if (g.youtubeLongForm && g.youtubeLongForm.length) return g.youtubeLongForm;
+      return g.youtubeTopLong ? [g.youtubeTopLong] : [];
+    }
+    function shortsList(g) {
+      if (g.youtubeShorts && g.youtubeShorts.length) return g.youtubeShorts;
+      return g.youtubeTopShort ? [g.youtubeTopShort] : [];
+    }
+    function avgViews(list) {
+      if (!list || list.length === 0) return null;
+      return list.reduce((sum, v) => sum + v.views, 0) / list.length;
+    }
+
+    function videoCellHtml(videos) {
+      const list = videos || [];
+      if (list.length === 0) return '<span class="muted small">No genuine match found</span>';
+      const top = list[0];
+      const extra =
+        list.length > 1
+          ? `<div class="muted small">+${list.length - 1} more found &middot; avg ${formatViews(Math.round(avgViews(list)))} views across all ${list.length}</div>`
+          : "";
       return `
-        <tr>
-          <td>${esc(g.hotelName)}<div class="muted small">${esc(g.destination)}</div></td>
-          <td><a class="view-link" href="${escAttr(video.url)}" target="_blank">${esc((video.title || "Untitled").slice(0, 60))}</a></td>
-          <td>${esc(video.channelTitle || "Unknown")}<div class="muted small">${video.channelSubs !== null && video.channelSubs !== undefined ? formatViews(video.channelSubs) + " subs" : "subs hidden"}</div></td>
-          <td>${type}</td>
-          <td class="num">${formatViews(video.views)}</td>
-          <td class="muted small nowrap">${formatPublishedDate(video.publishedAt)}</td>
-          <td class="num">${g.youtubeAvgLongFormViews !== null && g.youtubeAvgLongFormViews !== undefined ? formatViews(g.youtubeAvgLongFormViews) : "\u2014"}</td>
-          <td class="num">${channelActivityDisplay(g.youtubeRecentUploadCount)}</td>
+        <a class="view-link" href="${escAttr(top.url)}" target="_blank">${esc((top.title || "Untitled").slice(0, 70))}</a>
+        <div class="muted small">${esc(top.channelTitle || "Unknown")} &middot; ${formatViews(top.views)} views &middot; ${formatPublishedDate(top.publishedAt)}</div>
+        ${extra}
+      `;
+    }
+
+    function videoCoverageRow(g, idx) {
+      return `
+        <tr class="hotel-row" data-idx="${idx}">
+          <td class="num">${idx + 1}</td>
+          <td>${esc(g.hotelName)}</td>
+          <td class="muted">${esc(g.destination)}</td>
+          <td>${videoCellHtml(longFormList(g))}</td>
+          <td>${videoCellHtml(shortsList(g))}</td>
+          <td class="num" title="Distinct videos found that genuinely name-check this hotel, not just channel activity in general">${g.youtubeVideoCount ? `${g.youtubeVideoCount} video${g.youtubeVideoCount === 1 ? "" : "s"}` : "\u2014"}</td>
         </tr>
       `;
+    }
+
+    function videoCoverageSortComparator(sortBy) {
+      return (a, b) => {
+        if (sortBy === "videocount") {
+          return (b.youtubeVideoCount || 0) - (a.youtubeVideoCount || 0) || (b.youtubeViews || 0) - (a.youtubeViews || 0);
+        }
+        if (sortBy === "totalviews") {
+          return (b.youtubeViews || 0) - (a.youtubeViews || 0);
+        }
+        const aLongAvg = avgViews(longFormList(a)) ?? -1;
+        const bLongAvg = avgViews(longFormList(b)) ?? -1;
+        if (sortBy === "destination") {
+          const destCompare = (a.destination || "").localeCompare(b.destination || "");
+          return destCompare !== 0 ? destCompare : bLongAvg - aLongAvg;
+        }
+        return bLongAvg - aLongAvg;
+      };
     }
 
     function renderVideoCoverage(groups) {
       const body = document.getElementById("video-coverage-body");
       const emptyEl = document.getElementById("video-coverage-empty");
-      const rows = [];
-      for (const g of groups) {
-        if (g.youtubeTopLong) rows.push({ g, video: g.youtubeTopLong, type: "Long-form" });
-        if (g.youtubeTopShort) rows.push({ g, video: g.youtubeTopShort, type: "Shorts" });
-      }
-      if (rows.length === 0) {
+      const withVideo = groups.filter((g) => longFormList(g).length || shortsList(g).length);
+
+      if (withVideo.length === 0) {
         body.innerHTML = "";
         emptyEl.classList.remove("hidden");
         return;
       }
       emptyEl.classList.add("hidden");
-      // Grouped by destination first (comparing across a whole area is
-      // the actual use case), long-form before Shorts within a place
-      // (a Short's view count is a cheaper, more algorithm-boosted
-      // signal than someone deliberately watching a longer video).
-      rows.sort((a, b) => {
-        const destCompare = a.g.destination.localeCompare(b.g.destination);
-        if (destCompare !== 0) return destCompare;
-        if (a.type !== b.type) return a.type === "Long-form" ? -1 : 1;
-        return b.video.views - a.video.views;
+
+      const sorted = [...withVideo].sort(videoCoverageSortComparator(videoSortBy));
+      body.innerHTML = sorted.map((g, idx) => videoCoverageRow(g, idx)).join("");
+
+      body.querySelectorAll(".hotel-row").forEach((tr) => {
+        tr.addEventListener("click", () => openVideoModal(sorted[parseInt(tr.dataset.idx, 10)]));
       });
-      let lastDestination = null;
-      body.innerHTML = rows
-        .map(({ g, video, type }) => {
-          const groupHeader =
-            g.destination !== lastDestination
-              ? `<tr class="video-group-header"><td colspan="8">${esc(g.destination)}</td></tr>`
-              : "";
-          lastDestination = g.destination;
-          return groupHeader + videoCoverageRow(g, video, type);
-        })
-        .join("");
+      body.querySelectorAll(".hotel-row a.view-link").forEach((a) => {
+        a.addEventListener("click", (e) => e.stopPropagation());
+      });
     }
+
+    document.getElementById("video-sort-by").addEventListener("change", (e) => {
+      videoSortBy = e.target.value;
+      renderVideoCoverage(allGroups);
+    });
 
     function renderKpiActiveStates() {
       const atLow = document.getElementById("kpi-at-low");
