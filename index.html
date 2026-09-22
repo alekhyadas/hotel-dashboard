@@ -46,6 +46,8 @@
     --badge-red-text: #b91c1c;
     --badge-orange-bg: #fff4e5;
     --badge-orange-text: #a15c00;
+    --badge-teal-bg: #e0f7f4;
+    --badge-teal-text: #0f766e;
     --price-low-text: #0f7a3d;
     --stars-gold: #d1a441;
     --stars-ai-text: #7c3aed;
@@ -91,6 +93,8 @@
     --badge-red-text: #fca5a5;
     --badge-orange-bg: rgba(249, 115, 22, 0.16);
     --badge-orange-text: #fdba74;
+    --badge-teal-bg: rgba(20, 184, 166, 0.16);
+    --badge-teal-text: #5eead4;
     --price-low-text: #34d399;
     --stars-ai-text: #c4b5fd;
     --thin-review-text: #fbbf24;
@@ -148,6 +152,7 @@
   .badge { display: inline-block; font-size: 9px; font-weight: 700; letter-spacing: 0.03em; border-radius: 4px; padding: 2px 6px; }
   .badge-new { background: var(--badge-blue-bg); color: var(--badge-blue-text); margin-left: 6px; }
   .badge-low { background: var(--badge-green-bg); color: var(--badge-green-text); margin-top: 4px; }
+  .badge-rare { background: var(--badge-teal-bg); color: var(--badge-teal-text); margin-left: 6px; cursor: help; }
   .badge-yt { background: var(--badge-red-bg); color: var(--badge-red-text); margin-left: 6px; text-decoration: none; }
   .badge-amenity { background: var(--badge-purple-bg); color: var(--badge-purple-text); margin: 4px 4px 0 0; display: inline-block; }
   .badge-target { background: var(--badge-amber-bg); color: var(--badge-amber-text); margin-top: 4px; display: inline-block; }
@@ -516,7 +521,7 @@
     }
 
     // For the two KPIs with no existing checkbox filter to reuse.
-    let kpiQuickFilter = null; // 'atLowest' | 'youtubePopular' | null
+    let kpiQuickFilter = null; // 'atLowest' | 'youtubePopular' | 'rareDeal' | null
 
     function applyFiltersAndSort(groups) {
       const searchText = document.getElementById("search-hotel-name").value.trim().toLowerCase();
@@ -535,6 +540,7 @@
         if (newlyBuiltOnly && !g.isNewlyBuilt) return false;
         if (favoritesOnly && !g.isFavorite) return false;
         if (kpiQuickFilter === "atLowest" && !g.everAtLowest) return false;
+        if (kpiQuickFilter === "rareDeal" && !g.isRareDeal) return false;
         if (kpiQuickFilter === "youtubePopular" && !(g.youtubeViews >= YOUTUBE_POPULAR_THRESHOLD)) return false;
         return true;
       });
@@ -572,6 +578,7 @@
           <div class="kpi-sub">${cheapest ? esc(cheapest.hotelName) + " \u2022 " + esc(cheapest.destination) : ""}</div>
         </div>
         <div class="kpi"><div class="kpi-value" id="kpi-at-low">${groups.filter((g) => g.everAtLowest).length}</div><div class="kpi-label">At their lowest price</div></div>
+        <div class="kpi"><div class="kpi-value" id="kpi-rare-deals">${groups.filter((g) => g.isRareDeal).length}</div><div class="kpi-label">Rare deals</div><div class="kpi-sub">Unusually cheap, not just discounted</div></div>
         <div class="kpi"><div class="kpi-value" id="kpi-newly-built">${groups.filter((g) => g.isNewlyBuilt).length}</div><div class="kpi-label">Newly built</div></div>
         <div class="kpi"><div class="kpi-value" id="kpi-well-reviewed">${groups.filter(isTrustworthy).length}</div><div class="kpi-label">Well reviewed</div><div class="kpi-sub">4.0+ with 200+ reviews</div></div>
         <div class="kpi"><div class="kpi-value" id="kpi-youtube-popular">${groups.filter((g) => g.youtubeViews >= YOUTUBE_POPULAR_THRESHOLD).length}</div><div class="kpi-label">Popular on YouTube</div><div class="kpi-sub">50K+ views</div></div>
@@ -621,6 +628,7 @@
             ${g.isFavorite ? '<span title="Favorited" style="margin-right:3px;">\u2764\ufe0f</span>' : ""}
             <span class="hotel-name">${esc(g.hotelName)}</span>
             ${g.isNewlyBuilt ? '<span class="badge badge-new">NEW BUILD</span>' : ""}
+            ${g.isRareDeal ? `<span class="badge badge-rare" title="${escAttr((g.rarityReasons || []).join("; "))}">\u{1F48E} Rare deal</span>` : ""}
             ${g.hasFlaggedDates ? `<span class="badge badge-warn" title="One or more tracked dates for this hotel show a price that looks like a bad scrape, expand to see which. Excluded from this hotel's cheapest price and all-time-low badge.">⚠ check dates</span>` : ""}
             ${(g.amenities || []).map((a) => `<span class="badge badge-amenity">${esc(a)}</span>`).join("")}
           </td>
@@ -813,10 +821,12 @@
 
     function renderKpiActiveStates() {
       const atLow = document.getElementById("kpi-at-low");
+      const rareDeals = document.getElementById("kpi-rare-deals");
       const ytPop = document.getElementById("kpi-youtube-popular");
       const newBuilt = document.getElementById("kpi-newly-built");
       const wellRev = document.getElementById("kpi-well-reviewed");
       if (atLow) atLow.closest(".kpi").classList.toggle("kpi-active", kpiQuickFilter === "atLowest");
+      if (rareDeals) rareDeals.closest(".kpi").classList.toggle("kpi-active", kpiQuickFilter === "rareDeal");
       if (ytPop) ytPop.closest(".kpi").classList.toggle("kpi-active", kpiQuickFilter === "youtubePopular");
       if (newBuilt) newBuilt.closest(".kpi").classList.toggle("kpi-active", document.getElementById("filter-newly-built").checked);
       if (wellRev) wellRev.closest(".kpi").classList.toggle("kpi-active", document.getElementById("filter-quality").checked);
@@ -849,6 +859,7 @@
       { label: "Cheapest price", get: (g) => formatINR(g.cheapestPrice) },
       { label: "Cheapest dates", get: (g) => `${g.cheapestCheckin || g.dates[0].checkin} → ${g.cheapestCheckout || g.dates[0].checkout}` },
       { label: "Lowest ever seen", get: (g) => (g.everAtLowest ? "At its lowest now" : formatINR(g.lowestEver)) },
+      { label: "Rare deal", get: (g) => (g.isRareDeal ? `Yes — ${(g.rarityReasons || []).join("; ")}` : "No") },
       { label: "Star tier", get: (g) => (g.manualStarTier || g.starRating ? `${g.manualStarTier || g.starRating}★` : g.aiEstimatedStarTier ? `~${g.aiEstimatedStarTier}★ (AI est.)` : "Unrated") },
       { label: "Guest rating", get: (g) => (g.rating !== null && g.rating !== undefined ? `${g.rating.toFixed(1)} (${(g.reviewCount || 0).toLocaleString("en-IN")} reviews)` : "—") },
       { label: "Newly built", get: (g) => (g.isNewlyBuilt ? "Yes" : "—") },
@@ -923,11 +934,16 @@
       document.getElementById("search-hotel-name").addEventListener("input", rerender);
 
       const atLowKpi = document.getElementById("kpi-at-low");
+      const rareDealsKpi = document.getElementById("kpi-rare-deals");
       const ytPopKpi = document.getElementById("kpi-youtube-popular");
       const newBuiltKpi = document.getElementById("kpi-newly-built");
       const wellRevKpi = document.getElementById("kpi-well-reviewed");
       if (atLowKpi) atLowKpi.closest(".kpi").addEventListener("click", () => {
         kpiQuickFilter = kpiQuickFilter === "atLowest" ? null : "atLowest";
+        rerender();
+      });
+      if (rareDealsKpi) rareDealsKpi.closest(".kpi").addEventListener("click", () => {
+        kpiQuickFilter = kpiQuickFilter === "rareDeal" ? null : "rareDeal";
         rerender();
       });
       if (ytPopKpi) ytPopKpi.closest(".kpi").addEventListener("click", () => {
