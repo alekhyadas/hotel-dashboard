@@ -127,6 +127,26 @@
   .checkbox-inline { flex-direction: row !important; align-items: center; gap: 7px !important; height: 34px; font-weight: 400; font-size: 12px; }
   .checkbox-inline input { width: auto; }
 
+  /* Ported from the extension dashboard (dashboard.css's .secondary-btn
+     + .weekend-filter-*), which live-dashboard.html doesn't otherwise
+     have a base button style to build on, hence the self-contained
+     rule rather than reusing a shared ".secondary-btn". */
+  .weekend-filter-label { font-size: 11px; font-weight: 600; color: var(--label-text-2); align-self: center; }
+  .weekend-filter-btn {
+    background: var(--card-bg);
+    color: var(--text);
+    border: 1px solid var(--input-border);
+    border-radius: 7px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-family: inherit;
+    cursor: pointer;
+    height: 34px;
+  }
+  .weekend-filter-btn:hover { background: var(--hover-bg-2); }
+  .weekend-filter-btn.active { background: var(--text); color: var(--card-bg); border-color: var(--text); }
+  .weekend-filter-btn.active:hover { background: var(--text); }
+
   table { width: 100%; border-collapse: collapse; background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; font-size: 13px; }
   thead tr:first-child th:first-child { border-top-left-radius: 10px; }
   thead tr:first-child th:last-child { border-top-right-radius: 10px; }
@@ -298,6 +318,13 @@
         <input type="checkbox" id="filter-favorites" />
         Favorites only
       </label>
+    </div>
+
+    <div class="controls">
+      <span class="weekend-filter-label">Check-in:</span>
+      <button class="weekend-filter-btn" data-weekend="this">This weekend</button>
+      <button class="weekend-filter-btn" data-weekend="next">Next weekend</button>
+      <button id="export-tracked-hotels" class="weekend-filter-btn" style="margin-left:auto;">Export as CSV</button>
     </div>
 
     <table id="deals-table">
@@ -511,6 +538,91 @@
         g.rating >= TRUSTWORTHY_MIN_RATING && g.reviewCount >= TRUSTWORTHY_MIN_REVIEWS;
     }
 
+    // PROJECT_BRIEF.md Open Item #12: the extension dashboard has had a
+    // "This weekend / Next weekend" check-in quick filter for a while
+    // (dashboard.js), never ported here even though it's pure
+    // client-side date math over already-published data, nothing
+    // privacy-sensitive about it. Logic below is copied verbatim from
+    // dashboard.js's startOfThisWeekend()/weekendDateRange() so the two
+    // dashboards agree on what "this weekend" means for the exact same
+    // published data.
+    let weekendFilter = null; // 'this' | 'next' | null
+
+    function startOfThisWeekend(today = new Date()) {
+      const d = new Date(today);
+      d.setHours(0, 0, 0, 0);
+      const dow = d.getDay(); // 0=Sun..6=Sat
+      if (dow === 0) d.setDate(d.getDate() - 2);
+      else if (dow === 6) d.setDate(d.getDate() - 1);
+      else d.setDate(d.getDate() + (5 - dow));
+      return d;
+    }
+
+    function weekendDateRange(which) {
+      const friday = startOfThisWeekend();
+      if (which === "next") friday.setDate(friday.getDate() + 7);
+      const sunday = new Date(friday);
+      sunday.setDate(sunday.getDate() + 2);
+      return { start: toISODateLocal(friday), end: toISODateLocal(sunday) };
+    }
+
+    function toISODateLocal(d) {
+      return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+    }
+
+    function setWeekendFilter(which) {
+      weekendFilter = weekendFilter === which ? null : which;
+      document.querySelectorAll(".weekend-filter-btn").forEach((btn) => {
+        btn.classList.toggle("active", btn.dataset.weekend === weekendFilter);
+      });
+      rerender();
+    }
+
+    document.querySelectorAll(".weekend-filter-btn").forEach((btn) => {
+      btn.addEventListener("click", () => setWeekendFilter(btn.dataset.weekend));
+    });
+
+    // Same export feature added to the extension dashboard's Tools tab
+    // (dashboard.js's trackedHotelsToCsv(), shared.js), reimplemented
+    // here against this file's own published-data field names (this
+    // file has to stay a single self-contained page, so it can't import
+    // shared.js the way the extension dashboard does -- same reason
+    // esc()/formatDateRangeWithWeekend()/etc. are their own copies here
+    // rather than shared imports). One row per (hotel, tracked date),
+    // not one row per hotel, so it reflects everything actually
+    // published, not just each hotel's current headline price.
+    function trackedHotelsToCsv(groups) {
+      const header = [
+        "Hotel", "Destination", "Source", "Star tier", "Rating", "Review count",
+        "Check-in", "Check-out", "Price (INR)", "Lowest ever (INR)", "Original price (INR)",
+        "Discount %", "Newly built", "Favorite", "Rare deal", "Looks like a bad scrape",
+        "Amenities", "YouTube views", "Last checked", "Booking URL",
+      ].join(",") + "\n";
+
+      const rows = [];
+      for (const g of groups) {
+        const starTier = g.manualStarTier || g.starRating || g.aiEstimatedStarTier || "";
+        for (const d of g.dates) {
+          const discountPct = d.originalPrice && d.originalPrice > d.price
+            ? Math.round(((d.originalPrice - d.price) / d.originalPrice) * 100)
+            : "";
+          rows.push([
+            g.hotelName, g.destination, g.source, starTier, g.rating ?? "", g.reviewCount ?? "",
+            d.checkin, d.checkout, d.price, d.lowest, d.originalPrice ?? "",
+            discountPct, g.isNewlyBuilt ? "Yes" : "No", g.isFavorite ? "Yes" : "No",
+            g.isRareDeal ? "Yes" : "No", d.isLikelyBadScrape ? "Yes" : "No",
+            (g.amenities || []).join("; "), g.youtubeViews ?? "", d.updatedAt, d.url,
+          ].map(escapeCsvValue).join(","));
+        }
+      }
+      return header + rows.join("\n");
+    }
+
+    function escapeCsvValue(val) {
+      const s = val === null || val === undefined ? "" : typeof val === "object" ? JSON.stringify(val) : String(val);
+      return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+    }
+
     function populateDestinationFilter(groups) {
       const select = document.getElementById("filter-destination");
       for (const d of [...new Set(groups.map((g) => g.destination))].sort()) {
@@ -541,6 +653,11 @@
         if (favoritesOnly && !g.isFavorite) return false;
         if (kpiQuickFilter === "atLowest" && !g.everAtLowest) return false;
         if (kpiQuickFilter === "rareDeal" && !g.isRareDeal) return false;
+        if (weekendFilter) {
+          const { start, end } = weekendDateRange(weekendFilter);
+          const hasMatchingDate = g.dates.some((d) => d.checkin >= start && d.checkin <= end);
+          if (!hasMatchingDate) return false;
+        }
         if (kpiQuickFilter === "youtubePopular" && !(g.youtubeViews >= YOUTUBE_POPULAR_THRESHOLD)) return false;
         return true;
       });
@@ -568,20 +685,31 @@
       return filtered;
     }
 
+    // PROJECT_BRIEF.md Open Item #13: several KPI subtitle lines the
+    // extension dashboard shows (dashboard.html, static markup) were
+    // missing here -- "Worth booking now" under "At their lowest
+    // price", the check-in date under "Cheapest tracked stay" (dropped
+    // because this is built with a template string rather than static
+    // HTML + a separate JS fill-in like dashboard.js does, easy to lose
+    // a field that way), "Fresh for filming" under "Newly built", and
+    // "Popular on YouTube"'s subtitle was shortened to "50K+ views"
+    // instead of "50K+ views in a matching video". Cosmetic (no data
+    // gap), but worth matching so the two dashboards read the same.
     function renderKpis(groups) {
       const cheapest = groups.slice().sort((a, b) => a.cheapestPrice - b.cheapestPrice)[0];
       const kpiRow = document.getElementById("kpi-row");
+      const cheapestCheckin = cheapest ? cheapest.cheapestCheckin || cheapest.dates[0]?.checkin : null;
       kpiRow.innerHTML = `
         <div class="kpi">
           <div class="kpi-value">${cheapest ? formatINR(cheapest.cheapestPrice) : "\u2014"}</div>
           <div class="kpi-label">Cheapest tracked stay</div>
-          <div class="kpi-sub">${cheapest ? esc(cheapest.hotelName) + " \u2022 " + esc(cheapest.destination) : ""}</div>
+          <div class="kpi-sub">${cheapest ? esc(cheapest.hotelName) + " \u2022 " + esc(cheapest.destination) + (cheapestCheckin ? " \u2022 " + esc(cheapestCheckin) : "") : ""}</div>
         </div>
-        <div class="kpi"><div class="kpi-value" id="kpi-at-low">${groups.filter((g) => g.everAtLowest).length}</div><div class="kpi-label">At their lowest price</div></div>
+        <div class="kpi"><div class="kpi-value" id="kpi-at-low">${groups.filter((g) => g.everAtLowest).length}</div><div class="kpi-label">At their lowest price</div><div class="kpi-sub">Worth booking now</div></div>
         <div class="kpi"><div class="kpi-value" id="kpi-rare-deals">${groups.filter((g) => g.isRareDeal).length}</div><div class="kpi-label">Rare deals</div><div class="kpi-sub">Unusually cheap, not just discounted</div></div>
-        <div class="kpi"><div class="kpi-value" id="kpi-newly-built">${groups.filter((g) => g.isNewlyBuilt).length}</div><div class="kpi-label">Newly built</div></div>
+        <div class="kpi"><div class="kpi-value" id="kpi-newly-built">${groups.filter((g) => g.isNewlyBuilt).length}</div><div class="kpi-label">Newly built</div><div class="kpi-sub">Fresh for filming</div></div>
         <div class="kpi"><div class="kpi-value" id="kpi-well-reviewed">${groups.filter(isTrustworthy).length}</div><div class="kpi-label">Well reviewed</div><div class="kpi-sub">4.0+ with 200+ reviews</div></div>
-        <div class="kpi"><div class="kpi-value" id="kpi-youtube-popular">${groups.filter((g) => g.youtubeViews >= YOUTUBE_POPULAR_THRESHOLD).length}</div><div class="kpi-label">Popular on YouTube</div><div class="kpi-sub">50K+ views</div></div>
+        <div class="kpi"><div class="kpi-value" id="kpi-youtube-popular">${groups.filter((g) => g.youtubeViews >= YOUTUBE_POPULAR_THRESHOLD).length}</div><div class="kpi-label">Popular on YouTube</div><div class="kpi-sub">50K+ views in a matching video</div></div>
       `;
     }
 
@@ -959,6 +1087,20 @@
         const cb = document.getElementById("filter-quality");
         cb.checked = !cb.checked;
         rerender();
+      });
+
+      document.getElementById("export-tracked-hotels").addEventListener("click", () => {
+        if (allGroups.length === 0) return;
+        const csv = trackedHotelsToCsv(allGroups);
+        const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `hotel-tracker-data-${new Date().toISOString().slice(0, 10)}.csv`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
       });
 
       document.querySelectorAll(".tab-btn").forEach((btn) => {
