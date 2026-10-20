@@ -121,6 +121,24 @@
   .kpi-label { font-size: 11px; font-weight: 600; color: var(--label-text); }
   .kpi-sub { font-size: 10px; color: var(--muted-2); margin-top: 2px; }
 
+  /* Latest drops strip (from deals.json). Tokens only, same as the rest of the page. */
+  .drops-strip { margin-bottom: 22px; }
+  .drops-strip h2 { font-size: 13px; font-weight: 700; margin: 0 0 10px; letter-spacing: 0.01em; }
+  .drops-row { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 6px; }
+  .drop-card { flex: 0 0 240px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
+  .drop-card.drop-hot { border-color: var(--badge-red-text); }
+  .drop-top { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 6px; }
+  .drop-badge { font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 999px; background: var(--badge-green-bg); color: var(--badge-green-text); white-space: nowrap; }
+  .drop-badge.t-last_minute { background: var(--badge-red-bg); color: var(--badge-red-text); }
+  .drop-badge.t-rare { background: var(--badge-teal-bg); color: var(--badge-teal-text); }
+  .drop-badge.t-discount { background: var(--badge-amber-bg); color: var(--badge-amber-text); }
+  .drop-badge.t-new { background: var(--badge-blue-bg); color: var(--badge-blue-text); }
+  .drop-when { font-size: 11px; color: var(--muted); }
+  .drop-name { font-weight: 700; font-size: 14px; line-height: 1.25; }
+  .drop-meta { font-size: 11px; color: var(--muted); margin: 2px 0 6px; }
+  .drop-price { font-size: 18px; font-weight: 700; }
+  .drop-was { font-size: 12px; font-weight: 400; color: var(--muted); text-decoration: line-through; margin-right: 4px; }
+  .drop-pct { font-size: 12px; font-weight: 700; color: var(--price-low-text); margin-left: 6px; }
   .controls { display: flex; gap: 18px; align-items: flex-end; margin-bottom: 16px; flex-wrap: wrap; }
   .controls label { font-size: 11px; font-weight: 600; color: var(--label-text-2); display: flex; flex-direction: column; gap: 5px; }
   .controls select, .controls input[type="text"] { padding: 7px 10px; font-size: 13px; font-weight: 400; border: 1px solid var(--input-border); border-radius: 7px; background: var(--card-bg); color: var(--text); min-width: 160px; }
@@ -280,6 +298,11 @@
 
   <div class="tab-panel" data-panel="hotels">
     <div class="kpi-row" id="kpi-row"></div>
+
+    <section class="drops-strip hidden" id="drops-strip">
+      <h2>Latest price drops</h2>
+      <div class="drops-row" id="drops-row"></div>
+    </section>
 
     <div class="controls">
       <label>Search
@@ -1023,7 +1046,48 @@
       document.getElementById("compare-modal-overlay").classList.add("hidden");
     }
 
+    const DROP_LABELS = { last_minute: "\u{1F525} Last-minute", rare: "\u{1F48E} Rare deal", drop: "\u{1F4C9} Price drop", discount: "Big discount", new: "Newly built" };
+
+    function dropWhen(iso) {
+      const mins = Math.max(0, Math.round((Date.now() - new Date(iso).getTime()) / 60000));
+      if (mins < 60) return `${mins}m ago`;
+      const h = Math.round(mins / 60);
+      return h < 48 ? `${h}h ago` : `${Math.round(h / 24)}d ago`;
+    }
+
+    function dropCard(e) {
+      const url = sanitizeUrl(e.url);
+      const lead = e.leadDays == null ? "" : e.leadDays <= 0 ? " • check-in tonight" : e.leadDays === 1 ? " • check-in tomorrow" : "";
+      const inner = `
+        <div class="drop-top"><span class="drop-badge t-${DROP_LABELS[e.type] ? e.type : "drop"}">${DROP_LABELS[e.type] || "Price drop"}</span><span class="drop-when">${dropWhen(e.at)}</span></div>
+        <div class="drop-name">${esc(e.hotelName)}</div>
+        <div class="drop-meta">${esc(e.destination)} • ${esc(e.checkin)}${lead}</div>
+        <div class="drop-price">${e.refPrice && e.refPrice > e.price ? `<span class="drop-was">${formatINR(e.refPrice)}</span>` : ""}${formatINR(e.price)}${e.dropPct ? `<span class="drop-pct">-${e.dropPct}%</span>` : ""}</div>`;
+      const cls = `drop-card${e.type === "last_minute" ? " drop-hot" : ""}`;
+      return url
+        ? `<a class="${cls}" href="${escAttr(url)}" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit">${inner}</a>`
+        : `<div class="${cls}">${inner}</div>`;
+    }
+
+    // deals.json is optional: older publishes (and a repo that has not
+    // published since this feature shipped) simply don't have it.
+    async function loadDrops() {
+      try {
+        const resp = await fetch("./deals.json?t=" + Date.now(), { cache: "no-store" });
+        if (!resp.ok) return;
+        const feed = await resp.json();
+        const cutoff = Date.now() - 7 * 86400000;
+        const events = (feed.events || []).filter((e) => new Date(e.at).getTime() >= cutoff)
+          .sort((a, b) => (b.type === "last_minute") - (a.type === "last_minute") || new Date(b.at) - new Date(a.at))
+          .slice(0, 12);
+        if (events.length === 0) return;
+        document.getElementById("drops-row").innerHTML = events.map(dropCard).join("");
+        document.getElementById("drops-strip").classList.remove("hidden");
+      } catch (e) { /* no feed yet, fine */ }
+    }
+
     async function main() {
+      loadDrops();
       let data;
       try {
         const resp = await fetch("./data.json?t=" + Date.now(), { cache: "no-store" });
