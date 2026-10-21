@@ -1,6 +1,40 @@
 {
-  "generatedAt": "2026-10-21T21:36:32.450Z",
+  "generatedAt": "2026-10-21T22:02:25.653Z",
   "events": [
+    {
+      "id": "rare|makemytrip|HOTEL SEA HORSE|Mandarmoni|2026-10-24|1487|2026-10-21T21",
+      "at": "2026-10-21T21:36:47.383Z",
+      "type": "rare",
+      "hotelName": "HOTEL SEA HORSE",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-24",
+      "checkout": "2026-10-26",
+      "price": 1487,
+      "refPrice": null,
+      "dropPct": null,
+      "leadDays": 2,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201604201657291599&_uCurrency=INR&checkin=10242026&checkout=10262026&city=CTXMD&country=IN&lat=21.66863&lng=87.71009&locusId=CTXMD&locusType=city&rank=16&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
+    {
+      "id": "rare|makemytrip|Elegant Boutique Hotel & Spa|Mandarmoni|2026-10-24|1066|2026-10-21T21",
+      "at": "2026-10-21T21:36:47.254Z",
+      "type": "rare",
+      "hotelName": "Elegant Boutique Hotel & Spa",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-24",
+      "checkout": "2026-10-26",
+      "price": 1066,
+      "refPrice": null,
+      "dropPct": null,
+      "leadDays": 2,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202410011548169397&_uCurrency=INR&checkin=10242026&checkout=10262026&city=CTXMD&country=IN&lat=21.66629&lng=87.70853&locusId=CTXMD&locusType=city&rank=96&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
     {
       "id": "last_minute|makemytrip|Super Hotel O Sonajhuri Forestview Bolpur Formerly Comfort Inn|Shantiniketan|2026-10-25|789|2026-10-21T19",
       "at": "2026-10-21T19:28:22.082Z",
