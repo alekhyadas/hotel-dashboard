@@ -1,6 +1,40 @@
 {
-  "generatedAt": "2026-10-21T16:36:02.973Z",
+  "generatedAt": "2026-10-21T18:06:47.067Z",
   "events": [
+    {
+      "id": "last_minute|makemytrip|Sucasa Hills Meraki Grand Two Mins Walk From MG Marg|Gangtok|2026-10-23|4101|2026-10-21T16",
+      "at": "2026-10-21T16:35:43.094Z",
+      "type": "last_minute",
+      "hotelName": "Sucasa Hills Meraki Grand Two Mins Walk From MG Marg",
+      "destination": "Gangtok",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-23",
+      "checkout": "2026-10-25",
+      "price": 4101,
+      "refPrice": 5010,
+      "dropPct": 18,
+      "leadDays": 2,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202403101412441754&_uCurrency=INR&checkin=10232026&checkout=10252026&city=CTXGA&country=IN&lat=27.32526&lng=88.61201&locusId=CTXGA&locusType=city&rank=5&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
+    {
+      "id": "last_minute|makemytrip|Ricardo Beach Resort|Mandarmoni|2026-10-22|3054|2026-10-21T16",
+      "at": "2026-10-21T16:33:16.503Z",
+      "type": "last_minute",
+      "hotelName": "Ricardo Beach Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-22",
+      "checkout": "2026-10-24",
+      "price": 3054,
+      "refPrice": 3564,
+      "dropPct": 14,
+      "leadDays": 1,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202501241516469301&_uCurrency=INR&checkin=10222026&checkout=10242026&city=CTXMD&country=IN&lat=21.65473&lng=87.678&locusId=CTXMD&locusType=city&rank=1&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
     {
       "id": "rare|makemytrip|Eco Nature Camp|Purulia|2026-10-21|1042|2026-10-21T15",
       "at": "2026-10-21T15:06:18.332Z",
