@@ -1,6 +1,40 @@
 {
-  "generatedAt": "2026-10-21T15:06:11.319Z",
+  "generatedAt": "2026-10-21T16:36:02.973Z",
   "events": [
+    {
+      "id": "rare|makemytrip|Eco Nature Camp|Purulia|2026-10-21|1042|2026-10-21T15",
+      "at": "2026-10-21T15:06:18.332Z",
+      "type": "rare",
+      "hotelName": "Eco Nature Camp",
+      "destination": "Purulia",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-21",
+      "checkout": "2026-10-23",
+      "price": 1042,
+      "refPrice": null,
+      "dropPct": null,
+      "leadDays": 0,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202607151958512273&_uCurrency=INR&checkin=10212026&checkout=10232026&city=CTPIA&country=IN&lat=23.26631&lng=86.19119&locusId=CTPIA&locusType=city&rank=5&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
+    {
+      "id": "last_minute|makemytrip|Super Hotel O Sonajhuri Forestview Bolpur Formerly Comfort Inn|Shantiniketan|2026-10-21|673|2026-10-21T15",
+      "at": "2026-10-21T15:04:37.450Z",
+      "type": "last_minute",
+      "hotelName": "Super Hotel O Sonajhuri Forestview Bolpur Formerly Comfort Inn",
+      "destination": "Shantiniketan",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-21",
+      "checkout": "2026-10-23",
+      "price": 673,
+      "refPrice": 1058,
+      "dropPct": 36,
+      "leadDays": 0,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202606082207002906&_uCurrency=INR&checkin=10212026&checkout=10232026&city=CTXOJ&country=IN&lat=23.69647&lng=87.67797&locusId=CTXOJ&locusType=city&rank=4&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
     {
       "id": "rare|makemytrip|Sun City Resort|Mandarmoni|2026-10-24|3445|2026-10-21T12",
       "at": "2026-10-21T12:26:24.842Z",
