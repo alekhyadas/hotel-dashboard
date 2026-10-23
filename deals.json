@@ -1,6 +1,23 @@
 {
-  "generatedAt": "2026-10-23T14:54:26.937Z",
+  "generatedAt": "2026-10-23T15:30:45.271Z",
   "events": [
+    {
+      "id": "last_minute|makemytrip|Hotel Mayuri, Digha|Digha|2026-10-23|2462|2026-10-23T14",
+      "at": "2026-10-23T14:52:41.843Z",
+      "type": "last_minute",
+      "hotelName": "Hotel Mayuri, Digha",
+      "destination": "Digha",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-23",
+      "checkout": "2026-10-25",
+      "price": 2462,
+      "refPrice": 4875,
+      "dropPct": 49,
+      "leadDays": 0,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202101272347189285&_uCurrency=INR&checkin=10232026&checkout=10252026&city=CTXDI&country=IN&lat=21.62076&lng=87.50465&locusId=CTXDI&locusType=city&rank=1&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
     {
       "id": "rare|makemytrip|HOTEL ALLISHAN|Digha|2026-10-25|1433|2026-10-22T22",
       "at": "2026-10-22T22:16:47.403Z",
@@ -1683,23 +1700,6 @@
       "leadDays": 0,
       "isNewlyBuilt": false,
       "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201702151620361103&_uCurrency=INR&checkin=10222026&checkout=10242026&city=CTIXB&country=IN&lat=27.03474&lng=88.25995&locusId=CTIXB&locusType=city&rank=8&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
-    },
-    {
-      "id": "last_minute|makemytrip|Hotel Cosy Inn|Digha|2026-10-22|1659|2026-10-21T19",
-      "at": "2026-10-21T19:02:49.337Z",
-      "type": "last_minute",
-      "hotelName": "Hotel Cosy Inn",
-      "destination": "Digha",
-      "source": "makemytrip",
-      "starRating": null,
-      "checkin": "2026-10-22",
-      "checkout": "2026-10-24",
-      "price": 1659,
-      "refPrice": 1895,
-      "dropPct": 12,
-      "leadDays": 0,
-      "isNewlyBuilt": false,
-      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201501291616506250&_uCurrency=INR&checkin=10222026&checkout=10242026&city=CTXDI&country=IN&lat=21.62553&lng=87.52922&locusId=CTXDI&locusType=city&rank=2&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
     }
   ]
 }
