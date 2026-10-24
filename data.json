@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T14:11:51.718Z",
+  "generatedAt": "2026-10-24T15:29:38.770Z",
   "groups": [
     {
       "groupKey": "makemytrip:::1BHK Augusta Villa Apartments:::Darjeeling",
@@ -411,17 +411,73 @@
       "reviewCount": 14,
       "isNewlyBuilt": false,
       "isFavorite": false,
-      "youtubeViews": null,
-      "youtubeVideoCount": null,
+      "youtubeViews": 458,
+      "youtubeVideoCount": 6,
       "aiEstimatedStarTier": null,
       "manualStarTier": null,
       "aiReviewSummary": null,
       "amenities": [],
-      "youtubeVideoUrl": null,
-      "youtubeTopShort": null,
+      "youtubeVideoUrl": "https://www.youtube.com/watch?v=Pg05vtcoK8k",
+      "youtubeTopShort": {
+        "channelSubs": 1980,
+        "channelTitle": "Property Darshan",
+        "publishedAt": "2020-05-24T04:48:10Z",
+        "title": "360° View of 2 BHk Flat For Sale in Tollygunge Kolkata | Flat in South Kolkata | (19805)",
+        "url": "https://www.youtube.com/watch?v=Pg05vtcoK8k",
+        "views": 334
+      },
       "youtubeTopLong": null,
-      "youtubeShorts": null,
-      "youtubeLongForm": null,
+      "youtubeShorts": [
+        {
+          "channelSubs": 1980,
+          "channelTitle": "Property Darshan",
+          "publishedAt": "2020-05-24T04:48:10Z",
+          "title": "360° View of 2 BHk Flat For Sale in Tollygunge Kolkata | Flat in South Kolkata | (19805)",
+          "url": "https://www.youtube.com/watch?v=Pg05vtcoK8k",
+          "views": 334
+        },
+        {
+          "channelSubs": 428,
+          "channelTitle": "Property Expert",
+          "publishedAt": "2022-11-22T12:30:21Z",
+          "title": "Luxury 3BHK Flats near Tollygunge Metro #shorts #flatforsale #3bhk #kolkata",
+          "url": "https://www.youtube.com/watch?v=SMK48wF7NIM",
+          "views": 42
+        },
+        {
+          "channelSubs": 428,
+          "channelTitle": "Property Expert",
+          "publishedAt": "2022-07-24T12:30:13Z",
+          "title": "M Luxury 3-BHK Flat for Sale, #tollygunge #kolkata #shorts #flatforsale #3bhk",
+          "url": "https://www.youtube.com/watch?v=bDh1z3NuSP8",
+          "views": 31
+        },
+        {
+          "channelSubs": 428,
+          "channelTitle": "Property Expert",
+          "publishedAt": "2022-08-06T12:30:03Z",
+          "title": "Luxury 3Bhk flats at Tollygunge Kolkata #shorts #flatforsale #3bhk #kolkata",
+          "url": "https://www.youtube.com/watch?v=6mpbvf_zvSo",
+          "views": 25
+        },
+        {
+          "channelSubs": 428,
+          "channelTitle": "Property Expert",
+          "publishedAt": "2022-10-02T12:30:18Z",
+          "title": "Luxury 3BHK Kolkata near Tollygunge #shorts #flatforsale #3bhk #kolkata",
+          "url": "https://www.youtube.com/watch?v=yBFAxNuW2dk",
+          "views": 15
+        },
+        {
+          "channelSubs": 428,
+          "channelTitle": "Property Expert",
+          "publishedAt": "2022-12-01T12:30:20Z",
+          "title": "Luxury 3BHK Tollygunge Kolkata #shorts #flatforsale #3bhk #kolkata",
+          "url": "https://www.youtube.com/watch?v=xdoUVm8SQSQ",
+          "views": 11
+        }
+      ],
+      "youtubeLongForm": [],
       "roomDetailLowest": null,
       "cheapestPrice": 4458,
       "cheapestCheckin": "2026-10-24",
@@ -464,17 +520,89 @@
       "reviewCount": null,
       "isNewlyBuilt": false,
       "isFavorite": false,
-      "youtubeViews": null,
-      "youtubeVideoCount": null,
+      "youtubeViews": 739359,
+      "youtubeVideoCount": 7,
       "aiEstimatedStarTier": null,
       "manualStarTier": null,
       "aiReviewSummary": null,
       "amenities": [],
-      "youtubeVideoUrl": null,
-      "youtubeTopShort": null,
-      "youtubeTopLong": null,
-      "youtubeShorts": null,
-      "youtubeLongForm": null,
+      "youtubeVideoUrl": "https://www.youtube.com/watch?v=0KtLzX-yQng",
+      "youtubeTopShort": {
+        "channelSubs": 80300,
+        "channelTitle": "PROPERTY FINDER",
+        "publishedAt": "2024-04-01T12:13:08Z",
+        "title": "2bhk flat sale | low price 2bhk | #flats #lowbudgetflats",
+        "url": "https://www.youtube.com/watch?v=0KtLzX-yQng",
+        "views": 736948
+      },
+      "youtubeTopLong": {
+        "channelSubs": 7880,
+        "channelTitle": "gagan engineer",
+        "publishedAt": "2023-09-16T04:30:22Z",
+        "title": "2 Bedroom Apartment Tour | কলকাতা | Small 2BHK Flat | kolkata Flat Sale | 2 Bedroom",
+        "url": "https://www.youtube.com/watch?v=l1GbKR1xk6g",
+        "views": 732
+      },
+      "youtubeShorts": [
+        {
+          "channelSubs": 80300,
+          "channelTitle": "PROPERTY FINDER",
+          "publishedAt": "2024-04-01T12:13:08Z",
+          "title": "2bhk flat sale | low price 2bhk | #flats #lowbudgetflats",
+          "url": "https://www.youtube.com/watch?v=0KtLzX-yQng",
+          "views": 736948
+        },
+        {
+          "channelSubs": 15500,
+          "channelTitle": "Arijit Real Estate",
+          "publishedAt": "2023-08-15T15:29:36Z",
+          "title": "2 BHK flat rent in Kolkata || ☎️7003801327 || Flat in Tollygunj #rent #2bhk #kolkata #flat",
+          "url": "https://www.youtube.com/watch?v=EYo2HIPF-0g",
+          "views": 1570
+        },
+        {
+          "channelSubs": 428,
+          "channelTitle": "Property Expert",
+          "publishedAt": "2022-11-22T12:30:21Z",
+          "title": "Luxury 3BHK Flats near Tollygunge Metro #shorts #flatforsale #3bhk #kolkata",
+          "url": "https://www.youtube.com/watch?v=SMK48wF7NIM",
+          "views": 42
+        },
+        {
+          "channelSubs": 428,
+          "channelTitle": "Property Expert",
+          "publishedAt": "2022-07-24T12:30:13Z",
+          "title": "M Luxury 3-BHK Flat for Sale, #tollygunge #kolkata #shorts #flatforsale #3bhk",
+          "url": "https://www.youtube.com/watch?v=bDh1z3NuSP8",
+          "views": 31
+        },
+        {
+          "channelSubs": 428,
+          "channelTitle": "Property Expert",
+          "publishedAt": "2022-08-06T12:30:03Z",
+          "title": "Luxury 3Bhk flats at Tollygunge Kolkata #shorts #flatforsale #3bhk #kolkata",
+          "url": "https://www.youtube.com/watch?v=6mpbvf_zvSo",
+          "views": 25
+        },
+        {
+          "channelSubs": 428,
+          "channelTitle": "Property Expert",
+          "publishedAt": "2022-12-01T12:30:20Z",
+          "title": "Luxury 3BHK Tollygunge Kolkata #shorts #flatforsale #3bhk #kolkata",
+          "url": "https://www.youtube.com/watch?v=xdoUVm8SQSQ",
+          "views": 11
+        }
+      ],
+      "youtubeLongForm": [
+        {
+          "channelSubs": 7880,
+          "channelTitle": "gagan engineer",
+          "publishedAt": "2023-09-16T04:30:22Z",
+          "title": "2 Bedroom Apartment Tour | কলকাতা | Small 2BHK Flat | kolkata Flat Sale | 2 Bedroom",
+          "url": "https://www.youtube.com/watch?v=l1GbKR1xk6g",
+          "views": 732
+        }
+      ],
       "roomDetailLowest": null,
       "cheapestPrice": 4257,
       "cheapestCheckin": "2026-10-24",
@@ -861,17 +989,97 @@
       "reviewCount": 52,
       "isNewlyBuilt": false,
       "isFavorite": false,
-      "youtubeViews": null,
-      "youtubeVideoCount": null,
+      "youtubeViews": 3003846,
+      "youtubeVideoCount": 8,
       "aiEstimatedStarTier": null,
       "manualStarTier": null,
       "aiReviewSummary": null,
       "amenities": [],
-      "youtubeVideoUrl": null,
-      "youtubeTopShort": null,
-      "youtubeTopLong": null,
-      "youtubeShorts": null,
-      "youtubeLongForm": null,
+      "youtubeVideoUrl": "https://www.youtube.com/watch?v=1c2p7UaBySY",
+      "youtubeTopShort": {
+        "channelSubs": 12000,
+        "channelTitle": "Mr. Kundu",
+        "publishedAt": "2025-06-10T16:37:00Z",
+        "title": "দীঘার সেরা লাক্সারি হোটেল ||New Digha Hotel With Swimming Pool||New Digha Hotel With Pool",
+        "url": "https://www.youtube.com/watch?v=1c2p7UaBySY",
+        "views": 683251
+      },
+      "youtubeTopLong": {
+        "channelSubs": 72900,
+        "channelTitle": "The Shining Bong",
+        "publishedAt": "2025-11-03T05:30:26Z",
+        "title": "Best 12 Sea Facing Hotels In New Digha | Budget Hotels In New Digha | Digha Hotel Price | Digha Tour",
+        "url": "https://www.youtube.com/watch?v=tWoSSQdCEBY",
+        "views": 218464
+      },
+      "youtubeShorts": [
+        {
+          "channelSubs": 12000,
+          "channelTitle": "Mr. Kundu",
+          "publishedAt": "2025-06-10T16:37:00Z",
+          "title": "দীঘার সেরা লাক্সারি হোটেল ||New Digha Hotel With Swimming Pool||New Digha Hotel With Pool",
+          "url": "https://www.youtube.com/watch?v=1c2p7UaBySY",
+          "views": 683251
+        },
+        {
+          "channelSubs": 30200,
+          "channelTitle": "Banglar Cheler Vlogs",
+          "publishedAt": "2025-04-05T10:09:06Z",
+          "title": "Digha hotel swimming pool 🔥￼",
+          "url": "https://www.youtube.com/watch?v=SXxchV75Aog",
+          "views": 560836
+        },
+        {
+          "channelSubs": 1210000,
+          "channelTitle": "MOinsideHIT",
+          "publishedAt": "2024-09-27T15:09:50Z",
+          "title": "One of the best & Cheap hotel in New Digha hotel tour #digha #dighabeach #moinsidehit",
+          "url": "https://www.youtube.com/watch?v=YG-HoE8KimM",
+          "views": 506148
+        },
+        {
+          "channelSubs": 50700,
+          "channelTitle": "Swag's Venture",
+          "publishedAt": "2025-07-25T12:36:18Z",
+          "title": "দীঘা হোটেলের ব্যালকনি থেকে সমুদ্রের ভিউ/Digha Sea facing Hotel/Digha Hotel near Sea Beach #shorts",
+          "url": "https://www.youtube.com/watch?v=bTdce63SkJY",
+          "views": 412328
+        },
+        {
+          "channelSubs": 1120,
+          "channelTitle": "Tinnis Creation",
+          "publishedAt": "2024-07-31T11:25:58Z",
+          "title": "Sea facing with swimming pool hotel at New digha in affordable rate #digha #hotel #travel #youtube",
+          "url": "https://www.youtube.com/watch?v=JfpvR4PZ878",
+          "views": 262502
+        }
+      ],
+      "youtubeLongForm": [
+        {
+          "channelSubs": 72900,
+          "channelTitle": "The Shining Bong",
+          "publishedAt": "2025-11-03T05:30:26Z",
+          "title": "Best 12 Sea Facing Hotels In New Digha | Budget Hotels In New Digha | Digha Hotel Price | Digha Tour",
+          "url": "https://www.youtube.com/watch?v=tWoSSQdCEBY",
+          "views": 218464
+        },
+        {
+          "channelSubs": 149000,
+          "channelTitle": "Katus Lifestyle",
+          "publishedAt": "2025-02-06T11:27:16Z",
+          "title": "দীঘায় কম বাজেটে সুইমিং পুল হোটেল। Digha Hotel With Swimming Pool. dheusagar digha hotel.",
+          "url": "https://www.youtube.com/watch?v=FecFjkZySfQ",
+          "views": 203735
+        },
+        {
+          "channelSubs": 30600,
+          "channelTitle": "Anindya Das",
+          "publishedAt": "2024-10-06T13:29:09Z",
+          "title": "New Digha Hotel | Digha Luxury Swimming Pool Hotel | Digha Hotel Near Sea Beach | Hotel Swarna",
+          "url": "https://www.youtube.com/watch?v=sSEVSQijHYo",
+          "views": 156582
+        }
+      ],
       "roomDetailLowest": null,
       "cheapestPrice": 2754,
       "cheapestCheckin": "2026-11-06",
@@ -2228,17 +2436,65 @@
       "reviewCount": null,
       "isNewlyBuilt": false,
       "isFavorite": false,
-      "youtubeViews": null,
-      "youtubeVideoCount": null,
+      "youtubeViews": 115008,
+      "youtubeVideoCount": 4,
       "aiEstimatedStarTier": null,
       "manualStarTier": null,
       "aiReviewSummary": null,
       "amenities": [],
-      "youtubeVideoUrl": null,
-      "youtubeTopShort": null,
-      "youtubeTopLong": null,
-      "youtubeShorts": null,
-      "youtubeLongForm": null,
+      "youtubeVideoUrl": "https://www.youtube.com/watch?v=S9TISuY5_ZY",
+      "youtubeTopShort": {
+        "channelSubs": 525,
+        "channelTitle": "My Digital Eye",
+        "publishedAt": "2024-08-07T03:49:03Z",
+        "title": "Sibalaya Guest House, Low budget stay near Kolkata Airport 1no. #guesthouse #hotel #lowbudget",
+        "url": "https://www.youtube.com/watch?v=S9TISuY5_ZY",
+        "views": 81467
+      },
+      "youtubeTopLong": {
+        "channelSubs": 101000,
+        "channelTitle": "Ruma Dey Baidya - HolidayStory",
+        "publishedAt": "2021-01-22T03:12:07Z",
+        "title": "Swagatam International Guest House | Hotel near Kolkata airport gate no 2",
+        "url": "https://www.youtube.com/watch?v=AxLu4x-nORs",
+        "views": 22529
+      },
+      "youtubeShorts": [
+        {
+          "channelSubs": 525,
+          "channelTitle": "My Digital Eye",
+          "publishedAt": "2024-08-07T03:49:03Z",
+          "title": "Sibalaya Guest House, Low budget stay near Kolkata Airport 1no. #guesthouse #hotel #lowbudget",
+          "url": "https://www.youtube.com/watch?v=S9TISuY5_ZY",
+          "views": 81467
+        },
+        {
+          "channelSubs": 48900,
+          "channelTitle": "Hindustani Yatri",
+          "publishedAt": "2024-08-16T15:45:11Z",
+          "title": "Best budget hotel in kolkata airport best unmarried couple hotel in kolkata under 500",
+          "url": "https://www.youtube.com/watch?v=yF03MoRp-AM",
+          "views": 8480
+        }
+      ],
+      "youtubeLongForm": [
+        {
+          "channelSubs": 101000,
+          "channelTitle": "Ruma Dey Baidya - HolidayStory",
+          "publishedAt": "2021-01-22T03:12:07Z",
+          "title": "Swagatam International Guest House | Hotel near Kolkata airport gate no 2",
+          "url": "https://www.youtube.com/watch?v=AxLu4x-nORs",
+          "views": 22529
+        },
+        {
+          "channelSubs": 67200,
+          "channelTitle": "Randomfacts by Shikhaa",
+          "publishedAt": "2026-04-28T05:30:12Z",
+          "title": "10 Best Budget Hotels Near Kolkata Airport | कोलकाता में सस्ते होटल",
+          "url": "https://www.youtube.com/watch?v=EkPRj5FwBKI",
+          "views": 2532
+        }
+      ],
       "roomDetailLowest": null,
       "cheapestPrice": 909,
       "cheapestCheckin": "2026-10-24",
@@ -2684,17 +2940,41 @@
       "reviewCount": 40,
       "isNewlyBuilt": false,
       "isFavorite": false,
-      "youtubeViews": null,
-      "youtubeVideoCount": null,
+      "youtubeViews": 87114,
+      "youtubeVideoCount": 2,
       "aiEstimatedStarTier": null,
       "manualStarTier": null,
       "aiReviewSummary": null,
       "amenities": [],
-      "youtubeVideoUrl": null,
-      "youtubeTopShort": null,
+      "youtubeVideoUrl": "https://www.youtube.com/watch?v=1V2Dsf4mo2w",
+      "youtubeTopShort": {
+        "channelSubs": 457,
+        "channelTitle": "Great Indian Homestay ",
+        "publishedAt": "2025-09-27T20:27:11Z",
+        "title": "Call 7205797446 Homestay in Puri Jagannath dham #affordableluxury",
+        "url": "https://www.youtube.com/watch?v=1V2Dsf4mo2w",
+        "views": 64145
+      },
       "youtubeTopLong": null,
-      "youtubeShorts": null,
-      "youtubeLongForm": null,
+      "youtubeShorts": [
+        {
+          "channelSubs": 457,
+          "channelTitle": "Great Indian Homestay ",
+          "publishedAt": "2025-09-27T20:27:11Z",
+          "title": "Call 7205797446 Homestay in Puri Jagannath dham #affordableluxury",
+          "url": "https://www.youtube.com/watch?v=1V2Dsf4mo2w",
+          "views": 64145
+        },
+        {
+          "channelSubs": 457,
+          "channelTitle": "Great Indian Homestay ",
+          "publishedAt": "2025-09-27T15:40:59Z",
+          "title": "Homestay in Puri 7205797446 Near Beach, homestay in puri Jagannath dham",
+          "url": "https://www.youtube.com/watch?v=GSUBR4oBhw0",
+          "views": 22969
+        }
+      ],
+      "youtubeLongForm": [],
       "roomDetailLowest": null,
       "cheapestPrice": 5667,
       "cheapestCheckin": "2026-10-28",
@@ -6275,17 +6555,57 @@
       "reviewCount": 11,
       "isNewlyBuilt": false,
       "isFavorite": false,
-      "youtubeViews": null,
-      "youtubeVideoCount": null,
+      "youtubeViews": 56257,
+      "youtubeVideoCount": 3,
       "aiEstimatedStarTier": null,
       "manualStarTier": null,
       "aiReviewSummary": null,
       "amenities": [],
-      "youtubeVideoUrl": null,
-      "youtubeTopShort": null,
-      "youtubeTopLong": null,
-      "youtubeShorts": null,
-      "youtubeLongForm": null,
+      "youtubeVideoUrl": "https://www.youtube.com/watch?v=i7Lgfm12mOU",
+      "youtubeTopShort": {
+        "channelSubs": 244,
+        "channelTitle": "explorer soumen",
+        "publishedAt": "2026-07-31T11:50:18Z",
+        "title": "Ang's Retreat, Gangtok #gangtok #sikkim #darjeeling #viral #shorts",
+        "url": "https://www.youtube.com/watch?v=CWAf8hjYUeg",
+        "views": 353
+      },
+      "youtubeTopLong": {
+        "channelSubs": 82300,
+        "channelTitle": "Saili's Lifestyle",
+        "publishedAt": "2025-04-22T10:26:42Z",
+        "title": "Gangtok Tourist Places | Gangtok Tour 2025 | Gangtok | Gangtok Hotel | Kolkata To Gangtok | Sikkim",
+        "url": "https://www.youtube.com/watch?v=i7Lgfm12mOU",
+        "views": 54091
+      },
+      "youtubeShorts": [
+        {
+          "channelSubs": 244,
+          "channelTitle": "explorer soumen",
+          "publishedAt": "2026-07-31T11:50:18Z",
+          "title": "Ang's Retreat, Gangtok #gangtok #sikkim #darjeeling #viral #shorts",
+          "url": "https://www.youtube.com/watch?v=CWAf8hjYUeg",
+          "views": 353
+        }
+      ],
+      "youtubeLongForm": [
+        {
+          "channelSubs": 82300,
+          "channelTitle": "Saili's Lifestyle",
+          "publishedAt": "2025-04-22T10:26:42Z",
+          "title": "Gangtok Tourist Places | Gangtok Tour 2025 | Gangtok | Gangtok Hotel | Kolkata To Gangtok | Sikkim",
+          "url": "https://www.youtube.com/watch?v=i7Lgfm12mOU",
+          "views": 54091
+        },
+        {
+          "channelSubs": 5140,
+          "channelTitle": "Backpacker Moinak",
+          "publishedAt": "2025-08-09T05:33:06Z",
+          "title": "3 Star Hotel in Gangtok / Kanchanjunga View Rooms / Car Parking Available ",
+          "url": "https://www.youtube.com/watch?v=qX3U8nK8Ns4",
+          "views": 1813
+        }
+      ],
       "roomDetailLowest": null,
       "cheapestPrice": 1815,
       "cheapestCheckin": "2026-10-25",
@@ -9579,17 +9899,89 @@
       "reviewCount": 486,
       "isNewlyBuilt": false,
       "isFavorite": false,
-      "youtubeViews": null,
-      "youtubeVideoCount": null,
+      "youtubeViews": 956527,
+      "youtubeVideoCount": 7,
       "aiEstimatedStarTier": null,
       "manualStarTier": null,
       "aiReviewSummary": null,
       "amenities": [],
-      "youtubeVideoUrl": null,
-      "youtubeTopShort": null,
-      "youtubeTopLong": null,
-      "youtubeShorts": null,
-      "youtubeLongForm": null,
+      "youtubeVideoUrl": "https://www.youtube.com/watch?v=xzEWv_TY2bE",
+      "youtubeTopShort": {
+        "channelSubs": 563000,
+        "channelTitle": "Foodyy Bangali",
+        "publishedAt": "2023-11-23T14:52:48Z",
+        "title": "Mandarmani r sera Resort e chilam 😍📍 Location: Aqua Blue Resort. Contact: 9002555954 #viral #food",
+        "url": "https://www.youtube.com/watch?v=xzEWv_TY2bE",
+        "views": 898986
+      },
+      "youtubeTopLong": {
+        "channelSubs": 9110,
+        "channelTitle": "Anjali's Foood & Travel World",
+        "publishedAt": "2023-08-04T07:00:10Z",
+        "title": "Aqua Blue Resort Mandarmani Room Tour & Price |Best Hotel Review with Swimming Pool under Rs 3500/-",
+        "url": "https://www.youtube.com/watch?v=MrQnwSxOHOE",
+        "views": 46708
+      },
+      "youtubeShorts": [
+        {
+          "channelSubs": 563000,
+          "channelTitle": "Foodyy Bangali",
+          "publishedAt": "2023-11-23T14:52:48Z",
+          "title": "Mandarmani r sera Resort e chilam 😍📍 Location: Aqua Blue Resort. Contact: 9002555954 #viral #food",
+          "url": "https://www.youtube.com/watch?v=xzEWv_TY2bE",
+          "views": 898986
+        }
+      ],
+      "youtubeLongForm": [
+        {
+          "channelSubs": 9110,
+          "channelTitle": "Anjali's Foood & Travel World",
+          "publishedAt": "2023-08-04T07:00:10Z",
+          "title": "Aqua Blue Resort Mandarmani Room Tour & Price |Best Hotel Review with Swimming Pool under Rs 3500/-",
+          "url": "https://www.youtube.com/watch?v=MrQnwSxOHOE",
+          "views": 46708
+        },
+        {
+          "channelSubs": 766,
+          "channelTitle": "KRDD (কতই রঙ্গ দেখি দুনিয়ায়)",
+          "publishedAt": "2023-08-31T05:27:15Z",
+          "title": "Aqua Blue Resort - Mandarmani | Hotel Review | Aug 2023",
+          "url": "https://www.youtube.com/watch?v=ZhGw9KkDZPE",
+          "views": 5297
+        },
+        {
+          "channelSubs": 9110,
+          "channelTitle": "Anjali's Foood & Travel World",
+          "publishedAt": "2023-08-08T07:00:02Z",
+          "title": "Aqua Blue Resort Room Tour & Price |  Finally Got Premium Room | Swimming Pool Hotel in Mandarmani",
+          "url": "https://www.youtube.com/watch?v=5Bi14INiBJI",
+          "views": 2707
+        },
+        {
+          "channelSubs": 1600,
+          "channelTitle": "Fun With Shreya ",
+          "publishedAt": "2024-03-28T07:27:00Z",
+          "title": "Mandarmani তে কাটানো একটা দিন🥰||Aqua Blue Resort||Complimentary Breakfast Buffet😍||আর কি খেলাম?",
+          "url": "https://www.youtube.com/watch?v=G4wtLK18ISo",
+          "views": 1839
+        },
+        {
+          "channelSubs": 9110,
+          "channelTitle": "Anjali's Foood & Travel World",
+          "publishedAt": "2023-08-22T06:40:01Z",
+          "title": "Had Unlimited Morning Breakfast In Aqua Blue Resort In Mandarmani | Honest Food Buffet Review Vlog😱",
+          "url": "https://www.youtube.com/watch?v=IdfGgOkcwHw",
+          "views": 883
+        },
+        {
+          "channelSubs": 394,
+          "channelTitle": "BikesNBeret",
+          "publishedAt": "2023-04-20T20:13:38Z",
+          "title": "Mandarmani Couple Ride | Beach Ride | Aqua Blue Resort | Motovlog & Tour",
+          "url": "https://www.youtube.com/watch?v=y6jKi-xa8bM",
+          "views": 107
+        }
+      ],
       "roomDetailLowest": null,
       "cheapestPrice": 5626,
       "cheapestCheckin": "2026-10-25",
@@ -12356,17 +12748,73 @@
       "reviewCount": 132,
       "isNewlyBuilt": false,
       "isFavorite": false,
-      "youtubeViews": null,
-      "youtubeVideoCount": null,
+      "youtubeViews": 32439,
+      "youtubeVideoCount": 5,
       "aiEstimatedStarTier": null,
       "manualStarTier": null,
       "aiReviewSummary": null,
       "amenities": [],
-      "youtubeVideoUrl": null,
-      "youtubeTopShort": null,
-      "youtubeTopLong": null,
-      "youtubeShorts": null,
-      "youtubeLongForm": null,
+      "youtubeVideoUrl": "https://www.youtube.com/watch?v=RyfBrC8hGiU",
+      "youtubeTopShort": {
+        "channelSubs": 39,
+        "channelTitle": "Tina das sikdar",
+        "publishedAt": "2025-04-18T18:29:17Z",
+        "title": "Azad hind beach resort in Mandarmani✨✨✨",
+        "url": "https://www.youtube.com/watch?v=2ZLQcNhzjYo",
+        "views": 3373
+      },
+      "youtubeTopLong": {
+        "channelSubs": 406000,
+        "channelTitle": "Alka Agarwal",
+        "publishedAt": "2024-10-11T07:00:37Z",
+        "title": "Best Resort In Mandarmani 😍 || Azad Hind Beach Resort || kolkata || alkagarwal",
+        "url": "https://www.youtube.com/watch?v=RyfBrC8hGiU",
+        "views": 16270
+      },
+      "youtubeShorts": [
+        {
+          "channelSubs": 39,
+          "channelTitle": "Tina das sikdar",
+          "publishedAt": "2025-04-18T18:29:17Z",
+          "title": "Azad hind beach resort in Mandarmani✨✨✨",
+          "url": "https://www.youtube.com/watch?v=2ZLQcNhzjYo",
+          "views": 3373
+        },
+        {
+          "channelSubs": 377,
+          "channelTitle": "Chalo Dekhe Ashi",
+          "publishedAt": "2025-03-19T15:46:31Z",
+          "title": "Hotel Azhad Hind Beach Resort #mandarmani #mandarmanivlog #digha",
+          "url": "https://www.youtube.com/watch?v=M30qwk3BKhk",
+          "views": 2819
+        }
+      ],
+      "youtubeLongForm": [
+        {
+          "channelSubs": 406000,
+          "channelTitle": "Alka Agarwal",
+          "publishedAt": "2024-10-11T07:00:37Z",
+          "title": "Best Resort In Mandarmani 😍 || Azad Hind Beach Resort || kolkata || alkagarwal",
+          "url": "https://www.youtube.com/watch?v=RyfBrC8hGiU",
+          "views": 16270
+        },
+        {
+          "channelSubs": 148,
+          "channelTitle": "Exploreshorts",
+          "publishedAt": "2023-04-20T17:33:05Z",
+          "title": "Lloyds beach resort Mandarmani l Hotel Night View #Breakfast in AZAD HIND DHABA",
+          "url": "https://www.youtube.com/watch?v=0gJs2xSiJNc",
+          "views": 6841
+        },
+        {
+          "channelSubs": 1400,
+          "channelTitle": "Let's Go Bong",
+          "publishedAt": "2024-11-23T13:30:06Z",
+          "title": "AZAD HIND BEACH RESORT MANDARMONI । বাজেটের মধ্যেই Luxury Beach Resort with Pool #letsgobong",
+          "url": "https://www.youtube.com/watch?v=GDaRLfR_w4I",
+          "views": 3136
+        }
+      ],
       "roomDetailLowest": null,
       "cheapestPrice": 3500,
       "cheapestCheckin": "2026-10-23",
@@ -12409,17 +12857,33 @@
       "reviewCount": 10,
       "isNewlyBuilt": false,
       "isFavorite": false,
-      "youtubeViews": null,
-      "youtubeVideoCount": null,
+      "youtubeViews": 488,
+      "youtubeVideoCount": 1,
       "aiEstimatedStarTier": null,
       "manualStarTier": null,
       "aiReviewSummary": null,
       "amenities": [],
-      "youtubeVideoUrl": null,
+      "youtubeVideoUrl": "https://www.youtube.com/watch?v=6IKsXZrfN3w",
       "youtubeTopShort": null,
-      "youtubeTopLong": null,
-      "youtubeShorts": null,
-      "youtubeLongForm": null,
+      "youtubeTopLong": {
+        "channelSubs": 11,
+        "channelTitle": "Sangeeta Bhanja",
+        "publishedAt": "2022-04-21T12:31:58Z",
+        "title": "Mayfair waves Puri, amazing  room tour by Aadya.",
+        "url": "https://www.youtube.com/watch?v=6IKsXZrfN3w",
+        "views": 488
+      },
+      "youtubeShorts": [],
+      "youtubeLongForm": [
+        {
+          "channelSubs": 11,
+          "channelTitle": "Sangeeta Bhanja",
+          "publishedAt": "2022-04-21T12:31:58Z",
+          "title": "Mayfair waves Puri, amazing  room tour by Aadya.",
+          "url": "https://www.youtube.com/watch?v=6IKsXZrfN3w",
+          "views": 488
+        }
+      ],
       "roomDetailLowest": null,
       "cheapestPrice": 2018,
       "cheapestCheckin": "2026-10-28",
@@ -12481,17 +12945,65 @@
       "reviewCount": 22,
       "isNewlyBuilt": false,
       "isFavorite": false,
-      "youtubeViews": null,
-      "youtubeVideoCount": null,
+      "youtubeViews": 7254,
+      "youtubeVideoCount": 4,
       "aiEstimatedStarTier": null,
       "manualStarTier": null,
       "aiReviewSummary": null,
       "amenities": [],
-      "youtubeVideoUrl": null,
-      "youtubeTopShort": null,
-      "youtubeTopLong": null,
-      "youtubeShorts": null,
-      "youtubeLongForm": null,
+      "youtubeVideoUrl": "https://www.youtube.com/watch?v=Y9ewchlSscI",
+      "youtubeTopShort": {
+        "channelSubs": 15200,
+        "channelTitle": "Barsha'r Sathe",
+        "publishedAt": "2023-01-29T10:36:27Z",
+        "title": "Hotel in tajpur || Tajpur hotel near sea beach ||Aahar guest house",
+        "url": "https://www.youtube.com/watch?v=mGbV74H8eeY",
+        "views": 1989
+      },
+      "youtubeTopLong": {
+        "channelSubs": 13600,
+        "channelTitle": "The Journey Begins",
+        "publishedAt": "2023-09-04T08:30:42Z",
+        "title": "তাজপুর এ থাকার এক সুন্দর ঠিকানা | Digha Tajpur Sea Beach | Aahar Guest house Tajpur",
+        "url": "https://www.youtube.com/watch?v=Y9ewchlSscI",
+        "views": 4354
+      },
+      "youtubeShorts": [
+        {
+          "channelSubs": 15200,
+          "channelTitle": "Barsha'r Sathe",
+          "publishedAt": "2023-01-29T10:36:27Z",
+          "title": "Hotel in tajpur || Tajpur hotel near sea beach ||Aahar guest house",
+          "url": "https://www.youtube.com/watch?v=mGbV74H8eeY",
+          "views": 1989
+        }
+      ],
+      "youtubeLongForm": [
+        {
+          "channelSubs": 13600,
+          "channelTitle": "The Journey Begins",
+          "publishedAt": "2023-09-04T08:30:42Z",
+          "title": "তাজপুর এ থাকার এক সুন্দর ঠিকানা | Digha Tajpur Sea Beach | Aahar Guest house Tajpur",
+          "url": "https://www.youtube.com/watch?v=Y9ewchlSscI",
+          "views": 4354
+        },
+        {
+          "channelSubs": 2020,
+          "channelTitle": "Diyamom's Lifestyle",
+          "publishedAt": "2025-05-31T14:32:07Z",
+          "title": "Aahar Gaust House Tajpur || Tajpur Hotel Near Sea Beach || Tajpur Sea Beach ⛱️",
+          "url": "https://www.youtube.com/watch?v=XbslxMTqjFo",
+          "views": 476
+        },
+        {
+          "channelSubs": 2180,
+          "channelTitle": "Suswad",
+          "publishedAt": "2024-11-01T12:50:33Z",
+          "title": "My Digha Tour Last Part|Digha Sea Beach|Hotel Sand Piper|Sea Facing Hotel|Aahar Restaurant|Digha",
+          "url": "https://www.youtube.com/watch?v=gFYQI-ypXFw",
+          "views": 435
+        }
+      ],
       "roomDetailLowest": null,
       "cheapestPrice": 2694,
       "cheapestCheckin": "2026-10-23",
@@ -16267,17 +16779,33 @@
       "reviewCount": null,
       "isNewlyBuilt": false,
       "isFavorite": false,
-      "youtubeViews": null,
-      "youtubeVideoCount": null,
+      "youtubeViews": 64145,
+      "youtubeVideoCount": 1,
       "aiEstimatedStarTier": null,
       "manualStarTier": null,
       "aiReviewSummary": null,
       "amenities": [],
-      "youtubeVideoUrl": null,
-      "youtubeTopShort": null,
+      "youtubeVideoUrl": "https://www.youtube.com/watch?v=1V2Dsf4mo2w",
+      "youtubeTopShort": {
+        "channelSubs": 457,
+        "channelTitle": "Great Indian Homestay ",
+        "publishedAt": "2025-09-27T20:27:11Z",
+        "title": "Call 7205797446 Homestay in Puri Jagannath dham #affordableluxury",
+        "url": "https://www.youtube.com/watch?v=1V2Dsf4mo2w",
+        "views": 64145
+      },
       "youtubeTopLong": null,
-      "youtubeShorts": null,
-      "youtubeLongForm": null,
+      "youtubeShorts": [
+        {
+          "channelSubs": 457,
+          "channelTitle": "Great Indian Homestay ",
+          "publishedAt": "2025-09-27T20:27:11Z",
+          "title": "Call 7205797446 Homestay in Puri Jagannath dham #affordableluxury",
+          "url": "https://www.youtube.com/watch?v=1V2Dsf4mo2w",
+          "views": 64145
+        }
+      ],
+      "youtubeLongForm": [],
       "roomDetailLowest": null,
       "cheapestPrice": 830,
       "cheapestCheckin": "2026-10-28",
@@ -16320,17 +16848,41 @@
       "reviewCount": 36,
       "isNewlyBuilt": false,
       "isFavorite": false,
-      "youtubeViews": null,
-      "youtubeVideoCount": null,
+      "youtubeViews": 815938,
+      "youtubeVideoCount": 2,
       "aiEstimatedStarTier": null,
       "manualStarTier": null,
       "aiReviewSummary": null,
       "amenities": [],
-      "youtubeVideoUrl": null,
-      "youtubeTopShort": null,
+      "youtubeVideoUrl": "https://www.youtube.com/watch?v=ffnnSt4hg5U",
+      "youtubeTopShort": {
+        "channelSubs": 548,
+        "channelTitle": "Piiyush  Jaiswal",
+        "publishedAt": "2023-03-11T15:31:53Z",
+        "title": "Top Affordable Couple Friendly Hotel in Kolkata || Local IDs Accepted || Best Hotels For Couples",
+        "url": "https://www.youtube.com/watch?v=ffnnSt4hg5U",
+        "views": 474369
+      },
       "youtubeTopLong": null,
-      "youtubeShorts": null,
-      "youtubeLongForm": null,
+      "youtubeShorts": [
+        {
+          "channelSubs": 548,
+          "channelTitle": "Piiyush  Jaiswal",
+          "publishedAt": "2023-03-11T15:31:53Z",
+          "title": "Top Affordable Couple Friendly Hotel in Kolkata || Local IDs Accepted || Best Hotels For Couples",
+          "url": "https://www.youtube.com/watch?v=ffnnSt4hg5U",
+          "views": 474369
+        },
+        {
+          "channelSubs": 1320,
+          "channelTitle": "Suchetana Dasgupta ",
+          "publishedAt": "2024-08-22T07:27:36Z",
+          "title": "Best Couple Friendly Hotel in Kolkata | Affordable Hotel in Kolkata | Best restaurant in Kolkata",
+          "url": "https://www.youtube.com/watch?v=dQksoMGkV9w",
+          "views": 341569
+        }
+      ],
+      "youtubeLongForm": [],
       "roomDetailLowest": null,
       "cheapestPrice": 2052,
       "cheapestCheckin": "2026-10-24",
@@ -16373,17 +16925,65 @@
       "reviewCount": 25,
       "isNewlyBuilt": false,
       "isFavorite": false,
-      "youtubeViews": null,
-      "youtubeVideoCount": null,
+      "youtubeViews": 822,
+      "youtubeVideoCount": 4,
       "aiEstimatedStarTier": null,
       "manualStarTier": null,
       "aiReviewSummary": null,
       "amenities": [],
-      "youtubeVideoUrl": null,
-      "youtubeTopShort": null,
-      "youtubeTopLong": null,
-      "youtubeShorts": null,
-      "youtubeLongForm": null,
+      "youtubeVideoUrl": "https://www.youtube.com/watch?v=SnOTt59XCFY",
+      "youtubeTopShort": {
+        "channelSubs": 2760,
+        "channelTitle": "Asia Hotels and Resorts",
+        "publishedAt": "2020-01-22T05:05:15Z",
+        "title": "Hotel Central Point Lodge (STDC) , Gangtok India | Call : 7303231118 |",
+        "url": "https://www.youtube.com/watch?v=rg48wVeLr4I",
+        "views": 262
+      },
+      "youtubeTopLong": {
+        "channelSubs": 3110,
+        "channelTitle": "Akash Bhai 70",
+        "publishedAt": "2024-08-31T12:06:11Z",
+        "title": "Gangtok Sikkim Agarwal hotel central point 🏨 #vlogger #youtubevideo #viralvideo",
+        "url": "https://www.youtube.com/watch?v=SnOTt59XCFY",
+        "views": 309
+      },
+      "youtubeShorts": [
+        {
+          "channelSubs": 2760,
+          "channelTitle": "Asia Hotels and Resorts",
+          "publishedAt": "2020-01-22T05:05:15Z",
+          "title": "Hotel Central Point Lodge (STDC) , Gangtok India | Call : 7303231118 |",
+          "url": "https://www.youtube.com/watch?v=rg48wVeLr4I",
+          "views": 262
+        },
+        {
+          "channelSubs": 3110,
+          "channelTitle": "Akash Bhai 70",
+          "publishedAt": "2024-09-21T09:57:19Z",
+          "title": "Gangtok Sikkim Agarwal hotel central point #shortsvideo #ytshorts #viralvideo",
+          "url": "https://www.youtube.com/watch?v=X_mT4-VhBM4",
+          "views": 92
+        }
+      ],
+      "youtubeLongForm": [
+        {
+          "channelSubs": 3110,
+          "channelTitle": "Akash Bhai 70",
+          "publishedAt": "2024-08-31T12:06:11Z",
+          "title": "Gangtok Sikkim Agarwal hotel central point 🏨 #vlogger #youtubevideo #viralvideo",
+          "url": "https://www.youtube.com/watch?v=SnOTt59XCFY",
+          "views": 309
+        },
+        {
+          "channelSubs": 2440,
+          "channelTitle": "Mapple",
+          "publishedAt": "2025-04-17T12:13:46Z",
+          "title": "Gangtok Hotel Central Point.. Budget hotel। গ্যাংটক সেন্ট্রাল পয়েন্ট হোটেল ম্যাল এর কাছাকাছি#vlog",
+          "url": "https://www.youtube.com/watch?v=flh8Fl4itxI",
+          "views": 159
+        }
+      ],
       "roomDetailLowest": null,
       "cheapestPrice": 2120,
       "cheapestCheckin": "2026-10-24",
@@ -31379,25 +31979,6 @@
           "roomDetailLowest": null
         },
         {
-          "checkin": "2026-10-26",
-          "checkout": "2026-10-28",
-          "price": 3244,
-          "lowest": 3244,
-          "updatedAt": "2026-10-22T16:22:58.650Z",
-          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202204231531096519&_uCurrency=INR&checkin=10262026&checkout=10282026&city=CTXOJ&country=IN&lat=23.64012&lng=87.61917&locusId=CTXOJ&locusType=city&rank=58&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
-          "priceHistory": [
-            {
-              "at": "2026-10-22T16:22:58.650Z",
-              "dv": 1,
-              "lead": 4,
-              "price": 3244
-            }
-          ],
-          "originalPrice": null,
-          "isLikelyBadScrape": false,
-          "roomDetailLowest": null
-        },
-        {
           "checkin": "2026-09-20",
           "checkout": "2026-09-22",
           "price": 3265,
@@ -31512,6 +32093,31 @@
             {
               "at": "2026-10-15T18:05:24.736Z",
               "price": 3384
+            }
+          ],
+          "originalPrice": null,
+          "isLikelyBadScrape": false,
+          "roomDetailLowest": null
+        },
+        {
+          "checkin": "2026-10-26",
+          "checkout": "2026-10-28",
+          "price": 3385,
+          "lowest": 3244,
+          "updatedAt": "2026-10-24T15:21:16.890Z",
+          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202204231531096519&_uCurrency=INR&checkin=10262026&checkout=10282026&city=CTXOJ&country=IN&lat=23.64012&lng=87.61917&locusId=CTXOJ&locusType=city&rank=2&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
+          "priceHistory": [
+            {
+              "at": "2026-10-22T16:22:58.650Z",
+              "dv": 1,
+              "lead": 4,
+              "price": 3244
+            },
+            {
+              "at": "2026-10-24T15:21:16.890Z",
+              "dv": 1,
+              "lead": 2,
+              "price": 3385
             }
           ],
           "originalPrice": null,
@@ -328469,7 +329075,7 @@
           "checkout": "2026-10-28",
           "price": 1150,
           "lowest": 1150,
-          "updatedAt": "2026-10-24T13:51:16.872Z",
+          "updatedAt": "2026-10-24T15:21:16.991Z",
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201909241546391008&_uCurrency=INR&checkin=10262026&checkout=10282026&city=CTXOJ&country=IN&lat=23.68854&lng=87.6824&locusId=CTXOJ&locusType=city&rank=4&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
@@ -328522,6 +329128,12 @@
             },
             {
               "at": "2026-10-24T13:51:16.872Z",
+              "dv": 1,
+              "lead": 2,
+              "price": 1150
+            },
+            {
+              "at": "2026-10-24T15:21:16.991Z",
               "dv": 1,
               "lead": 2,
               "price": 1150
@@ -566219,7 +566831,7 @@
           "checkout": "2026-10-28",
           "price": 1965,
           "lowest": 1965,
-          "updatedAt": "2026-10-24T13:51:15.745Z",
+          "updatedAt": "2026-10-24T15:21:16.797Z",
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202007131009241580&_uCurrency=INR&checkin=10262026&checkout=10282026&city=CTXOJ&country=IN&lat=23.69262&lng=87.66791&locusId=CTXOJ&locusType=city&rank=1&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
@@ -566272,6 +566884,12 @@
             },
             {
               "at": "2026-10-24T13:51:15.745Z",
+              "dv": 1,
+              "lead": 2,
+              "price": 1965
+            },
+            {
+              "at": "2026-10-24T15:21:16.797Z",
               "dv": 1,
               "lead": 2,
               "price": 1965
@@ -636042,7 +636660,7 @@
           "checkout": "2026-10-28",
           "price": 1118,
           "lowest": 850,
-          "updatedAt": "2026-10-24T13:51:16.802Z",
+          "updatedAt": "2026-10-24T15:21:16.942Z",
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202104140001493510&_uCurrency=INR&checkin=10262026&checkout=10282026&city=CTXOJ&country=IN&lat=23.68794&lng=87.688&locusId=CTXOJ&locusType=city&rank=3&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
@@ -636095,6 +636713,12 @@
             },
             {
               "at": "2026-10-24T13:51:16.802Z",
+              "dv": 1,
+              "lead": 2,
+              "price": 1118
+            },
+            {
+              "at": "2026-10-24T15:21:16.942Z",
               "dv": 1,
               "lead": 2,
               "price": 1118
