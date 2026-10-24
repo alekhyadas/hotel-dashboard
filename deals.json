@@ -1,6 +1,40 @@
 {
-  "generatedAt": "2026-10-24T04:55:30.357Z",
+  "generatedAt": "2026-10-24T06:27:24.900Z",
   "events": [
+    {
+      "id": "last_minute|makemytrip|Jain Group Hotel Potala|Gangtok|2026-10-26|906|2026-10-24T04",
+      "at": "2026-10-24T04:54:05.033Z",
+      "type": "last_minute",
+      "hotelName": "Jain Group Hotel Potala",
+      "destination": "Gangtok",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-26",
+      "checkout": "2026-10-28",
+      "price": 906,
+      "refPrice": 1269,
+      "dropPct": 29,
+      "leadDays": 2,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201010311143552729&_uCurrency=INR&checkin=10262026&checkout=10282026&city=CTXGA&country=IN&lat=27.32964&lng=88.61411&locusId=CTXGA&locusType=city&rank=3&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
+    {
+      "id": "last_minute|makemytrip|Kristi Guest House, Shantiniketan|Shantiniketan|2026-10-25|1563|2026-10-24T04",
+      "at": "2026-10-24T04:52:32.207Z",
+      "type": "last_minute",
+      "hotelName": "Kristi Guest House, Shantiniketan",
+      "destination": "Shantiniketan",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-25",
+      "checkout": "2026-10-27",
+      "price": 1563,
+      "refPrice": 1770,
+      "dropPct": 12,
+      "leadDays": 1,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201909241546391008&_uCurrency=INR&checkin=10252026&checkout=10272026&city=CTXOJ&country=IN&lat=23.68854&lng=87.6824&locusId=CTXOJ&locusType=city&rank=4&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
     {
       "id": "last_minute|makemytrip|Hotel M Plaza Mandarmani|Mandarmoni|2026-10-26|1752|2026-10-24T04",
       "at": "2026-10-24T04:24:17.675Z",
@@ -1666,40 +1700,6 @@
       "leadDays": 0,
       "isNewlyBuilt": false,
       "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201705030004491529&_uCurrency=INR&checkin=10232026&checkout=10252026&city=CTXPR&country=IN&lat=19.80321&lng=85.84852&locusId=CTXPR&locusType=city&rank=23&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
-    },
-    {
-      "id": "last_minute|makemytrip|Kakkson Inn|Puri|2026-10-23|1642|2026-10-22T19",
-      "at": "2026-10-22T19:07:56.210Z",
-      "type": "last_minute",
-      "hotelName": "Kakkson Inn",
-      "destination": "Puri",
-      "source": "makemytrip",
-      "starRating": null,
-      "checkin": "2026-10-23",
-      "checkout": "2026-10-25",
-      "price": 1642,
-      "refPrice": 2130,
-      "dropPct": 23,
-      "leadDays": 0,
-      "isNewlyBuilt": false,
-      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201801051851584192&_uCurrency=INR&checkin=10232026&checkout=10252026&city=CTXPR&country=IN&lat=19.79049&lng=85.80487&locusId=CTXPR&locusType=city&rank=6&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
-    },
-    {
-      "id": "last_minute|makemytrip|Gogol Beach Resort|Mandarmoni|2026-10-23|3941|2026-10-22T19",
-      "at": "2026-10-22T19:06:39.375Z",
-      "type": "last_minute",
-      "hotelName": "Gogol Beach Resort",
-      "destination": "Mandarmoni",
-      "source": "makemytrip",
-      "starRating": null,
-      "checkin": "2026-10-23",
-      "checkout": "2026-10-25",
-      "price": 3941,
-      "refPrice": 5154,
-      "dropPct": 24,
-      "leadDays": 0,
-      "isNewlyBuilt": false,
-      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202310052100446323&_uCurrency=INR&checkin=10232026&checkout=10252026&city=CTXMD&country=IN&lat=21.65135&lng=87.65789&locusId=CTXMD&locusType=city&rank=6&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
     }
   ]
 }
