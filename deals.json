@@ -1,6 +1,40 @@
 {
-  "generatedAt": "2026-10-24T07:55:49.708Z",
+  "generatedAt": "2026-10-24T09:25:57.285Z",
   "events": [
+    {
+      "id": "last_minute|makemytrip|Kakkson Inn|Puri|2026-10-24|1048|2026-10-24T07",
+      "at": "2026-10-24T07:52:47.096Z",
+      "type": "last_minute",
+      "hotelName": "Kakkson Inn",
+      "destination": "Puri",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-24",
+      "checkout": "2026-10-26",
+      "price": 1048,
+      "refPrice": 1462,
+      "dropPct": 28,
+      "leadDays": 0,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201801051851584192&_uCurrency=INR&checkin=10242026&checkout=10262026&city=CTXPR&country=IN&lat=19.79049&lng=85.80487&locusId=CTXPR&locusType=city&rank=2&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
+    {
+      "id": "last_minute|makemytrip|Jain Group Hotel Potala|Gangtok|2026-10-24|1196|2026-10-24T07",
+      "at": "2026-10-24T07:52:01.386Z",
+      "type": "last_minute",
+      "hotelName": "Jain Group Hotel Potala",
+      "destination": "Gangtok",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-24",
+      "checkout": "2026-10-26",
+      "price": 1196,
+      "refPrice": 1487,
+      "dropPct": 20,
+      "leadDays": 0,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201010311143552729&_uCurrency=INR&checkin=10242026&checkout=10262026&city=CTXGA&country=IN&lat=27.32964&lng=88.61411&locusId=CTXGA&locusType=city&rank=3&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
     {
       "id": "rare|makemytrip|Hotel Aayes & Resort|Shantiniketan|2026-10-25|1120|2026-10-24T06",
       "at": "2026-10-24T06:27:31.073Z",
@@ -1666,40 +1700,6 @@
       "leadDays": 0,
       "isNewlyBuilt": false,
       "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202506201933597472&_uCurrency=INR&checkin=10232026&checkout=10252026&city=CTXPR&country=IN&lat=19.79979&lng=85.82535&locusId=CTXPR&locusType=city&rank=170&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
-    },
-    {
-      "id": "last_minute|makemytrip|Sterling Arka Suites, Puri|Puri|2026-10-23|19625|2026-10-22T19",
-      "at": "2026-10-22T19:08:00.914Z",
-      "type": "last_minute",
-      "hotelName": "Sterling Arka Suites, Puri",
-      "destination": "Puri",
-      "source": "makemytrip",
-      "starRating": null,
-      "checkin": "2026-10-23",
-      "checkout": "2026-10-25",
-      "price": 19625,
-      "refPrice": 22028,
-      "dropPct": 11,
-      "leadDays": 0,
-      "isNewlyBuilt": false,
-      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202512011327245879&_uCurrency=INR&checkin=10232026&checkout=10252026&city=CTXPR&country=IN&lat=19.78205&lng=85.78199&locusId=CTXPR&locusType=city&rank=130&region=in&roomStayQualifier=2e0e&viewType=LUXE&mtkeys=undefined"
-    },
-    {
-      "id": "last_minute|makemytrip|Collection O Shree Jagannatha Temple Puri Formerly Nirmalya Residency|Puri|2026-10-23|2385|2026-10-22T19",
-      "at": "2026-10-22T19:08:00.605Z",
-      "type": "last_minute",
-      "hotelName": "Collection O Shree Jagannatha Temple Puri Formerly Nirmalya Residency",
-      "destination": "Puri",
-      "source": "makemytrip",
-      "starRating": null,
-      "checkin": "2026-10-23",
-      "checkout": "2026-10-25",
-      "price": 2385,
-      "refPrice": 2687,
-      "dropPct": 11,
-      "leadDays": 0,
-      "isNewlyBuilt": false,
-      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202509051411533773&_uCurrency=INR&checkin=10232026&checkout=10252026&city=CTXPR&country=IN&lat=19.79494&lng=85.80092&locusId=CTXPR&locusType=city&rank=101&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
     }
   ]
 }
