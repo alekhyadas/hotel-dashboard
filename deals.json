@@ -1,6 +1,23 @@
 {
-  "generatedAt": "2026-10-25T15:50:17.664Z",
+  "generatedAt": "2026-10-25T17:24:31.336Z",
   "events": [
+    {
+      "id": "rare|makemytrip|Eco Nature Camp|Purulia|2026-10-25|1032|2026-10-25T15",
+      "at": "2026-10-25T15:50:47.355Z",
+      "type": "rare",
+      "hotelName": "Eco Nature Camp",
+      "destination": "Purulia",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-25",
+      "checkout": "2026-10-27",
+      "price": 1032,
+      "refPrice": null,
+      "dropPct": null,
+      "leadDays": 0,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202607151958512273&_uCurrency=INR&checkin=10252026&checkout=10272026&city=CTPIA&country=IN&lat=23.26631&lng=86.19119&locusId=CTPIA&locusType=city&rank=5&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
     {
       "id": "last_minute|makemytrip|Beach View Resort|Digha|2026-10-25|4473|2026-10-25T12",
       "at": "2026-10-25T12:49:49.744Z",
@@ -1683,23 +1700,6 @@
       "leadDays": 2,
       "isNewlyBuilt": false,
       "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202109241423087316&_uCurrency=INR&checkin=10262026&checkout=10282026&city=CTXGA&country=IN&lat=27.32554&lng=88.61187&locusId=CTXGA&locusType=city&rank=11&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
-    },
-    {
-      "id": "last_minute|makemytrip|Hotel M Plaza New Digha|Digha|2026-10-26|2368|2026-10-24T06",
-      "at": "2026-10-24T06:26:30.115Z",
-      "type": "last_minute",
-      "hotelName": "Hotel M Plaza New Digha",
-      "destination": "Digha",
-      "source": "makemytrip",
-      "starRating": null,
-      "checkin": "2026-10-26",
-      "checkout": "2026-10-28",
-      "price": 2368,
-      "refPrice": 3831,
-      "dropPct": 38,
-      "leadDays": 2,
-      "isNewlyBuilt": false,
-      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202501171605421311&_uCurrency=INR&checkin=10262026&checkout=10282026&city=CTXDI&country=IN&lat=21.61979&lng=87.50247&locusId=CTXDI&locusType=city&rank=23&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
     }
   ]
 }
