@@ -1,6 +1,40 @@
 {
-  "generatedAt": "2026-10-25T08:20:31.124Z",
+  "generatedAt": "2026-10-25T12:26:04.086Z",
   "events": [
+    {
+      "id": "rare|makemytrip|The Cristallo Resort|Shantiniketan|2026-10-26|1758|2026-10-25T08",
+      "at": "2026-10-25T08:21:03.107Z",
+      "type": "rare",
+      "hotelName": "The Cristallo Resort",
+      "destination": "Shantiniketan",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-26",
+      "checkout": "2026-10-28",
+      "price": 1758,
+      "refPrice": null,
+      "dropPct": null,
+      "leadDays": 1,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202007131009241580&_uCurrency=INR&checkin=10262026&checkout=10282026&city=CTXOJ&country=IN&lat=23.69262&lng=87.66791&locusId=CTXOJ&locusType=city&rank=1&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
+    {
+      "id": "last_minute|makemytrip|Jain Group Hotel Potala|Gangtok|2026-10-25|803|2026-10-25T08",
+      "at": "2026-10-25T08:16:52.716Z",
+      "type": "last_minute",
+      "hotelName": "Jain Group Hotel Potala",
+      "destination": "Gangtok",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-25",
+      "checkout": "2026-10-27",
+      "price": 803,
+      "refPrice": 1125,
+      "dropPct": 29,
+      "leadDays": 0,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201010311143552729&_uCurrency=INR&checkin=10252026&checkout=10272026&city=CTXGA&country=IN&lat=27.32964&lng=88.61411&locusId=CTXGA&locusType=city&rank=5&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
     {
       "id": "rare|makemytrip|SWET APARAJITA|Shantiniketan|2026-10-25|1250|2026-10-25T06",
       "at": "2026-10-25T06:29:37.082Z",
@@ -1666,40 +1700,6 @@
       "leadDays": 1,
       "isNewlyBuilt": false,
       "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201801051851584192&_uCurrency=INR&checkin=10252026&checkout=10272026&city=CTXPR&country=IN&lat=19.79049&lng=85.80487&locusId=CTXPR&locusType=city&rank=2&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
-    },
-    {
-      "id": "last_minute|makemytrip|Hotel Queen Darjeeling|Darjeeling|2026-10-25|1464|2026-10-24T06",
-      "at": "2026-10-24T06:21:46.709Z",
-      "type": "last_minute",
-      "hotelName": "Hotel Queen Darjeeling",
-      "destination": "Darjeeling",
-      "source": "makemytrip",
-      "starRating": null,
-      "checkin": "2026-10-25",
-      "checkout": "2026-10-27",
-      "price": 1464,
-      "refPrice": 1885,
-      "dropPct": 22,
-      "leadDays": 1,
-      "isNewlyBuilt": false,
-      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201809251427393131&_uCurrency=INR&checkin=10252026&checkout=10272026&city=CTIXB&country=IN&lat=27.04457&lng=88.26567&locusId=CTIXB&locusType=city&rank=37&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
-    },
-    {
-      "id": "last_minute|makemytrip|Jain Group Hotel Potala|Gangtok|2026-10-26|906|2026-10-24T04",
-      "at": "2026-10-24T04:54:05.033Z",
-      "type": "last_minute",
-      "hotelName": "Jain Group Hotel Potala",
-      "destination": "Gangtok",
-      "source": "makemytrip",
-      "starRating": null,
-      "checkin": "2026-10-26",
-      "checkout": "2026-10-28",
-      "price": 906,
-      "refPrice": 1269,
-      "dropPct": 29,
-      "leadDays": 2,
-      "isNewlyBuilt": false,
-      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201010311143552729&_uCurrency=INR&checkin=10262026&checkout=10282026&city=CTXGA&country=IN&lat=27.32964&lng=88.61411&locusId=CTXGA&locusType=city&rank=3&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
     }
   ]
 }
