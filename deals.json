@@ -1,6 +1,40 @@
 {
-  "generatedAt": "2026-10-25T12:26:04.086Z",
+  "generatedAt": "2026-10-25T13:02:49.356Z",
   "events": [
+    {
+      "id": "rare|makemytrip|Valmere Himalayan Hotel & Spa (Near Sikkim Manipal University)|Gangtok|2026-10-25|2186|2026-10-25T12",
+      "at": "2026-10-25T12:26:37.286Z",
+      "type": "rare",
+      "hotelName": "Valmere Himalayan Hotel & Spa (Near Sikkim Manipal University)",
+      "destination": "Gangtok",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-25",
+      "checkout": "2026-10-27",
+      "price": 2186,
+      "refPrice": null,
+      "dropPct": null,
+      "leadDays": 0,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201904031849475047&_uCurrency=INR&checkin=10252026&checkout=10272026&city=CTXGA&country=IN&lat=27.30719&lng=88.59354&locusId=CTXGA&locusType=city&rank=2&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
+    {
+      "id": "rare|makemytrip|Jain Group Hotel Potala|Gangtok|2026-10-27|803|2026-10-25T12",
+      "at": "2026-10-25T12:26:37.050Z",
+      "type": "rare",
+      "hotelName": "Jain Group Hotel Potala",
+      "destination": "Gangtok",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-27",
+      "checkout": "2026-10-29",
+      "price": 803,
+      "refPrice": null,
+      "dropPct": null,
+      "leadDays": 2,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201010311143552729&_uCurrency=INR&checkin=10272026&checkout=10292026&city=CTXGA&country=IN&lat=27.32964&lng=88.61411&locusId=CTXGA&locusType=city&rank=5&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
     {
       "id": "rare|makemytrip|The Cristallo Resort|Shantiniketan|2026-10-26|1758|2026-10-25T08",
       "at": "2026-10-25T08:21:03.107Z",
@@ -1666,40 +1700,6 @@
       "leadDays": 2,
       "isNewlyBuilt": false,
       "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202501151716189332&_uCurrency=INR&checkin=10262026&checkout=10282026&city=CTXMD&country=IN&lat=21.65934&lng=87.6864&locusId=CTXMD&locusType=city&rank=4&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
-    },
-    {
-      "id": "last_minute|makemytrip|Hotel Kalinga|Puri|2026-10-25|3648|2026-10-24T06",
-      "at": "2026-10-24T06:23:13.388Z",
-      "type": "last_minute",
-      "hotelName": "Hotel Kalinga",
-      "destination": "Puri",
-      "source": "makemytrip",
-      "starRating": null,
-      "checkin": "2026-10-25",
-      "checkout": "2026-10-27",
-      "price": 3648,
-      "refPrice": 4465,
-      "dropPct": 18,
-      "leadDays": 1,
-      "isNewlyBuilt": false,
-      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201512151637178862&_uCurrency=INR&checkin=10252026&checkout=10272026&city=CTXPR&country=IN&lat=19.80457&lng=85.84977&locusId=CTXPR&locusType=city&rank=7&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
-    },
-    {
-      "id": "last_minute|makemytrip|Kakkson Inn|Puri|2026-10-25|925|2026-10-24T06",
-      "at": "2026-10-24T06:23:13.126Z",
-      "type": "last_minute",
-      "hotelName": "Kakkson Inn",
-      "destination": "Puri",
-      "source": "makemytrip",
-      "starRating": null,
-      "checkin": "2026-10-25",
-      "checkout": "2026-10-27",
-      "price": 925,
-      "refPrice": 1035,
-      "dropPct": 11,
-      "leadDays": 1,
-      "isNewlyBuilt": false,
-      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201801051851584192&_uCurrency=INR&checkin=10252026&checkout=10272026&city=CTXPR&country=IN&lat=19.79049&lng=85.80487&locusId=CTXPR&locusType=city&rank=2&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
     }
   ]
 }
