@@ -1,6 +1,23 @@
 {
-  "generatedAt": "2026-10-27T22:04:54.078Z",
+  "generatedAt": "2026-10-27T23:19:52.977Z",
   "events": [
+    {
+      "id": "last_minute|makemytrip|Hotel Brill View|Kolkata|2026-10-28|1218|2026-10-27T22",
+      "at": "2026-10-27T22:00:51.823Z",
+      "type": "last_minute",
+      "hotelName": "Hotel Brill View",
+      "destination": "Kolkata",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-28",
+      "checkout": "2026-10-30",
+      "price": 1218,
+      "refPrice": 1716,
+      "dropPct": 29,
+      "leadDays": 0,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202411121936088926&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTCCU&country=IN&lat=22.54144&lng=88.38954&locusId=CTCCU&locusType=city&rank=2&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
     {
       "id": "rare|makemytrip|The Golden Crest|Gangtok|2026-10-28|1171|2026-10-27T20",
       "at": "2026-10-27T20:21:29.735Z",
@@ -1683,23 +1700,6 @@
       "leadDays": 3,
       "isNewlyBuilt": false,
       "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202412220025544930&_uCurrency=INR&checkin=10302026&checkout=11012026&city=CTXOJ&country=IN&lat=23.69258&lng=87.66834&locusId=CTXOJ&locusType=city&rank=106&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
-    },
-    {
-      "id": "last_minute|makemytrip|UNIQUE SHANTINIKETAN|Shantiniketan|2026-10-30|2807|2026-10-26T18",
-      "at": "2026-10-26T18:51:40.058Z",
-      "type": "last_minute",
-      "hotelName": "UNIQUE SHANTINIKETAN",
-      "destination": "Shantiniketan",
-      "source": "makemytrip",
-      "starRating": null,
-      "checkin": "2026-10-30",
-      "checkout": "2026-11-01",
-      "price": 2807,
-      "refPrice": 3136,
-      "dropPct": 10,
-      "leadDays": 3,
-      "isNewlyBuilt": false,
-      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202209211732339748&_uCurrency=INR&checkin=10302026&checkout=11012026&city=CTXOJ&country=IN&lat=23.64063&lng=87.61221&locusId=CTXOJ&locusType=city&rank=95&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
     }
   ]
 }
