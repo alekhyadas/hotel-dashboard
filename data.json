@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T20:20:57.700Z",
+  "generatedAt": "2026-10-27T22:04:42.027Z",
   "groups": [
     {
       "groupKey": "makemytrip:::1BHK Augusta Villa Apartments:::Darjeeling",
@@ -60894,7 +60894,7 @@
           "checkout": "2026-10-30",
           "price": 2552,
           "lowest": 1769,
-          "updatedAt": "2026-10-27T20:19:14.831Z",
+          "updatedAt": "2026-10-27T22:03:52.973Z",
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202305230048202817&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXDI&country=IN&lat=21.62053&lng=87.50022&locusId=CTXDI&locusType=city&rank=3&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
@@ -60941,6 +60941,12 @@
             },
             {
               "at": "2026-10-27T20:19:14.831Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 2552
+            },
+            {
+              "at": "2026-10-27T22:03:52.973Z",
               "dv": 1,
               "lead": 0,
               "price": 2552
@@ -84927,7 +84933,7 @@
           "checkout": "2026-10-30",
           "price": 2971,
           "lowest": 2809,
-          "updatedAt": "2026-10-27T20:18:37.096Z",
+          "updatedAt": "2026-10-27T22:03:14.890Z",
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202509221330265744&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXMD&country=IN&lat=21.64858&lng=87.65128&locusId=CTXMD&locusType=city&rank=3&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
@@ -84968,6 +84974,12 @@
             },
             {
               "at": "2026-10-27T20:18:37.096Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 2971
+            },
+            {
+              "at": "2026-10-27T22:03:14.890Z",
               "dv": 1,
               "lead": 0,
               "price": 2971
@@ -126314,7 +126326,7 @@
           "checkout": "2026-10-30",
           "price": 1200,
           "lowest": 1200,
-          "updatedAt": "2026-10-27T20:16:53.154Z",
+          "updatedAt": "2026-10-27T22:01:38.626Z",
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202208111823543212&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXGA&country=IN&lat=27.33065&lng=88.60984&locusId=CTXGA&locusType=city&rank=1&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
@@ -126331,6 +126343,12 @@
             },
             {
               "at": "2026-10-27T20:16:53.154Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 1200
+            },
+            {
+              "at": "2026-10-27T22:01:38.626Z",
               "dv": 1,
               "lead": 0,
               "price": 1200
@@ -131198,7 +131216,7 @@
       "cheapestPrice": 1043,
       "cheapestCheckin": "2026-10-28",
       "cheapestCheckout": "2026-10-30",
-      "cheapestUrl": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202607151958512273&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTPIA&country=IN&lat=23.26631&lng=86.19119&locusId=CTPIA&locusType=city&rank=4&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
+      "cheapestUrl": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202607151958512273&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTPIA&country=IN&lat=23.26631&lng=86.19119&locusId=CTPIA&locusType=city&rank=5&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
       "lowestEver": 995,
       "everAtLowest": true,
       "hasFlaggedDates": false,
@@ -131526,8 +131544,8 @@
           "checkout": "2026-10-30",
           "price": 1043,
           "lowest": 995,
-          "updatedAt": "2026-10-27T20:17:46.168Z",
-          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202607151958512273&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTPIA&country=IN&lat=23.26631&lng=86.19119&locusId=CTPIA&locusType=city&rank=4&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
+          "updatedAt": "2026-10-27T22:02:29.153Z",
+          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202607151958512273&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTPIA&country=IN&lat=23.26631&lng=86.19119&locusId=CTPIA&locusType=city&rank=5&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
               "at": "2026-10-21T19:44:41.705Z",
@@ -131573,6 +131591,12 @@
             },
             {
               "at": "2026-10-27T20:17:46.168Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 1043
+            },
+            {
+              "at": "2026-10-27T22:02:29.153Z",
               "dv": 1,
               "lead": 0,
               "price": 1043
@@ -145515,7 +145539,7 @@
           "checkout": "2026-10-30",
           "price": 1132,
           "lowest": 796,
-          "updatedAt": "2026-10-27T20:19:14.680Z",
+          "updatedAt": "2026-10-27T22:03:52.763Z",
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=2015120914415699&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXDI&country=IN&lat=21.62256&lng=87.49962&locusId=CTXDI&locusType=city&rank=1&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
@@ -145538,6 +145562,12 @@
             },
             {
               "at": "2026-10-27T20:19:14.680Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 1132
+            },
+            {
+              "at": "2026-10-27T22:03:52.763Z",
               "dv": 1,
               "lead": 0,
               "price": 1132
@@ -154433,8 +154463,8 @@
           "checkout": "2026-10-30",
           "price": 793,
           "lowest": 793,
-          "updatedAt": "2026-10-27T20:16:54.011Z",
-          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202011052201039528&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXGA&country=IN&lat=27.34128&lng=88.60539&locusId=CTXGA&locusType=city&rank=12&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
+          "updatedAt": "2026-10-27T22:01:38.739Z",
+          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202011052201039528&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXGA&country=IN&lat=27.34128&lng=88.60539&locusId=CTXGA&locusType=city&rank=2&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
               "at": "2026-10-21T10:58:31.801Z",
@@ -154462,6 +154492,12 @@
             },
             {
               "at": "2026-10-27T20:16:54.011Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 793
+            },
+            {
+              "at": "2026-10-27T22:01:38.739Z",
               "dv": 1,
               "lead": 0,
               "price": 793
@@ -162641,7 +162677,7 @@
           "checkout": "2026-10-30",
           "price": 2246,
           "lowest": 2072,
-          "updatedAt": "2026-10-27T20:18:36.985Z",
+          "updatedAt": "2026-10-27T22:03:14.811Z",
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202310052100446323&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXMD&country=IN&lat=21.65135&lng=87.65789&locusId=CTXMD&locusType=city&rank=2&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
@@ -162682,6 +162718,12 @@
             },
             {
               "at": "2026-10-27T20:18:36.985Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 2246
+            },
+            {
+              "at": "2026-10-27T22:03:14.811Z",
               "dv": 1,
               "lead": 0,
               "price": 2246
@@ -173846,7 +173888,7 @@
           "checkout": "2026-10-30",
           "price": 1614,
           "lowest": 1543,
-          "updatedAt": "2026-10-27T20:16:53.472Z",
+          "updatedAt": "2026-10-27T22:01:38.950Z",
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201211021014113048&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXGA&country=IN&lat=27.32628&lng=88.61015&locusId=CTXGA&locusType=city&rank=5&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
@@ -173875,6 +173917,12 @@
             },
             {
               "at": "2026-10-27T20:16:53.472Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 1614
+            },
+            {
+              "at": "2026-10-27T22:01:38.950Z",
               "dv": 1,
               "lead": 0,
               "price": 1614
@@ -231178,6 +231226,32 @@
           "verified": true
         },
         {
+          "checkin": "2026-10-28",
+          "checkout": "2026-10-30",
+          "price": 1218,
+          "lowest": 1218,
+          "updatedAt": "2026-10-27T22:00:50.927Z",
+          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202411121936088926&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTCCU&country=IN&lat=22.54144&lng=88.38954&locusId=CTCCU&locusType=city&rank=2&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
+          "priceHistory": [
+            {
+              "at": "2026-10-26T16:06:37.370Z",
+              "dv": 1,
+              "lead": 2,
+              "price": 1716
+            },
+            {
+              "at": "2026-10-27T22:00:50.927Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 1218
+            }
+          ],
+          "originalPrice": null,
+          "isLikelyBadScrape": false,
+          "roomDetailLowest": null,
+          "verified": true
+        },
+        {
           "checkin": "2026-11-03",
           "checkout": "2026-11-05",
           "price": 1231,
@@ -231216,26 +231290,6 @@
               "dv": 1,
               "lead": 0,
               "price": 1282
-            }
-          ],
-          "originalPrice": null,
-          "isLikelyBadScrape": false,
-          "roomDetailLowest": null,
-          "verified": true
-        },
-        {
-          "checkin": "2026-10-28",
-          "checkout": "2026-10-30",
-          "price": 1716,
-          "lowest": 1716,
-          "updatedAt": "2026-10-26T16:06:37.370Z",
-          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202411121936088926&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTCCU&country=IN&lat=22.54144&lng=88.38954&locusId=CTCCU&locusType=city&rank=10&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
-          "priceHistory": [
-            {
-              "at": "2026-10-26T16:06:37.370Z",
-              "dv": 1,
-              "lead": 2,
-              "price": 1716
             }
           ],
           "originalPrice": null,
@@ -236174,8 +236228,8 @@
           "checkout": "2026-10-30",
           "price": 1619,
           "lowest": 1619,
-          "updatedAt": "2026-10-27T18:49:42.432Z",
-          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201601191549306185&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXDI&country=IN&lat=21.624&lng=87.502&locusId=CTXDI&locusType=city&rank=11&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
+          "updatedAt": "2026-10-27T22:03:52.886Z",
+          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201601191549306185&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXDI&country=IN&lat=21.624&lng=87.502&locusId=CTXDI&locusType=city&rank=2&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
               "at": "2026-10-21T10:34:11.120Z",
@@ -236197,6 +236251,12 @@
             },
             {
               "at": "2026-10-27T18:49:42.432Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 1619
+            },
+            {
+              "at": "2026-10-27T22:03:52.886Z",
               "dv": 1,
               "lead": 0,
               "price": 1619
@@ -237334,7 +237394,7 @@
           "checkout": "2026-10-30",
           "price": 873,
           "lowest": 873,
-          "updatedAt": "2026-10-27T20:19:15.048Z",
+          "updatedAt": "2026-10-27T22:03:53.157Z",
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201501291616506250&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXDI&country=IN&lat=21.62553&lng=87.52922&locusId=CTXDI&locusType=city&rank=5&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
@@ -237381,6 +237441,12 @@
             },
             {
               "at": "2026-10-27T20:19:15.048Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 873
+            },
+            {
+              "at": "2026-10-27T22:03:53.157Z",
               "dv": 1,
               "lead": 0,
               "price": 873
@@ -263326,7 +263392,7 @@
           "checkout": "2026-10-30",
           "price": 2713,
           "lowest": 2713,
-          "updatedAt": "2026-10-27T20:20:51.220Z",
+          "updatedAt": "2026-10-27T22:04:37.991Z",
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201512151637178862&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXPR&country=IN&lat=19.80457&lng=85.84977&locusId=CTXPR&locusType=city&rank=5&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
@@ -263349,6 +263415,12 @@
             },
             {
               "at": "2026-10-27T20:20:51.220Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 2713
+            },
+            {
+              "at": "2026-10-27T22:04:37.991Z",
               "dv": 1,
               "lead": 0,
               "price": 2713
@@ -267971,8 +268043,8 @@
           "checkout": "2026-10-30",
           "price": 3103,
           "lowest": 2802,
-          "updatedAt": "2026-10-26T16:18:23.437Z",
-          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=20160115125748280&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXPR&country=IN&lat=19.79463&lng=85.81992&locusId=CTXPR&locusType=city&rank=4&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
+          "updatedAt": "2026-10-27T22:04:37.817Z",
+          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=20160115125748280&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXPR&country=IN&lat=19.79463&lng=85.81992&locusId=CTXPR&locusType=city&rank=2&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
               "at": "2026-10-22T16:25:21.523Z",
@@ -267996,6 +268068,12 @@
               "at": "2026-10-26T16:18:23.437Z",
               "dv": 1,
               "lead": 2,
+              "price": 3103
+            },
+            {
+              "at": "2026-10-27T22:04:37.817Z",
+              "dv": 1,
+              "lead": 0,
               "price": 3103
             }
           ],
@@ -282400,7 +282478,7 @@
           "checkout": "2026-10-30",
           "price": 1875,
           "lowest": 1770,
-          "updatedAt": "2026-10-27T20:19:14.927Z",
+          "updatedAt": "2026-10-27T22:03:53.066Z",
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202101272347189285&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXDI&country=IN&lat=21.62076&lng=87.50465&locusId=CTXDI&locusType=city&rank=4&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
@@ -282441,6 +282519,12 @@
             },
             {
               "at": "2026-10-27T20:19:14.927Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 1875
+            },
+            {
+              "at": "2026-10-27T22:03:53.066Z",
               "dv": 1,
               "lead": 0,
               "price": 1875
@@ -310370,8 +310454,8 @@
           "checkout": "2026-10-30",
           "price": 1587,
           "lowest": 1436,
-          "updatedAt": "2026-10-27T20:17:45.942Z",
-          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202411211334375703&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTPIA&country=IN&lat=23.34352&lng=86.36282&locusId=CTPIA&locusType=city&rank=2&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
+          "updatedAt": "2026-10-27T22:02:28.976Z",
+          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202411211334375703&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTPIA&country=IN&lat=23.34352&lng=86.36282&locusId=CTPIA&locusType=city&rank=3&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
               "at": "2026-10-21T19:44:41.594Z",
@@ -310417,6 +310501,12 @@
             },
             {
               "at": "2026-10-27T20:17:45.942Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 1587
+            },
+            {
+              "at": "2026-10-27T22:02:28.976Z",
               "dv": 1,
               "lead": 0,
               "price": 1587
@@ -335944,7 +336034,7 @@
           "checkout": "2026-10-30",
           "price": 4197,
           "lowest": 4039,
-          "updatedAt": "2026-10-27T20:17:45.791Z",
+          "updatedAt": "2026-10-27T22:02:28.740Z",
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202509011757038493&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTPIA&country=IN&lat=23.12391&lng=86.15916&locusId=CTPIA&locusType=city&rank=1&region=in&roomStayQualifier=2e0e&viewType=PREMIUM&mtkeys=undefined",
           "priceHistory": [
             {
@@ -335991,6 +336081,12 @@
             },
             {
               "at": "2026-10-27T20:17:45.791Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 4197
+            },
+            {
+              "at": "2026-10-27T22:02:28.740Z",
               "dv": 1,
               "lead": 0,
               "price": 4197
@@ -338985,7 +339081,7 @@
           "checkout": "2026-10-30",
           "price": 4796,
           "lowest": 4796,
-          "updatedAt": "2026-10-27T20:15:49.845Z",
+          "updatedAt": "2026-10-27T22:00:52.007Z",
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202211261400037713&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTKSN&country=IN&lat=23.44716&lng=88.46701&locusId=CTCCU&locusType=city&rank=5&region=in&roomStayQualifier=2e0e&viewType=PREMIUM&mtkeys=undefined",
           "priceHistory": [
             {
@@ -339026,6 +339122,12 @@
             },
             {
               "at": "2026-10-27T20:15:49.845Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 4796
+            },
+            {
+              "at": "2026-10-27T22:00:52.007Z",
               "dv": 1,
               "lead": 0,
               "price": 4796
@@ -376101,7 +376203,7 @@
           "checkout": "2026-10-30",
           "price": 1181,
           "lowest": 807,
-          "updatedAt": "2026-10-27T20:16:53.343Z",
+          "updatedAt": "2026-10-27T22:01:38.821Z",
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201010311143552729&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXGA&country=IN&lat=27.32964&lng=88.61411&locusId=CTXGA&locusType=city&rank=3&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
@@ -376154,6 +376256,12 @@
             },
             {
               "at": "2026-10-27T20:16:53.343Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 1181
+            },
+            {
+              "at": "2026-10-27T22:01:38.821Z",
               "dv": 1,
               "lead": 0,
               "price": 1181
@@ -390710,7 +390818,7 @@
           "checkout": "2026-10-30",
           "price": 796,
           "lowest": 764,
-          "updatedAt": "2026-10-27T20:20:50.478Z",
+          "updatedAt": "2026-10-27T22:04:37.907Z",
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201801051851584192&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXPR&country=IN&lat=19.79049&lng=85.80487&locusId=CTXPR&locusType=city&rank=3&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
@@ -390733,6 +390841,12 @@
             },
             {
               "at": "2026-10-27T20:20:50.478Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 796
+            },
+            {
+              "at": "2026-10-27T22:04:37.907Z",
               "dv": 1,
               "lead": 0,
               "price": 796
@@ -456436,10 +456550,10 @@
       "youtubeShorts": null,
       "youtubeLongForm": null,
       "roomDetailLowest": null,
-      "cheapestPrice": 2301,
-      "cheapestCheckin": "2026-10-28",
-      "cheapestCheckout": "2026-10-30",
-      "cheapestUrl": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202008261031085041&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXMD&country=IN&lat=21.64894&lng=87.65063&locusId=CTXMD&locusType=city&rank=18&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
+      "cheapestPrice": 2303,
+      "cheapestCheckin": "2026-11-01",
+      "cheapestCheckout": "2026-11-03",
+      "cheapestUrl": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202008261031085041&_uCurrency=INR&checkin=11012026&checkout=11032026&city=CTXMD&country=IN&lat=21.64894&lng=87.65063&locusId=CTXMD&locusType=city&rank=31&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
       "lowestEver": 2185,
       "everAtLowest": true,
       "hasFlaggedDates": false,
@@ -456797,12 +456911,32 @@
           "verified": false
         },
         {
+          "checkin": "2026-11-01",
+          "checkout": "2026-11-03",
+          "price": 2303,
+          "lowest": 2303,
+          "updatedAt": "2026-10-26T19:04:33.074Z",
+          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202008261031085041&_uCurrency=INR&checkin=11012026&checkout=11032026&city=CTXMD&country=IN&lat=21.64894&lng=87.65063&locusId=CTXMD&locusType=city&rank=31&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
+          "priceHistory": [
+            {
+              "at": "2026-10-26T19:04:33.074Z",
+              "dv": 1,
+              "lead": 5,
+              "price": 2303
+            }
+          ],
+          "originalPrice": null,
+          "isLikelyBadScrape": false,
+          "roomDetailLowest": null,
+          "verified": true
+        },
+        {
           "checkin": "2026-10-28",
           "checkout": "2026-10-30",
-          "price": 2301,
+          "price": 2306,
           "lowest": 2185,
-          "updatedAt": "2026-10-26T16:14:09.840Z",
-          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202008261031085041&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXMD&country=IN&lat=21.64894&lng=87.65063&locusId=CTXMD&locusType=city&rank=18&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
+          "updatedAt": "2026-10-27T22:03:14.702Z",
+          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202008261031085041&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXMD&country=IN&lat=21.64894&lng=87.65063&locusId=CTXMD&locusType=city&rank=1&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
               "at": "2026-10-23T17:25:14.547Z",
@@ -456821,26 +456955,12 @@
               "dv": 1,
               "lead": 2,
               "price": 2301
-            }
-          ],
-          "originalPrice": null,
-          "isLikelyBadScrape": false,
-          "roomDetailLowest": null,
-          "verified": true
-        },
-        {
-          "checkin": "2026-11-01",
-          "checkout": "2026-11-03",
-          "price": 2303,
-          "lowest": 2303,
-          "updatedAt": "2026-10-26T19:04:33.074Z",
-          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202008261031085041&_uCurrency=INR&checkin=11012026&checkout=11032026&city=CTXMD&country=IN&lat=21.64894&lng=87.65063&locusId=CTXMD&locusType=city&rank=31&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
-          "priceHistory": [
+            },
             {
-              "at": "2026-10-26T19:04:33.074Z",
+              "at": "2026-10-27T22:03:14.702Z",
               "dv": 1,
-              "lead": 5,
-              "price": 2303
+              "lead": 0,
+              "price": 2306
             }
           ],
           "originalPrice": null,
@@ -546386,7 +546506,7 @@
           "checkout": "2026-10-30",
           "price": 4173,
           "lowest": 3173,
-          "updatedAt": "2026-10-27T20:18:37.337Z",
+          "updatedAt": "2026-10-27T22:03:15.040Z",
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202508280502075563&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXMD&country=IN&lat=21.64893&lng=87.65563&locusId=CTXMD&locusType=city&rank=5&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
@@ -546433,6 +546553,12 @@
             },
             {
               "at": "2026-10-27T20:18:37.337Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 4173
+            },
+            {
+              "at": "2026-10-27T22:03:15.040Z",
               "dv": 1,
               "lead": 0,
               "price": 4173
@@ -557439,7 +557565,7 @@
           "checkout": "2026-10-30",
           "price": 2123,
           "lowest": 1948,
-          "updatedAt": "2026-10-27T20:18:37.215Z",
+          "updatedAt": "2026-10-27T22:03:14.966Z",
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202305291335166805&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXMD&country=IN&lat=21.65188&lng=87.65952&locusId=CTXMD&locusType=city&rank=4&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
@@ -557468,6 +557594,12 @@
             },
             {
               "at": "2026-10-27T20:18:37.215Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 2123
+            },
+            {
+              "at": "2026-10-27T22:03:14.966Z",
               "dv": 1,
               "lead": 0,
               "price": 2123
@@ -574673,7 +574805,7 @@
       "hasFlaggedDates": false,
       "isRareDeal": true,
       "rarityReasons": [
-        "beats 96% of this hotel's own price history, held for 2+ scans"
+        "beats 95% of this hotel's own price history, held for 2+ scans"
       ],
       "dates": [
         {
@@ -574707,7 +574839,7 @@
           "checkout": "2026-10-30",
           "price": 1500,
           "lowest": 1500,
-          "updatedAt": "2026-10-27T18:47:20.712Z",
+          "updatedAt": "2026-10-27T22:02:28.916Z",
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201712191752052657&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTPIA&country=IN&lat=23.57525&lng=86.84284&locusId=CTPIA&locusType=city&rank=2&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
@@ -574724,6 +574856,12 @@
             },
             {
               "at": "2026-10-27T18:47:20.712Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 1500
+            },
+            {
+              "at": "2026-10-27T22:02:28.916Z",
               "dv": 1,
               "lead": 0,
               "price": 1500
@@ -622633,7 +622771,7 @@
           "checkout": "2026-10-30",
           "price": 3876,
           "lowest": 3462,
-          "updatedAt": "2026-10-27T20:16:53.406Z",
+          "updatedAt": "2026-10-27T22:01:38.886Z",
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202203151258453515&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXGA&country=IN&lat=27.32411&lng=88.61172&locusId=CTXGA&locusType=city&rank=4&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
@@ -622686,6 +622824,12 @@
             },
             {
               "at": "2026-10-27T20:16:53.406Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 3876
+            },
+            {
+              "at": "2026-10-27T22:01:38.886Z",
               "dv": 1,
               "lead": 0,
               "price": 3876
@@ -687470,7 +687614,7 @@
           "checkout": "2026-10-30",
           "price": 4939,
           "lowest": 4939,
-          "updatedAt": "2026-10-27T20:15:49.704Z",
+          "updatedAt": "2026-10-27T22:00:50.807Z",
           "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201811161246338458&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTULU&country=IN&lat=22.48125&lng=88.06196&locusId=CTCCU&locusType=city&rank=1&region=in&roomStayQualifier=2e0e&viewType=PREMIUM&mtkeys=undefined",
           "priceHistory": [
             {
@@ -687493,6 +687637,12 @@
             },
             {
               "at": "2026-10-27T20:15:49.704Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 4939
+            },
+            {
+              "at": "2026-10-27T22:00:50.807Z",
               "dv": 1,
               "lead": 0,
               "price": 4939
@@ -730103,7 +730253,7 @@
       "youtubeShorts": null,
       "youtubeLongForm": null,
       "roomDetailLowest": null,
-      "cheapestPrice": 2737,
+      "cheapestPrice": 2967,
       "cheapestCheckin": "2026-10-28",
       "cheapestCheckout": "2026-10-30",
       "cheapestUrl": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202509021741355848&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXPR&country=IN&lat=19.78909&lng=85.79768&locusId=CTXPR&locusType=city&rank=1&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
@@ -730832,50 +730982,6 @@
           "verified": false
         },
         {
-          "checkin": "2026-10-28",
-          "checkout": "2026-10-30",
-          "price": 2737,
-          "lowest": 2737,
-          "updatedAt": "2026-10-27T20:20:49.956Z",
-          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202509021741355848&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXPR&country=IN&lat=19.78909&lng=85.79768&locusId=CTXPR&locusType=city&rank=1&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
-          "priceHistory": [
-            {
-              "at": "2026-10-22T16:25:21.381Z",
-              "dv": 1,
-              "lead": 6,
-              "price": 3143
-            },
-            {
-              "at": "2026-10-23T17:29:29.419Z",
-              "dv": 1,
-              "lead": 5,
-              "price": 3225
-            },
-            {
-              "at": "2026-10-25T05:13:50.804Z",
-              "dv": 1,
-              "lead": 3,
-              "price": 3225
-            },
-            {
-              "at": "2026-10-26T16:18:24.029Z",
-              "dv": 1,
-              "lead": 2,
-              "price": 3016
-            },
-            {
-              "at": "2026-10-27T20:20:49.956Z",
-              "dv": 1,
-              "lead": 0,
-              "price": 2737
-            }
-          ],
-          "originalPrice": null,
-          "isLikelyBadScrape": false,
-          "roomDetailLowest": null,
-          "verified": true
-        },
-        {
           "checkin": "2026-10-26",
           "checkout": "2026-10-28",
           "price": 2900,
@@ -730983,6 +731089,56 @@
             },
             {
               "at": "2026-10-27T17:18:20.693Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 2967
+            }
+          ],
+          "originalPrice": null,
+          "isLikelyBadScrape": false,
+          "roomDetailLowest": null,
+          "verified": true
+        },
+        {
+          "checkin": "2026-10-28",
+          "checkout": "2026-10-30",
+          "price": 2967,
+          "lowest": 2737,
+          "updatedAt": "2026-10-27T22:04:37.708Z",
+          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202509021741355848&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXPR&country=IN&lat=19.78909&lng=85.79768&locusId=CTXPR&locusType=city&rank=1&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
+          "priceHistory": [
+            {
+              "at": "2026-10-22T16:25:21.381Z",
+              "dv": 1,
+              "lead": 6,
+              "price": 3143
+            },
+            {
+              "at": "2026-10-23T17:29:29.419Z",
+              "dv": 1,
+              "lead": 5,
+              "price": 3225
+            },
+            {
+              "at": "2026-10-25T05:13:50.804Z",
+              "dv": 1,
+              "lead": 3,
+              "price": 3225
+            },
+            {
+              "at": "2026-10-26T16:18:24.029Z",
+              "dv": 1,
+              "lead": 2,
+              "price": 3016
+            },
+            {
+              "at": "2026-10-27T20:20:49.956Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 2737
+            },
+            {
+              "at": "2026-10-27T22:04:37.708Z",
               "dv": 1,
               "lead": 0,
               "price": 2967
@@ -790727,7 +790883,7 @@
       "cheapestPrice": 2868,
       "cheapestCheckin": "2026-10-28",
       "cheapestCheckout": "2026-10-30",
-      "cheapestUrl": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202509082212262224&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTPIA&country=IN&lat=23.37569&lng=86.31117&locusId=CTPIA&locusType=city&rank=3&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
+      "cheapestUrl": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202509082212262224&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTPIA&country=IN&lat=23.37569&lng=86.31117&locusId=CTPIA&locusType=city&rank=4&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
       "lowestEver": 2868,
       "everAtLowest": true,
       "hasFlaggedDates": false,
@@ -791795,8 +791951,8 @@
           "checkout": "2026-10-30",
           "price": 2868,
           "lowest": 2868,
-          "updatedAt": "2026-10-27T20:17:46.061Z",
-          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202509082212262224&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTPIA&country=IN&lat=23.37569&lng=86.31117&locusId=CTPIA&locusType=city&rank=3&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
+          "updatedAt": "2026-10-27T22:02:29.044Z",
+          "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202509082212262224&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTPIA&country=IN&lat=23.37569&lng=86.31117&locusId=CTPIA&locusType=city&rank=4&region=in&roomStayQualifier=2e0e&mtkeys=undefined",
           "priceHistory": [
             {
               "at": "2026-10-27T18:47:20.819Z",
@@ -791806,6 +791962,12 @@
             },
             {
               "at": "2026-10-27T20:17:46.061Z",
+              "dv": 1,
+              "lead": 0,
+              "price": 2868
+            },
+            {
+              "at": "2026-10-27T22:02:29.044Z",
               "dv": 1,
               "lead": 0,
               "price": 2868
@@ -798144,7 +798306,7 @@
     }
   ],
   "today": {
-    "generatedAt": "2026-10-27T20:20:57.610Z",
+    "generatedAt": "2026-10-27T22:04:41.928Z",
     "weekends": [
       {
         "checkin": "2026-10-30",
