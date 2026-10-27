@@ -1,6 +1,40 @@
 {
-  "generatedAt": "2026-10-27T15:41:48.650Z",
+  "generatedAt": "2026-10-27T15:49:45.018Z",
   "events": [
+    {
+      "id": "drop|makemytrip|Hotel Sonar Bangla Sundarban|Sundarbans|2026-11-13|9827|2026-10-27T15",
+      "at": "2026-10-27T15:25:14.947Z",
+      "type": "drop",
+      "hotelName": "Hotel Sonar Bangla Sundarban",
+      "destination": "Sundarbans",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-11-13",
+      "checkout": "2026-11-15",
+      "price": 9827,
+      "refPrice": 13968,
+      "dropPct": 30,
+      "leadDays": 17,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202012171738159426&_uCurrency=INR&checkin=11132026&checkout=11152026&city=CTXER&country=IN&lat=22.13214&lng=88.813&locusId=CTXER&locusType=city&rank=1&region=in&roomStayQualifier=2e0e&viewType=PREMIUM&mtkeys=undefined"
+    },
+    {
+      "id": "drop|makemytrip|Gogol Beach Resort|Mandarmoni|2026-12-18|4817|2026-10-27T15",
+      "at": "2026-10-27T15:18:21.561Z",
+      "type": "drop",
+      "hotelName": "Gogol Beach Resort",
+      "destination": "Mandarmoni",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-12-18",
+      "checkout": "2026-12-20",
+      "price": 4817,
+      "refPrice": 6524,
+      "dropPct": 26,
+      "leadDays": 52,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202310052100446323&_uCurrency=INR&checkin=12182026&checkout=12202026&city=CTXMD&country=IN&lat=21.65135&lng=87.65789&locusId=CTXMD&locusType=city&rank=1&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
     {
       "id": "drop|makemytrip|Super Hotel O Sonajhuri Forestview Bolpur Formerly Comfort Inn|Shantiniketan|2026-12-18|987|2026-10-27T15",
       "at": "2026-10-27T15:21:45.058Z",
@@ -1666,40 +1700,6 @@
       "leadDays": 3,
       "isNewlyBuilt": false,
       "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201912311926236059&_uCurrency=INR&checkin=10292026&checkout=10312026&city=CTXDI&country=IN&lat=21.62025&lng=87.49882&locusId=CTXDI&locusType=city&rank=2&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
-    },
-    {
-      "id": "last_minute|makemytrip|Bombay Beach Resort|Mandarmoni|2026-10-29|2724|2026-10-26T11",
-      "at": "2026-10-26T11:39:27.863Z",
-      "type": "last_minute",
-      "hotelName": "Bombay Beach Resort",
-      "destination": "Mandarmoni",
-      "source": "makemytrip",
-      "starRating": null,
-      "checkin": "2026-10-29",
-      "checkout": "2026-10-31",
-      "price": 2724,
-      "refPrice": 3252,
-      "dropPct": 16,
-      "leadDays": 3,
-      "isNewlyBuilt": false,
-      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201407221629005740&_uCurrency=INR&checkin=10292026&checkout=10312026&city=CTXMD&country=IN&lat=21.66541&lng=87.70812&locusId=CTXMD&locusType=city&rank=4&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
-    },
-    {
-      "id": "last_minute|makemytrip|Hotel Sonar Bangla Mandarmani|Mandarmoni|2026-10-29|4967|2026-10-26T11",
-      "at": "2026-10-26T11:39:27.597Z",
-      "type": "last_minute",
-      "hotelName": "Hotel Sonar Bangla Mandarmani",
-      "destination": "Mandarmoni",
-      "source": "makemytrip",
-      "starRating": null,
-      "checkin": "2026-10-29",
-      "checkout": "2026-10-31",
-      "price": 4967,
-      "refPrice": 5528,
-      "dropPct": 10,
-      "leadDays": 3,
-      "isNewlyBuilt": false,
-      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=200809051540156456&_uCurrency=INR&checkin=10292026&checkout=10312026&city=CTXMD&country=IN&lat=21.65256&lng=87.66768&locusId=CTXMD&locusType=city&rank=1&region=in&roomStayQualifier=2e0e&viewType=PREMIUM&mtkeys=undefined"
     }
   ]
 }
