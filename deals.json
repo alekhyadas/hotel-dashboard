@@ -1,6 +1,23 @@
 {
-  "generatedAt": "2026-10-28T11:20:44.938Z",
+  "generatedAt": "2026-10-28T13:33:11.283Z",
   "events": [
+    {
+      "id": "drop|makemytrip|PUNJAB RESIDENCY|Purulia|2026-10-28|1972|2026-10-28T13",
+      "at": "2026-10-28T13:29:08.190Z",
+      "type": "drop",
+      "hotelName": "PUNJAB RESIDENCY",
+      "destination": "Purulia",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-28",
+      "checkout": "2026-10-30",
+      "price": 1972,
+      "refPrice": 2420,
+      "dropPct": 19,
+      "leadDays": 0,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202412262139192796&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTPIA&country=IN&lat=23.33334&lng=86.36375&locusId=CTPIA&locusType=city&rank=4&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
     {
       "id": "rare|makemytrip|Valmere Himalayan Hotel & Spa (Near Sikkim Manipal University)|Gangtok|2026-10-28|2243|2026-10-28T10",
       "at": "2026-10-28T10:05:57.615Z",
@@ -1683,23 +1700,6 @@
       "leadDays": 10,
       "isNewlyBuilt": false,
       "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202001311839495079&_uCurrency=INR&checkin=11062026&checkout=11082026&city=CTXDI&country=IN&lat=21.62036&lng=87.49986&locusId=CTXDI&locusType=city&rank=120&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
-    },
-    {
-      "id": "drop|makemytrip|Sun And Sand Hotel|Digha|2026-11-06|1577|2026-10-26T19",
-      "at": "2026-10-26T19:34:34.740Z",
-      "type": "drop",
-      "hotelName": "Sun And Sand Hotel",
-      "destination": "Digha",
-      "source": "makemytrip",
-      "starRating": null,
-      "checkin": "2026-11-06",
-      "checkout": "2026-11-08",
-      "price": 1577,
-      "refPrice": 3316,
-      "dropPct": 52,
-      "leadDays": 10,
-      "isNewlyBuilt": false,
-      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202601191432149493&_uCurrency=INR&checkin=11062026&checkout=11082026&city=CTXDI&country=IN&lat=21.62153&lng=87.49932&locusId=CTXDI&locusType=city&rank=68&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
     }
   ]
 }
