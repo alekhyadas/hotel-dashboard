@@ -1,6 +1,40 @@
 {
-  "generatedAt": "2026-10-28T06:46:11.817Z",
+  "generatedAt": "2026-10-28T08:20:22.849Z",
   "events": [
+    {
+      "id": "last_minute|makemytrip|PUNJAB RESIDENCY|Purulia|2026-10-28|1972|2026-10-28T06",
+      "at": "2026-10-28T06:46:33.659Z",
+      "type": "last_minute",
+      "hotelName": "PUNJAB RESIDENCY",
+      "destination": "Purulia",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-28",
+      "checkout": "2026-10-30",
+      "price": 1972,
+      "refPrice": 2420,
+      "dropPct": 19,
+      "leadDays": 0,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202412262139192796&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTPIA&country=IN&lat=23.33334&lng=86.36375&locusId=CTPIA&locusType=city&rank=3&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
+    {
+      "id": "last_minute|makemytrip|Hotel Biksthang Boutique (2 min walk to m.g marg)|Gangtok|2026-10-28|2962|2026-10-28T06",
+      "at": "2026-10-28T06:45:53.795Z",
+      "type": "last_minute",
+      "hotelName": "Hotel Biksthang Boutique (2 min walk to m.g marg)",
+      "destination": "Gangtok",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-28",
+      "checkout": "2026-10-30",
+      "price": 2962,
+      "refPrice": 3602,
+      "dropPct": 18,
+      "leadDays": 0,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202305111404222782&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXGA&country=IN&lat=27.32484&lng=88.61306&locusId=CTXGA&locusType=city&rank=4&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
     {
       "id": "last_minute|makemytrip|Super Collection O Gandhi Ghat Formerly Sai Resorts|Puri|2026-10-28|2225|2026-10-28T03",
       "at": "2026-10-28T03:48:40.609Z",
@@ -1666,40 +1700,6 @@
       "leadDays": 4,
       "isNewlyBuilt": false,
       "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202101272347189285&_uCurrency=INR&checkin=10312026&checkout=11022026&city=CTXDI&country=IN&lat=21.62076&lng=87.50465&locusId=CTXDI&locusType=city&rank=3&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
-    },
-    {
-      "id": "drop|makemytrip|Hotel Ruksar Inn|Digha|2026-11-06|1514|2026-10-26T19",
-      "at": "2026-10-26T19:34:38.820Z",
-      "type": "drop",
-      "hotelName": "Hotel Ruksar Inn",
-      "destination": "Digha",
-      "source": "makemytrip",
-      "starRating": null,
-      "checkin": "2026-11-06",
-      "checkout": "2026-11-08",
-      "price": 1514,
-      "refPrice": 1813,
-      "dropPct": 16,
-      "leadDays": 10,
-      "isNewlyBuilt": false,
-      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202603061506311669&_uCurrency=INR&checkin=11062026&checkout=11082026&city=CTXDI&country=IN&lat=21.62993&lng=87.50401&locusId=CTXDI&locusType=city&rank=156&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
-    },
-    {
-      "id": "drop|makemytrip|7 SEAS|Digha|2026-11-06|2162|2026-10-26T19",
-      "at": "2026-10-26T19:34:38.095Z",
-      "type": "drop",
-      "hotelName": "7 SEAS",
-      "destination": "Digha",
-      "source": "makemytrip",
-      "starRating": null,
-      "checkin": "2026-11-06",
-      "checkout": "2026-11-08",
-      "price": 2162,
-      "refPrice": 2754,
-      "dropPct": 21,
-      "leadDays": 10,
-      "isNewlyBuilt": false,
-      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202303261523235564&_uCurrency=INR&checkin=11062026&checkout=11082026&city=CTXDI&country=IN&lat=21.62126&lng=87.49912&locusId=CTXDI&locusType=city&rank=144&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
     }
   ]
 }
