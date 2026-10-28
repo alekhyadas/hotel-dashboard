@@ -1,6 +1,23 @@
 {
-  "generatedAt": "2026-10-27T23:19:52.977Z",
+  "generatedAt": "2026-10-28T00:50:26.593Z",
   "events": [
+    {
+      "id": "last_minute|makemytrip|Super Hotel O Sonajhuri Forestview Bolpur Formerly Comfort Inn|Shantiniketan|2026-10-28|889|2026-10-27T23",
+      "at": "2026-10-27T23:19:17.625Z",
+      "type": "last_minute",
+      "hotelName": "Super Hotel O Sonajhuri Forestview Bolpur Formerly Comfort Inn",
+      "destination": "Shantiniketan",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-28",
+      "checkout": "2026-10-30",
+      "price": 889,
+      "refPrice": 1001,
+      "dropPct": 11,
+      "leadDays": 0,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202606082207002906&_uCurrency=INR&checkin=10282026&checkout=10302026&city=CTXOJ&country=IN&lat=23.69647&lng=87.67797&locusId=CTXOJ&locusType=city&rank=3&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
     {
       "id": "last_minute|makemytrip|Hotel Brill View|Kolkata|2026-10-28|1218|2026-10-27T22",
       "at": "2026-10-27T22:00:51.823Z",
@@ -1683,23 +1700,6 @@
       "leadDays": 10,
       "isNewlyBuilt": false,
       "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202101272347189285&_uCurrency=INR&checkin=11062026&checkout=11082026&city=CTXDI&country=IN&lat=21.62076&lng=87.50465&locusId=CTXDI&locusType=city&rank=3&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
-    },
-    {
-      "id": "last_minute|makemytrip|Palashbony Resort Sonajhuri Haat|Shantiniketan|2026-10-30|1551|2026-10-26T18",
-      "at": "2026-10-26T18:51:40.731Z",
-      "type": "last_minute",
-      "hotelName": "Palashbony Resort Sonajhuri Haat",
-      "destination": "Shantiniketan",
-      "source": "makemytrip",
-      "starRating": null,
-      "checkin": "2026-10-30",
-      "checkout": "2026-11-01",
-      "price": 1551,
-      "refPrice": 1730,
-      "dropPct": 10,
-      "leadDays": 3,
-      "isNewlyBuilt": false,
-      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=202412220025544930&_uCurrency=INR&checkin=10302026&checkout=11012026&city=CTXOJ&country=IN&lat=23.69258&lng=87.66834&locusId=CTXOJ&locusType=city&rank=106&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
     }
   ]
 }
