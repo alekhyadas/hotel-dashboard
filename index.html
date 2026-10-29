@@ -131,6 +131,9 @@
   .drop-badge { font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 999px; background: var(--badge-green-bg); color: var(--badge-green-text); white-space: nowrap; }
   .drop-badge.t-last_minute { background: var(--badge-red-bg); color: var(--badge-red-text); }
   .drop-badge.t-rare { background: var(--badge-teal-bg); color: var(--badge-teal-text); }
+  .drop-badge.t-record_low { background: var(--badge-teal-bg); color: var(--badge-teal-text); }
+  .drop-badge.t-good_deal { background: var(--badge-green-bg); color: var(--badge-green-text); }
+  .drop-badge.t-market_deal { background: var(--badge-green-bg); color: var(--badge-green-text); }
   .drop-badge.t-discount { background: var(--badge-amber-bg); color: var(--badge-amber-text); }
   .drop-badge.t-new { background: var(--badge-blue-bg); color: var(--badge-blue-text); }
   .drop-when { font-size: 11px; color: var(--muted); }
@@ -1104,7 +1107,7 @@
       document.getElementById("compare-modal-overlay").classList.add("hidden");
     }
 
-    const DROP_LABELS = { last_minute: "\u{1F525} Last-minute", rare: "\u{1F48E} Rare deal", drop: "\u{1F4C9} Price drop", discount: "Big discount", new: "Newly built" };
+    const DROP_LABELS = { record_low: "\u{1F3C6} Lowest price ever", good_deal: "\u{1F4B0} Well below usual", market_deal: "\u{1F4B8} Cheaper than similar hotels", last_minute: "\u{1F525} Last-minute", rare: "\u{1F48E} Rare deal", drop: "\u{1F4C9} Price drop", discount: "Big discount", new: "Newly built" };
 
     function dropWhen(iso) {
       const mins = Math.max(0, Math.round((Date.now() - new Date(iso).getTime()) / 60000));
