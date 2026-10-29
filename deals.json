@@ -1,6 +1,23 @@
 {
-  "generatedAt": "2026-10-29T13:33:19.645Z",
+  "generatedAt": "2026-10-29T18:54:52.488Z",
   "events": [
+    {
+      "id": "last_minute|makemytrip|ibis Kolkata Rajarhat - An Accor Brand|Kolkata|2026-10-30|3750|2026-10-29T13",
+      "at": "2026-10-29T13:28:24.991Z",
+      "type": "last_minute",
+      "hotelName": "ibis Kolkata Rajarhat - An Accor Brand",
+      "destination": "Kolkata",
+      "source": "makemytrip",
+      "starRating": null,
+      "checkin": "2026-10-30",
+      "checkout": "2026-11-01",
+      "price": 3750,
+      "refPrice": 5950,
+      "dropPct": 37,
+      "leadDays": 1,
+      "isNewlyBuilt": false,
+      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201811291816364913&_uCurrency=INR&checkin=10302026&checkout=11012026&city=CTCCU&country=IN&lat=22.58167&lng=88.46119&locusId=CTCCU&locusType=city&rank=2&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
+    },
     {
       "id": "rare|makemytrip|Eco Nature Camp|Purulia|2026-10-30|939|2026-10-29T12",
       "at": "2026-10-29T12:03:12.258Z",
@@ -1683,23 +1700,6 @@
       "leadDays": 1,
       "isNewlyBuilt": false,
       "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201209231409053771&_uCurrency=INR&checkin=10302026&checkout=11012026&city=CTIXB&country=IN&lat=27.03993&lng=88.26594&locusId=CTIXB&locusType=city&rank=1&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
-    },
-    {
-      "id": "last_minute|makemytrip|Hotel Mamoni Group|Digha|2026-11-01|1141|2026-10-28T21",
-      "at": "2026-10-28T21:14:10.486Z",
-      "type": "last_minute",
-      "hotelName": "Hotel Mamoni Group",
-      "destination": "Digha",
-      "source": "makemytrip",
-      "starRating": null,
-      "checkin": "2026-11-01",
-      "checkout": "2026-11-03",
-      "price": 1141,
-      "refPrice": 2075,
-      "dropPct": 45,
-      "leadDays": 3,
-      "isNewlyBuilt": false,
-      "url": "https://www.makemytrip.com/hotels/hotel-details?hotelId=201503301558416310&_uCurrency=INR&checkin=11012026&checkout=11032026&city=CTXDI&country=IN&lat=21.62474&lng=87.50263&locusId=CTXDI&locusType=city&rank=5&region=in&roomStayQualifier=2e0e&mtkeys=undefined"
     }
   ]
 }
