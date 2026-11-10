@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Resort Deal Dashboard</title>
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAD+0lEQVR4nMWX/08TZxzHn38Bilrn/EbbJa0oa9eWAoXSr1egQKFAGdUMjdmWMPaFxemmP0y7H+Z+ALJlZi7+0mQIGE06GbiRqRlKtpiYuFSzmG1lwxkXkwX3NWb3w3t5rrvHu/ZpoQbxkld699z183o/3y45QhSHPiZoDTEhbogJKUNMEA2xIFYGWkuqGacOwjv0vYGwvjewqO8V8GihjkBYJdf1+MO6ZwNYVXr8mRC6qE+ri/oWdVE/Vhfq9GlJebc3Xt7tw+PBGyflnZ5UeZcXj4VOT4psjbjFrREPlDQN7sbQyWMPReWuELLr5cctki0dbmQzOPI2/r1/96Gofb47p14hyJZwA7KpfzGKb29ewfytG0UxfXkKph4hp14hyOY2F3jQgsX2fvyLU9xahSCbWuvBY/7WdanozOVptA88JzE6OcpkB0eOsPbbd25mAnw+wa1VCLIpVAcecgAq1brMEkdPDLEAVCy3p39OPQiQp14+yMZmJ3ikFzIB5q5exMA7b0hMXkiyACOJD1j7r3d/kNrGzk1waxWCbGyqBQ85QDGMnRvn1ioEeTJYAx5yADq/s1e+lJCHmnLtxtes/c8/fskEmB7n1ioE2SBUg4ccoJg1cHJqjP3/qZYaOKJO6Tefg0I2+B3gUWwAOlKRwb0YeN2NqxMhYK6dcf1MCK/uc3M95AlfFXgUswbu3VuAe08EyeNBlTibi4kmGJocKg9Z77WDh3K+l+K1o4cw+n4gr/j+V2F2nvwoqPKQ9W4beMgBlnwRvdyHtr5aJrh2qhl7+534/Xwbu3Z02FWBInuczEO0DVbwkAMsvQYsSAz7WfHJ4wJMjVYsfNYi9dzZaZfalAFOfxhgHqJ1PQMecgC63aiYQrecHIAGo22e3V1SL3lD/+YBF/pfqctp/z4ZYh6yrs4CHrw1IO975Tvhpfh+pM+25EhmE40wt9rYVCihoyN7yFqnGTzSP+UGkKdCOR1vDR3BzAn1EFMplc990gjxUjs+fs8rSeX734w2Mg9ZW/M0ePy4zACT55M4sK9eFYAO++FDDdL5/NkW6flj73rZ/fhBF/OQNdWV4prqSmSz3AD//H0HDb3NuD39oIeJYZ9q69E5pyNBz3+baYXeY5Y9Iilz7EiVOXZApm9/vySnhZezBqStOjuFtp3V+OtC7nwrES+FEdlVBYUvRcrs2+Nl9u2QMQXr0frCzqLZ7LLBF7Hiu9P8HZH+NAShywqli7qJxlah1dgqFjW2CqwUHTEbRg67MDbslX7p9bqqnOeoM/OdqLFuC2us27DKqL8PSy2mcKnFtFhqMeERQx1qOQthNmpLzMZ4idmYKjEbxRKzESuE+H/NOHUonf8BjsOn14ZDqZMAAAAASUVORK5CYII=" data-hotel-favicon />
 <style>
   /* Public read-only mirror of the extension's dashboard. Same filters,
      sorting, and expandable per-hotel dates, just no Hide/AI/YouTube
@@ -1152,6 +1153,7 @@
     let todayData = null;
     let todayWeek = 0;
     const tdDay = (iso) => new Date(iso + "T00:00:00").toLocaleDateString("en-IN", { weekday: "short", day: "numeric", month: "short" });
+    const publishedPickFresh = (p) => !p.expiresAt || Date.parse(p.expiresAt) > Date.now();
     function tdCard(p) {
       const badge = p.kind === "deal"
         ? '<span class="td-badge td-deal" title="Below this stay\'s own usual price">Price drop</span>'
@@ -1164,7 +1166,8 @@
         <div class="td-price">${formatINR(p.price)}${p.fair && p.price < p.fair ? `<s>${formatINR(p.fair)}</s>` : ""}</div></div>
         <div class="td-badges">${badge}<span class="td-conf td-conf-${esc(p.confidence.level)}">${esc(p.confidence.label)}</span></div>
         <ul class="td-why">${p.why.slice(0, 4).map((w) => `<li>${esc(w)}</li>`).join("")}</ul>
-        ${p.url ? `<a class="td-book" href="${escAttr(p.url)}" target="_blank" rel="noopener noreferrer">Book on MakeMyTrip</a>` : ""}
+        <p class="td-meta">${p.quote && p.quote.total != null ? `${formatINR(p.quote.total)} observed stay total` : "Final payable total unverified"}</p>
+        ${p.url ? `<a class="td-book" href="${escAttr(p.url)}" target="_blank" rel="noopener noreferrer">Open ${p.source === "goibibo" ? "Goibibo" : "MakeMyTrip"}</a>` : ""}
       </article>`;
     }
     function renderToday() {
@@ -1175,16 +1178,19 @@
       }
       const w = t.book[todayWeek] || t.book[0];
       const weeks = t.book.map((b, i) => `<button class="td-week ${i === todayWeek ? "active" : ""}" data-week="${i}">${i === 0 ? "This weekend" : "Next weekend"} <span>${esc(tdDay(b.checkin))}</span></button>`).join("");
+      const currentPicks = (w && w.picks || []).filter(publishedPickFresh);
       document.getElementById("today-book").innerHTML = w
-        ? `<div class="td-weeks">${weeks}</div><p class="td-verdict">${esc(w.verdict)}</p><div class="td-grid">${w.picks.map(tdCard).join("")}</div>`
+        ? `<div class="td-weeks">${weeks}</div><p class="td-verdict">${currentPicks.length === (w.picks || []).length ? esc(w.verdict) : "Some published prices have expired and need a fresh scan."}</p><div class="td-grid">${currentPicks.map(tdCard).join("") || '<p class="td-meta">No fresh published recommendations. Check the booking site or wait for the next scan.</p>'}</div>`
         : '<p class="td-meta">No weekend in range.</p>';
       const f = t.film || { picks: [] };
+      f.picks = f.picks.filter(publishedPickFresh);
       document.getElementById("today-film").innerHTML = f.picks.length
         ? f.picks.map((p) => `<div class="td-row"><div><b>${esc(p.hotelName)}</b><div class="td-meta">${esc(p.destination)} • ${esc(p.why.join(", "))}</div></div><div class="td-row-right"><b>${formatINR(p.price)}</b><div class="td-meta">${esc(tdDay(p.checkin))}</div>${p.url ? `<a href="${escAttr(p.url)}" target="_blank" rel="noopener noreferrer">open</a>` : ""}</div></div>`).join("")
         : '<p class="td-meta">Nothing newly built or well rated and uncovered yet.</p>';
       if (t.weekends && t.weekends[0]) document.getElementById("today-cheapest-title").textContent = `Cheapest per place, ${tdDay(t.weekends[0].checkin)}`;
-      document.getElementById("today-cheapest").innerHTML = (t.cheapest || []).length
-        ? `<table class="td-table"><thead><tr><th>Place</th><th>Cheapest decent stay</th><th class="num">Price</th><th class="num">Typical</th></tr></thead><tbody>${t.cheapest.map((c) => `<tr><td><b>${esc(c.destination)}</b><div class="td-meta">${c.count} hotel${c.count === 1 ? "" : "s"}</div></td><td>${c.cheapest.url ? `<a href="${escAttr(c.cheapest.url)}" target="_blank" rel="noopener noreferrer">${esc(c.cheapest.hotelName)}</a>` : esc(c.cheapest.hotelName)}</td><td class="num"><b>${formatINR(c.cheapest.price)}</b></td><td class="num td-meta">${formatINR(c.typical)}</td></tr>`).join("")}</tbody></table>`
+      const freshCheapest = (t.cheapest || []).filter((c) => publishedPickFresh(c.cheapest));
+      document.getElementById("today-cheapest").innerHTML = freshCheapest.length
+        ? `<table class="td-table"><thead><tr><th>Place</th><th>Cheapest decent stay</th><th class="num">Price</th><th class="num">Typical</th></tr></thead><tbody>${freshCheapest.map((c) => `<tr><td><b>${esc(c.destination)}</b><div class="td-meta">${c.count} hotel${c.count === 1 ? "" : "s"}</div></td><td>${c.cheapest.url ? `<a href="${escAttr(c.cheapest.url)}" target="_blank" rel="noopener noreferrer">${esc(c.cheapest.hotelName)}</a>` : esc(c.cheapest.hotelName)}</td><td class="num"><b>${formatINR(c.cheapest.price)}</b></td><td class="num td-meta">${formatINR(c.typical)}</td></tr>`).join("")}</tbody></table>`
         : '<p class="td-meta">No checked prices for this weekend yet.</p>';
     }
     document.addEventListener("click", (e) => {
